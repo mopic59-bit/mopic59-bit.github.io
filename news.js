@@ -178,10 +178,11 @@ function renderNews(items) {
  }
  for (const item of valid) {
   if (item.kind === 'link') {
-   const row = document.createElement('p'); row.className = 'news-link';
+   const row = document.createElement('article'); row.className = 'news-item news-link';
+   const title = document.createElement('h3');
    const link = document.createElement('a'); link.href = item.url;
    link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = item.title + ' ↗';
-   row.append(link); container.append(row); continue;
+   title.append(link); row.append(title); container.append(row); continue;
   }
   const article = document.createElement('article'); article.className = 'news-item';
   const meta = document.createElement('p'); meta.className = 'count';
