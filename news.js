@@ -147,6 +147,18 @@ const newsItems = [
     "summary": "이재민 교수가 소아 급성림프모구백혈병의 조혈모세포이식 전처치요법을 비교한 연구로 대한조혈모세포이식학회 우수연제상을 받았습니다.",
     "date": "2016-03-04",
     "publisher": "메디컬투데이"
+  },
+  {
+    "kind": "link",
+    "year": 2023,
+    "title": "2023년 CPHO 우수논문상 영남의대 이재민",
+    "url": "https://www.kspho.or.kr/content/about/article_list.html"
+  },
+  {
+    "kind": "link",
+    "year": 2017,
+    "title": "2017년 대한혈액학회 우수논문상 영남의대 이재민",
+    "url": "https://www.hematology.or.kr/sub01/sub02.html"
   }
 ];
 
@@ -156,7 +168,7 @@ function renderNews(items) {
  const valid = items.filter(item => {
   try { return ['https:', 'http:'].includes(new URL(item.url).protocol) && item.title; }
   catch { return false; }
- }).sort((a,b) => (b.date || '').localeCompare(a.date || ''));
+ }).sort((a,b) => (b.date || String(b.year || '')).localeCompare(a.date || String(a.year || '')));
  if (!valid.length) {
   const message = document.createElement('p');
   message.className = 'news-empty';
@@ -165,6 +177,12 @@ function renderNews(items) {
   return;
  }
  for (const item of valid) {
+  if (item.kind === 'link') {
+   const row = document.createElement('p'); row.className = 'news-link';
+   const link = document.createElement('a'); link.href = item.url;
+   link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = item.title + ' ↗';
+   row.append(link); container.append(row); continue;
+  }
   const article = document.createElement('article'); article.className = 'news-item';
   const meta = document.createElement('p'); meta.className = 'count';
   meta.textContent = [item.publisher,item.date].filter(Boolean).join(' · ');
