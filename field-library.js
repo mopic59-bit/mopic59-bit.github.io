@@ -1,6 +1,41 @@
 (function () {
   'use strict';
 
+  var labels = {
+    ko: {
+      all: '전체', allYears: '모든 연도', year: '{year}년', untitled: '제목 미등록',
+      count: '선정 논문 {total}편 중 {visible}편 표시', tagCount: '{label} 논문 {count}편',
+      noMatches: '조건에 맞는 논문이 없습니다. 태그, 검색어 또는 연도를 바꿔보세요.',
+      papersPending: '선정 자료를 준비 중입니다.', summaryPending: '핵심 요약을 준비 중입니다.',
+      onlineDate: '온라인 공개 {date}', original: '원문 ↗', newsPending: '선정 뉴스를 준비 중입니다.',
+      dateMissing: '날짜 미등록', newsSummaryPending: '기사 요약을 준비 중입니다.', readArticle: '기사 읽기 ↗'
+    },
+    en: {
+      all: 'All', allYears: 'All years', year: '{year}', untitled: 'Untitled',
+      count: 'Showing {visible} of {total} selected papers', tagCount: '{label}: {count} papers',
+      noMatches: 'No papers match these filters. Try another tag, search term, or year.',
+      papersPending: 'Selected papers will be added here.', summaryPending: 'A key findings summary will be added here.',
+      onlineDate: 'Published online {date}', original: 'Full text ↗', newsPending: 'Selected news will be added here.',
+      dateMissing: 'Date unavailable', newsSummaryPending: 'An article summary will be added here.', readArticle: 'Read article ↗'
+    }
+  };
+  var tagLabelsEn = {
+    '림프종': 'Lymphoma', '신경모세포종': 'Neuroblastoma', '뇌종양': 'Brain tumors',
+    '기타 고형암': 'Other solid tumors', '비악성 혈액질환': 'Nonmalignant hematology',
+    '항체·면역치료': 'Antibody and immunotherapy', '표적치료': 'Targeted therapy',
+    '조혈모세포이식': 'HSCT', '지지요법': 'Supportive care'
+  };
+  function language() { return window.labI18n && window.labI18n.language === 'en' ? 'en' : 'ko'; }
+  function t(key, values) {
+    var message = labels[language()][key] || key;
+    return message.replace(/\{(\w+)\}/g, function (match, name) { return values && values[name] !== undefined ? String(values[name]) : match; });
+  }
+  function localized(record, key) {
+    if (window.labI18n && typeof window.labI18n.record === 'function') return value(window.labI18n.record(record, key));
+    return language() === 'en' ? value(record[key + 'En']) || value(record[key]) : value(record[key]);
+  }
+  function tagLabel(tag) { return language() === 'en' ? tagLabelsEn[tag] || tag : tag; }
+
   function start() {
     var tagList = document.getElementById('topic-tags');
     var searchInput = document.getElementById('topic-search');
@@ -15,15 +50,20 @@
     var papers = (Array.isArray(library.papers) ? library.papers : []).filter(isRecord).map(function (record, index) {
       return {
         id: value(record.id) || 'paper-' + index,
-        title: value(record.title) || '제목 미등록',
+        title: value(record.title),
+        titleEn: value(record.titleEn),
         authors: Array.isArray(record.authors) ? record.authors.map(value).filter(Boolean).join(', ') : value(record.authors),
+        authorsEn: Array.isArray(record.authorsEn) ? record.authorsEn.map(value).filter(Boolean).join(', ') : value(record.authorsEn),
         journal: value(record.journal),
+        journalEn: value(record.journalEn),
         date: validDate(record.date),
         year: validYear(record.year) || validDate(record.date).slice(0, 4),
         doi: value(record.doi),
         url: safeUrl(record.url),
         summary: value(record.summary),
+        summaryEn: value(record.summaryEn),
         dateNote: value(record.dateNote),
+        dateNoteEn: value(record.dateNoteEn),
         tags: unique(Array.isArray(record.tags) ? record.tags.map(value) : [])
       };
     }).sort(newestFirst);
@@ -37,16 +77,7 @@
     var years = unique(papers.map(function (paper) { return paper.year; })).sort(function (a, b) { return Number(b) - Number(a); });
     var state = { tag: '', q: '', year: '' };
 
-    yearSelect.replaceChildren();
-    var allYears = element('option', '', '모든 연도');
-    allYears.value = '';
-    yearSelect.appendChild(allYears);
-    years.forEach(function (year) {
-      var option = element('option', '', year + '년');
-      option.value = year;
-      yearSelect.appendChild(option);
-    });
-
+    renderYears();
     readQuery();
     renderPapers();
     renderNews();
@@ -70,6 +101,24 @@
       readQuery();
       renderPapers();
     });
+    window.addEventListener('lab-language-change', function () {
+      renderYears();
+      renderPapers();
+      renderNews();
+    });
+
+    function renderYears() {
+      yearSelect.replaceChildren();
+      var allYears = element('option', '', t('allYears'));
+      allYears.value = '';
+      yearSelect.appendChild(allYears);
+      years.forEach(function (year) {
+        var option = element('option', '', t('year', { year: year }));
+        option.value = year;
+        yearSelect.appendChild(option);
+      });
+      yearSelect.value = state.year;
+    }
 
     function readQuery() {
       var params = new URL(window.location.href).searchParams;
@@ -108,19 +157,19 @@
       var matching = papers.filter(function (paper) {
         if (state.year && paper.year !== state.year) return false;
         if (!query) return true;
-        return [paper.title, paper.authors, paper.journal, paper.summary, paper.doi, paper.tags.join(' ')].join(' ').toLocaleLowerCase().indexOf(query) >= 0;
+        return [paper.title, paper.titleEn, paper.authors, paper.authorsEn, paper.journal, paper.journalEn, paper.summary, paper.summaryEn, paper.doi, paper.tags.join(' '), paper.tags.map(function (tag) { return tagLabelsEn[tag] || tag; }).join(' ')].join(' ').toLocaleLowerCase().indexOf(query) >= 0;
       });
       var visible = matching.filter(function (paper) { return !state.tag || paper.tags.indexOf(state.tag) >= 0; });
       tagList.replaceChildren();
-      tagList.appendChild(filterButton('', '전체', matching.length));
+      tagList.appendChild(filterButton('', t('all'), matching.length));
       tags.forEach(function (tag) {
         var count = matching.filter(function (paper) { return paper.tags.indexOf(tag) >= 0; }).length;
-        tagList.appendChild(filterButton(tag, tag, count));
+        tagList.appendChild(filterButton(tag, tagLabel(tag), count));
       });
-      countNode.textContent = '선정 논문 ' + papers.length + '편 중 ' + visible.length + '편 표시';
+      countNode.textContent = t('count', { total: papers.length, visible: visible.length });
       paperList.replaceChildren();
       if (!visible.length) {
-        paperList.appendChild(element('p', 'empty', papers.length ? '조건에 맞는 논문이 없습니다. 태그, 검색어 또는 연도를 바꿔보세요.' : '선정 자료를 준비 중입니다.'));
+        paperList.appendChild(element('p', 'empty', t(papers.length ? 'noMatches' : 'papersPending')));
         return;
       }
       visible.forEach(function (paper) {
@@ -129,22 +178,24 @@
         var body = element('div', 'paper-content');
         if (paper.tags.length) {
           var paperTags = element('div', 'paper-tags');
-          paper.tags.forEach(function (tag) { paperTags.appendChild(filterButton(tag, tag)); });
+          paper.tags.forEach(function (tag) { paperTags.appendChild(filterButton(tag, tagLabel(tag))); });
           body.appendChild(paperTags);
         }
         var heading = element('h3');
         var doiHref = doiUrl(paper.doi);
-        heading.appendChild(linkOrText(paper.title, paper.url || doiHref));
+        heading.appendChild(linkOrText(localized(paper, 'title') || t('untitled'), paper.url || doiHref));
         body.appendChild(heading);
-        if (paper.authors) body.appendChild(element('p', 'paper-authors', paper.authors));
-        var citation = [paper.journal, paper.date ? '온라인 공개 ' + formatDate(paper.date) : paper.year].filter(Boolean).join(' · ');
+        var authors = localized(paper, 'authors');
+        if (authors) body.appendChild(element('p', 'paper-authors', authors));
+        var citation = [localized(paper, 'journal'), paper.date ? t('onlineDate', { date: formatDate(paper.date) }) : paper.year].filter(Boolean).join(' · ');
         if (citation) body.appendChild(element('p', 'paper-citation', citation));
-        if (paper.dateNote) body.appendChild(element('p', 'paper-date-note', paper.dateNote));
-        body.appendChild(element('p', 'paper-summary', paper.summary || '핵심 요약을 준비 중입니다.'));
+        var dateNote = localized(paper, 'dateNote');
+        if (dateNote) body.appendChild(element('p', 'paper-date-note', dateNote));
+        body.appendChild(element('p', 'paper-summary', localized(paper, 'summary') || t('summaryPending')));
         article.appendChild(body);
         var reference = doiHref || paper.url;
         if (reference) {
-          var source = linkOrText(doiHref ? 'DOI ↗' : '원문 ↗', reference);
+          var source = linkOrText(doiHref ? 'DOI ↗' : t('original'), reference);
           source.className = 'doi';
           article.appendChild(source);
         }
@@ -159,7 +210,7 @@
       button.setAttribute('aria-pressed', String(state.tag === tag));
       if (typeof count === 'number') {
         button.appendChild(element('span', 'tag-count', ' ' + count));
-        button.setAttribute('aria-label', label + ' 논문 ' + count + '편');
+        button.setAttribute('aria-label', t('tagCount', { label: label, count: count }));
       }
       button.addEventListener('click', function () { chooseTag(tag); });
       return button;
@@ -168,27 +219,30 @@
     function renderNews() {
       var news = (Array.isArray(library.news) ? library.news : []).filter(isRecord).map(function (record) {
         return {
-          title: value(record.title) || '제목 미등록',
+          title: value(record.title),
+          titleEn: value(record.titleEn),
           publisher: value(record.publisher) || value(record.source),
+          publisherEn: value(record.publisherEn) || value(record.sourceEn),
           date: validDate(record.date),
           summary: value(record.summary),
+          summaryEn: value(record.summaryEn),
           url: safeUrl(record.url) || safeUrl(record.link)
         };
       }).sort(newestFirst);
       newsList.replaceChildren();
       if (!news.length) {
-        newsList.appendChild(element('p', 'empty news-empty', '선정 뉴스를 준비 중입니다.'));
+        newsList.appendChild(element('p', 'empty news-empty', t('newsPending')));
         return;
       }
       news.forEach(function (item) {
         var article = element('article', 'news-item');
         var heading = element('h3');
-        heading.appendChild(linkOrText(item.title, item.url));
+        heading.appendChild(linkOrText(localized(item, 'title') || t('untitled'), item.url));
         article.appendChild(heading);
-        var metadata = [item.publisher, item.date ? formatDate(item.date) : '날짜 미등록'].filter(Boolean).join(' · ');
+        var metadata = [localized(item, 'publisher'), item.date ? formatDate(item.date) : t('dateMissing')].filter(Boolean).join(' · ');
         article.appendChild(element('p', 'muted', metadata));
-        article.appendChild(element('p', 'news-summary', item.summary || '기사 요약을 준비 중입니다.'));
-        if (item.url) article.appendChild(linkOrText('기사 읽기 ↗', item.url));
+        article.appendChild(element('p', 'news-summary', localized(item, 'summary') || t('newsSummaryPending')));
+        if (item.url) article.appendChild(linkOrText(t('readArticle'), item.url));
         newsList.appendChild(article);
       });
     }
@@ -205,7 +259,9 @@
     return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date ? date : '';
   }
   function newestFirst(a, b) { return a.date === b.date ? 0 : a.date > b.date ? -1 : 1; }
-  function formatDate(date) { return date.replace(/-/g, '.'); }
+  function formatDate(date) {
+    return new Intl.DateTimeFormat(language() === 'en' ? 'en-US' : 'ko-KR', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(date + 'T00:00:00Z'));
+  }
   function safeUrl(input) {
     try {
       var url = new URL(value(input));
