@@ -37,11 +37,11 @@ const newsItems = [
     "publisher": "아주경제"
   },
   {
-    "url": "https://www.dkilbo.com/news/articleView.html?idxno=315278",
-    "title": "이재민 교수‘소아혈액종양학회 연제상’",
-    "summary": "이재민 교수가 영유아기 미세먼지 장기 노출과 소아암 발생의 관련성을 분석한 연구로 대한소아혈액종양학회 최우수 연제상을 받았습니다.",
+    "url": "https://www.bosa.co.kr/news/articleView.html?idxno=2136979",
+    "title": "이재민 교수, 소아혈액종양학회 '최우수연제상'",
+    "summary": "영남대병원 소아청소년과 이재민 교수가 영유아기 미세먼지 장기 노출과 소아암 발생의 관련성을 분석한 후향적 코호트 연구로 대한소아혈액종양학회 추계학술대회 최우수연제상을 받았습니다. 국민건강보험 청구자료와 한국환경공단 대기오염 자료를 결합해 누적 미세먼지 노출과 소아암 발생 위험의 연관성을 분석했습니다.",
     "date": "2020-10-28",
-    "publisher": "대경일보"
+    "publisher": "의학신문"
   },
   {
     "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=361771",
