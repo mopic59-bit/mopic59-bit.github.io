@@ -19,9 +19,35 @@ window.researchLibrary = {
     "graft failure",
     "abatacept",
     "GVHD",
-    "meta-analysis"
+    "meta-analysis",
+    "ETP-ALL",
+    "MRD"
   ],
   "papers": [
+    {
+      "id": "etp-all-clinical-review-2026",
+      "title": "Understanding and clinical approach to early T-cell precursor acute lymphoblastic leukemia",
+      "authors": "Ju HY",
+      "authorsEn": "Ju HY",
+      "journal": "Blood Research · 2026 · 61:64",
+      "journalEn": "Blood Research · 2026 · 61:64",
+      "date": "2026-10-12",
+      "year": 2026,
+      "doi": "10.1007/s44313-026-00181-y",
+      "url": "https://link.springer.com/article/10.1007/s44313-026-00181-y",
+      "sourceUrl": "https://link.springer.com/article/10.1007/s44313-026-00181-y",
+      "summary": "ETP-ALL의 면역표현형·유전체 분류와 진료 접근을 소아 및 성인 T-ALL 연구를 바탕으로 정리한 종설입니다. 최근 집중 화학요법 연구에서는 ETP-ALL의 예후가 비ETP T-ALL보다 반드시 나쁘지는 않았으며, 면역표현형만으로 위험도를 판단하기 어렵다고 설명합니다. 유전체 아형과 MRD 반응을 통합한 위험분류 및 이식 결정, 재발·불응성 질환의 다라투무맙·베네토클락스 등 신약 전략을 검토합니다. 새로운 환자 데이터를 분석한 연구가 아니며, 유전체 기반 분류와 신약의 ETP-ALL 특이 효과는 추가 전향 검증이 필요합니다.",
+      "summaryEn": "This narrative review synthesizes pediatric and adult evidence on ETP-ALL definitions, genomic classification, prognosis, and management. Contemporary intensive-chemotherapy studies do not consistently show poorer outcomes than non-ETP T-ALL, so immunophenotype alone cannot define risk. It examines integrating genomic subtypes with MRD response for treatment and transplant decisions, alongside emerging agents such as daratumumab and venetoclax in relapsed/refractory disease. No new patient dataset was analyzed; genomic risk models and subtype-specific treatment benefits require prospective validation.",
+      "tags": [
+        "ALL",
+        "ETP-ALL",
+        "MRD",
+        "HSCT"
+      ],
+      "articleType": "Review",
+      "verification": "publisher-full-text",
+      "accessLevel": "fulltext"
+    },
     {
       "id": "cart-bridging-geth-2026",
       "title": "Bridging therapy in pediatric and AYA patients under 25 years with relapsed/refractory B-ALL undergoing anti-CD19 CAR-T therapy: a multicenter retrospective study by the Spanish group GETH-TC",
