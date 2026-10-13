@@ -21,7 +21,11 @@ window.researchLibrary = {
     "GVHD",
     "meta-analysis",
     "ETP-ALL",
-    "MRD"
+    "MRD",
+    "pLGG",
+    "BRAF",
+    "MEK",
+    "뇌종양"
   ],
   "papers": [
     {
@@ -199,6 +203,32 @@ window.researchLibrary = {
       ],
       "verification": "publisher-indexed-abstract",
       "issueDate": "2026-09-17"
+    },
+    {
+      "id": "plgg-braf-mek-review-2026",
+      "title": "Current Perspectives on Pediatric Low-Grade Gliomas: Focus on BRAF and MEK Inhibition",
+      "authors": "Suh JK, Koh KN",
+      "authorsEn": "Suh JK, Koh KN",
+      "journal": "Brain Tumor Research and Treatment · 2026 · 14(1):1–11",
+      "journalEn": "Brain Tumor Research and Treatment · 2026 · 14(1):1–11",
+      "date": "2026-01-31",
+      "year": 2026,
+      "doi": "10.14791/btrt.2025.0026",
+      "pmid": "41663197",
+      "pmcid": "PMC12891966",
+      "url": "https://btrt.org/DOIx.php?id=10.14791/btrt.2025.0026",
+      "sourceUrl": "https://btrt.org/DOIx.php?id=10.14791/btrt.2025.0026",
+      "summary": "소아 저등급 신경교종(pLGG)의 RAS/MAPK 유전체 이상과 BRAF·MEK 억제제의 임상근거를 정리한 종설입니다. BRAF V600E 변이 종양에서는 다브라페닙·트라메티닙 병용이 기존 화학요법보다 유리한 결과를 보였지만, BRAF 융합 종양에는 같은 전략을 그대로 적용할 수 없다고 강조합니다. MEK 억제제와 II형 RAF 억제제 등 분자아형에 따른 치료 선택, 내성 및 치료 종료 후 재성장 문제를 검토합니다. 신규 환자 데이터는 없으며, 소아의 장기 독성과 최적 치료기간에 대한 근거가 부족해 표적치료를 모든 pLGG의 표준으로 일반화할 수 없습니다.",
+      "summaryEn": "This review summarizes RAS/MAPK alterations and clinical evidence for BRAF and MEK inhibitors in pediatric low-grade glioma. Dabrafenib plus trametinib showed advantages over conventional chemotherapy in BRAF V600E-mutant tumors, but this approach cannot be generalized to BRAF-fusion tumors. It examines genotype-guided selection of MEK and type II RAF inhibitors, resistance, and regrowth after treatment cessation. No new patient data were analyzed; uncertain long-term toxicity and optimal treatment duration preclude treating targeted therapy as standard for every pLGG.",
+      "tags": [
+        "pLGG",
+        "BRAF",
+        "MEK",
+        "뇌종양"
+      ],
+      "articleType": "Review",
+      "verification": "publisher-full-text",
+      "accessLevel": "fulltext"
     },
     {
       "id": "infant-iron-prophylaxis-2025",

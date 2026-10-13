@@ -264,6 +264,14 @@
   "external.hira": {
     "ko": "건강보험심사평가원 암질환 사용약제 및 요법 ↗",
     "en": "HIRA · Cancer Drugs & Regimens (Korean) ↗"
+  },
+  "external.pnuLibrary": {
+    "ko": "부산대학교 도서관 ↗",
+    "en": "Pusan National University Library ↗"
+  },
+  "external.yuMedicalLibrary": {
+    "ko": "영남대학교 의학도서관 ↗",
+    "en": "Yeungnam University Medical Library ↗"
   }
 };
   var storageKey = 'research-lab-language';
