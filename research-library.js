@@ -5,9 +5,83 @@ window.researchLibrary = {
     "AML",
     "HSCT",
     "blinatumomab",
-    "venetoclax"
+    "venetoclax",
+    "CAR-T",
+    "bridging therapy",
+    "AIHA",
+    "sutimlimab",
+    "비악성 혈액질환",
+    "sarcoma",
+    "infant",
+    "TRM"
   ],
   "papers": [
+    {
+      "id": "cart-bridging-geth-2026",
+      "title": "Bridging therapy in pediatric and AYA patients under 25 years with relapsed/refractory B-ALL undergoing anti-CD19 CAR-T therapy: a multicenter retrospective study by the Spanish group GETH-TC",
+      "authors": "Galán-Gómez V, León-Triana O, Alonso-Saladrigues A 외 · GETH-TC",
+      "authorsEn": "Galán-Gómez V, León-Triana O, Alonso-Saladrigues A et al. · GETH-TC",
+      "journal": "Bone Marrow Transplantation · 2026 · 온라인 선출판",
+      "journalEn": "Bone Marrow Transplantation · 2026 · Advance online publication",
+      "date": "2026-10-12",
+      "year": 2026,
+      "doi": "10.1038/s41409-026-03067-w",
+      "url": "https://www.nature.com/articles/s41409-026-03067-w",
+      "sourceUrl": "https://www.nature.com/articles/s41409-026-03067-w",
+      "summary": "스페인 GETH-TC가 25세 미만 재발·불응성 B-ALL 환자 103명의 CAR-T 전 교량 치료를 비교한 다기관 후향 연구입니다. 저강도 화학요법(50명)·면역치료(20명)·고강도 화학요법(33명)의 CAR-T 주입 28일 후 MRD 음성 완전관해율은 각각 96%·85%·75%였습니다. 질환 진행과 치료 관련 사망은 앞의 두 군에서 낮았고, 선행 치료 3개 이상은 낮은 반응률과 연관됐습니다. 질환 공격성이나 환자 선택 차이가 결과에 영향을 줄 수 있어 치료 전략 간 인과적 우월성은 확정할 수 없습니다.",
+      "summaryEn": "This Spanish multicenter retrospective study compared bridging regimens in 103 patients under 25 with relapsed/refractory B-ALL receiving anti-CD19 CAR-T. Day-28 MRD-negative complete remission was 96%, 85%, and 75% following low-intensity chemotherapy, immunotherapy, and high-intensity chemotherapy, respectively. Progression and treatment-related mortality were lower in the first two groups, while at least three prior treatment lines were associated with poorer responses. Disease aggressiveness and treatment-selection differences limit causal comparisons.",
+      "tags": [
+        "ALL",
+        "CAR-T",
+        "bridging therapy"
+      ],
+      "verification": "publisher-indexed-abstract",
+      "accessLevel": "abstract"
+    },
+    {
+      "id": "sutimlimab-pediatric-aiha-2026",
+      "title": "Successful Use of Sutimlimab in two Pediatric Patients With Refractory Cold Antibody-Mediated Autoimmune Hemolytic Anemia",
+      "authors": "Zaheer S, Friedmann R, Cheng K 외",
+      "authorsEn": "Zaheer S, Friedmann R, Cheng K et al.",
+      "journal": "Pediatric Blood & Cancer · 2026 · e70751",
+      "date": "2026-10-12",
+      "year": 2026,
+      "doi": "10.1002/1545-5017.70751",
+      "pmid": "42862050",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70751",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42862050/",
+      "summary": "기존 치료에 반응하지 않은 소아 한랭항체 매개 자가면역용혈빈혈 2례에서 C1s 억제제 sutimlimab을 사용한 증례 보고입니다. 대상은 Evans 증후군을 동반한 4세 여아와 간이식 후 발병한 12개월 남아로, 각각 여러 기존 치료에도 난치성 경과를 보였습니다. 두 환자 모두 투여 후 용혈이 빠르게 호전되고 수혈이 필요하지 않은 상태와 지속적인 관해가 보고됐습니다. 대조군이 없는 2례 보고이므로 치료 효과와 안전성을 다른 소아 환자에게 일반화하는 데 한계가 있습니다.",
+      "summaryEn": "This two-patient case report describes sutimlimab, a C1s inhibitor, for refractory cold antibody-mediated autoimmune hemolytic anemia in children. The patients were a 4-year-old girl with Evans syndrome and a 12-month-old boy after liver transplantation, each with an inadequate response to previous treatments. Both experienced rapid improvement in hemolysis, achieved transfusion independence, and maintained remission after treatment. The small number of uncontrolled cases limits conclusions about efficacy and safety in other pediatric patients.",
+      "tags": [
+        "AIHA",
+        "sutimlimab",
+        "비악성 혈액질환"
+      ],
+      "verification": "pubmed-abstract",
+      "accessLevel": "abstract"
+    },
+    {
+      "id": "infant-bone-soft-tissue-neoplasms-2026",
+      "title": "Bone and Soft Tissue Neoplasms in Infants Versus Older Children: A Report From the Cancer in Young People in Canada Program",
+      "authors": "Sassine S, Coltin H, Kondyli M 외",
+      "authorsEn": "Sassine S, Coltin H, Kondyli M et al.",
+      "journal": "Pediatric Blood & Cancer · 2026 · e70753 (Early View)",
+      "date": "2026-10-12",
+      "year": 2026,
+      "doi": "10.1002/1545-5017.70753",
+      "pmid": "42862084",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70753",
+      "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70753",
+      "summary": "캐나다 CYP-C 자료에서 2001–2020년 진단된 골·연부조직종양 소아 1,102명(1세 미만 146명)을 분석한 전국 단위 후향 코호트 연구입니다. 영아는 1–10세 소아보다 치료 관련 사망이 많았고(4.8% 대 1.5%), 1년 전체생존율은 63.7% 대 81.5%, 5년은 56.9% 대 62.0%였습니다. 종양 유형과 전이 여부를 보정해도 영아의 사망 위험이 높았으며(보정 HR 1.61), 재발 누적발생률 차이는 유의하지 않았습니다. 후향 자료의 누락·분류 오류, 체계적인 분자정보 부족, 사망 원인에 대한 독립적 검증 부재가 해석의 한계입니다.",
+      "summaryEn": "This national retrospective CYP-C cohort analyzed 1,102 children with bone and soft tissue neoplasms diagnosed in 2001–2020, including 146 infants under one year. Infants had higher treatment-related mortality than children aged 1–10 years (4.8% vs. 1.5%) and lower overall survival at one year (63.7% vs. 81.5%) and five years (56.9% vs. 62.0%). Infancy remained associated with higher mortality after adjustment for tumor subtype and metastases (adjusted HR 1.61), while cumulative relapse incidence did not differ significantly. Limitations include possible missing or misclassified retrospective data, incomplete molecular information, and lack of independent adjudication of causes of death.",
+      "tags": [
+        "sarcoma",
+        "infant",
+        "TRM"
+      ],
+      "verification": "publisher-full-text-and-pubmed-abstract",
+      "accessLevel": "fulltext"
+    },
     {
       "id": "venetoclax-hsct-2026",
       "title": "Venetoclax-Based Therapy as a Bridge to Hematopoietic Stem Cell Transplantation in Relapsed or Refractory Pediatric Acute Leukemia",
