@@ -252,6 +252,18 @@
   "page.ogDescription": {
     "ko": "부산대학교 의과대학 이재민 교수의 소아혈액종양 진료·연구, 논문 목록과 연구 도구를 소개합니다.",
     "en": "Pediatric hematology and oncology research, publications, and tools by Professor Jae Min Lee at Pusan National University School of Medicine."
+  },
+  "nav.external": {
+    "ko": "외부 링크",
+    "en": "External Links"
+  },
+  "external.heading": {
+    "ko": "외부 링크",
+    "en": "External Links"
+  },
+  "external.hira": {
+    "ko": "건강보험심사평가원 암질환 사용약제 및 요법 ↗",
+    "en": "HIRA · Cancer Drugs & Regimens (Korean) ↗"
   }
 };
   var storageKey = 'research-lab-language';

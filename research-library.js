@@ -13,7 +13,13 @@ window.researchLibrary = {
     "비악성 혈액질환",
     "sarcoma",
     "infant",
-    "TRM"
+    "TRM",
+    "IDA",
+    "iron prophylaxis",
+    "graft failure",
+    "abatacept",
+    "GVHD",
+    "meta-analysis"
   ],
   "papers": [
     {
@@ -83,6 +89,51 @@ window.researchLibrary = {
       "accessLevel": "fulltext"
     },
     {
+      "id": "pediatric-primary-graft-failure-2026",
+      "title": "Overcoming Primary Graft Failure in Pediatric Allogeneic HSCT: Insights from Ten Centers of the Spanish Group for Hematopoietic Transplantation and Cellular Therapy (GETH-TC)",
+      "authors": "Mariona Morell Daniel, Melissa Panesso Romero, Maria Isabel Benítez Carabante 외",
+      "authorsEn": "Mariona Morell Daniel, Melissa Panesso Romero, Maria Isabel Benítez Carabante et al.",
+      "journal": "Transplantation and Cellular Therapy · 2026 · In Press (Journal Pre-proof)",
+      "date": "2026-10-11",
+      "year": 2026,
+      "doi": "10.1016/j.jtct.2026.10.017",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2666636726008055",
+      "sourceUrl": "https://www.sciencedirect.com/science/article/abs/pii/S2666636726008055",
+      "summary": "스페인 10개 기관에서 첫 동종 조혈모세포이식 후 일차 생착실패를 경험한 18세 미만 환자를 분석한 후향 연구입니다. 이식 1,561건 중 57건(3.65%)에서 생착실패가 발생했고, 구제 이식 후 74%에서 생착됐으며 생착군과 비생착군의 1년 생존율은 각각 81%와 43%였습니다. 생착 성공은 생존과 유의하게 연관됐으나 특정 전처치 요법과 생착·생존의 유의한 연관성은 확인되지 않았으며, 후향적 연구여서 인과관계를 확정하기에는 한계가 있습니다.",
+      "summaryEn": "This retrospective study across 10 Spanish centers examined primary graft failure in patients younger than 18 years after their first allogeneic HSCT. Among 1,561 transplants, 57 (3.65%) developed graft failure; 74% achieved engraftment after salvage HSCT, with 1-year survival of 81% in engrafted patients versus 43% in those without engraftment. Engraftment correlated with survival, but no specific conditioning regimen had a significant association with engraftment or survival, and the retrospective design limits causal conclusions.",
+      "tags": [
+        "HSCT",
+        "graft failure"
+      ],
+      "dateNote": "온라인 공개 2026.10.11 · 출판 전 원고(Journal Pre-proof)",
+      "dateNoteEn": "Available online Oct 11, 2026 · Journal Pre-proof",
+      "verification": "publisher-abstract",
+      "accessLevel": "abstract"
+    },
+    {
+      "id": "abatacept-gvhd-meta-analysis-2026",
+      "title": "Abatacept for Prophylaxis of Acute and Chronic Graft-Versus-Host-Disease in Children Undergoing Allogeneic Hematopoietic Stem Cell Transplantation—A Systematic Review and Meta-Analysis of Cohort Studies",
+      "authors": "Kruizinga MD, Verbeek AB, Lindemans CA 외",
+      "authorsEn": "Kruizinga MD, Verbeek AB, Lindemans CA et al.",
+      "journal": "Pediatric Blood & Cancer · 2026 · e70746 (Online ahead of print)",
+      "date": "2026-10-10",
+      "year": 2026,
+      "doi": "10.1002/1545-5017.70746",
+      "pmid": "42858118",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70746",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42858118/",
+      "summary": "소아 동종 조혈모세포이식에서 기존 GVHD 예방요법에 아바타셉트를 추가한 코호트 연구 15편(비교 연구 8편, 단일군 연구 7편)을 분석한 체계적 고찰·메타분석입니다. 아바타셉트 포함 요법은 II–IV등급 및 III–IV등급 급성 GVHD 위험 감소와 연관됐습니다(각각 RR 0.31, 0.14). 중등도·중증 만성 GVHD는 전체적으로 감소하지 않았지만, 연장 투여 요법에서는 위험 감소가 관찰됐습니다(RR 0.25). 후향 연구 설계와 코호트 간 이질성으로 효과와 안전성을 확정하기에는 한계가 있습니다.",
+      "summaryEn": "A systematic review and meta-analysis of 15 cohort studies (eight comparative and seven single-arm) evaluated adding abatacept to conventional GVHD prophylaxis in children undergoing allogeneic HSCT. Abatacept-inclusive regimens were associated with lower risks of grade II–IV and grade III–IV acute GVHD (RR 0.31 and 0.14, respectively). Moderate-to-severe chronic GVHD was not reduced overall, although extended regimens were associated with lower risk (RR 0.25). Retrospective designs and heterogeneous cohorts limit firm conclusions about efficacy and safety.",
+      "tags": [
+        "abatacept",
+        "GVHD",
+        "HSCT",
+        "meta-analysis"
+      ],
+      "verification": "pubmed-abstract",
+      "accessLevel": "abstract"
+    },
+    {
       "id": "venetoclax-hsct-2026",
       "title": "Venetoclax-Based Therapy as a Bridge to Hematopoietic Stem Cell Transplantation in Relapsed or Refractory Pediatric Acute Leukemia",
       "authors": "Colman KS, Meyran D, Malalasekera V 외",
@@ -122,6 +173,30 @@ window.researchLibrary = {
       ],
       "verification": "publisher-indexed-abstract",
       "issueDate": "2026-09-17"
+    },
+    {
+      "id": "infant-iron-prophylaxis-2025",
+      "title": "Comparing Iron Prophylaxis Strategies in Infants: Is Sucrosomial Iron a Better Alternative?",
+      "authors": "Okur Acar S, Tahta N",
+      "authorsEn": "Okur Acar S, Tahta N",
+      "journal": "Journal of Pediatric Hematology/Oncology · 2025 · 47:347–351",
+      "journalEn": "Journal of Pediatric Hematology/Oncology · 2025 · 47:347–351",
+      "date": "2025-08-20",
+      "year": 2025,
+      "doi": "10.1097/MPH.0000000000003111",
+      "pmid": "40833123",
+      "url": "https://www.ovid.com/jnls/jpho-online/abstract/10.1097/mph.0000000000003111~comparing-iron-prophylaxis-strategies-in-infants-is?redirectionsource=fulltextview",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40833123/",
+      "summary": "터키의 단일기관 소아혈액 외래를 방문한 9–15개월 만삭·모유수유 영아 248명의 철분 예방요법을 평가한 관찰 연구입니다. 예방요법을 받은 204명은 3가 철(Fe³⁺, 110명) 또는 Sucrosomial Iron(94명)을 사용했고, 2가 철 제형은 비교에 포함되지 않았습니다. 복약 준수와 투여 기간은 두 군 간 유의한 차이가 없었지만, Sucrosomial Iron군의 Hb·MCV·페리틴·트랜스페린 포화도가 더 낮았습니다. 외래 의뢰 표본의 비무작위 비교이므로 제형 간 인과적 우월성을 확정할 수 없으며 추가 연구가 필요합니다.",
+      "summaryEn": "This single-center observational assessment included 248 term-born, breastfed infants aged 9–15 months attending a Turkish pediatric hematology clinic. Of 204 receiving prophylaxis, 110 used ferric iron and 94 Sucrosomial Iron; no infants received ferrous iron. Adherence and duration did not differ significantly, but hemoglobin, MCV, ferritin, and transferrin saturation were lower in the Sucrosomial Iron group. The referred, nonrandomized sample limits causal comparisons, and further research is needed.",
+      "tags": [
+        "IDA",
+        "iron prophylaxis",
+        "infant",
+        "비악성 혈액질환"
+      ],
+      "verification": "pubmed-indexed-abstract-and-author-institution-record",
+      "accessLevel": "abstract"
     },
     {
       "id": "blinatumomab-standard-risk-2024",
