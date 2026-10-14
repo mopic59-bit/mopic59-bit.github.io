@@ -31,7 +31,12 @@ window.researchLibrary = {
     "osteonecrosis",
     "late effects",
     "CSVT",
-    "anticoagulation"
+    "anticoagulation",
+    "ITP",
+    "prognosis",
+    "etoposide",
+    "palliative care",
+    "relapsed/refractory"
   ],
   "papers": [
     {
@@ -195,6 +200,31 @@ window.researchLibrary = {
       "accessLevel": "abstract"
     },
     {
+      "id": "pediatric-itp-prognosis-meta-analysis-2026",
+      "title": "Revisiting Pediatric ITP Prognosis: A Systematic Review and Meta-analysis of Simple Clinical and Laboratory Predictors of Chronic Disease",
+      "authors": "Ashi AS, Alshaikhi OA, Alnasser EY",
+      "authorsEn": "Ashi AS, Alshaikhi OA, Alnasser EY",
+      "journal": "Journal of Pediatric Hematology/Oncology · 2026 · 온라인 선출판",
+      "journalEn": "Journal of Pediatric Hematology/Oncology · 2026 · Online ahead of print",
+      "date": "2026-10-08",
+      "year": 2026,
+      "doi": "10.1097/MPH.0000000000003305",
+      "pmid": "42847975",
+      "url": "https://www.ovid.com/jnls/jpho-online/abstract/10.1097/mph.0000000000003305~revisiting-pediatric-itp-prognosis-a-systematic-review-and?redirectionsource=fulltextview",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42847975/",
+      "summary": "소아 면역혈소판감소증(ITP)의 만성화(12개월 초과)를 예측하는 진단 당시 임상·검사 지표를 2014년 이후 관찰 연구로 평가한 체계적 문헌고찰·메타분석입니다. 문헌고찰에 26개 연구, 정량 통합에 24개 연구(4,000명 초과)를 포함해 무작위효과 모형으로 분석했습니다. 높은 진단 연령(OR 2.25)과 서서히 발병한 경우(OR 6.20)가 만성화와 강한 연관성을 보였고, 선행 감염이 없거나 여아인 경우도 만성화와 연관됐습니다. 초기 혈소판 수 관련 근거는 이질성이 크고(I²=78%), 경미한 출혈의 예측 결과는 단일 연구에 기반해 개별 환자의 경과를 단독으로 확정하는 지표로 사용하기에는 한계가 있습니다.",
+      "summaryEn": "This systematic review and meta-analysis assessed baseline predictors of chronic pediatric ITP (>12 months) in post-2014 observational studies. It included 26 studies in the review and 24 in quantitative synthesis (>4,000 patients), using random-effects models. Older diagnostic age (OR 2.25) and insidious onset (OR 6.20) showed strong associations, with absence of preceding infection and female sex also associated with chronicity. High heterogeneity for baseline platelet count (I²=78%) and single-study bleeding data limit certainty; these associations cannot alone determine an individual child's course.",
+      "tags": [
+        "ITP",
+        "비악성 혈액질환",
+        "meta-analysis",
+        "prognosis"
+      ],
+      "articleType": "Systematic Review and Meta-analysis",
+      "verification": "pubmed-abstract",
+      "accessLevel": "abstract"
+    },
+    {
       "id": "venetoclax-hsct-2026",
       "title": "Venetoclax-Based Therapy as a Bridge to Hematopoietic Stem Cell Transplantation in Relapsed or Refractory Pediatric Acute Leukemia",
       "authors": "Colman KS, Meyran D, Malalasekera V 외",
@@ -214,6 +244,30 @@ window.researchLibrary = {
         "HSCT"
       ],
       "verification": "publisher-full-text"
+    },
+    {
+      "id": "palliative-oral-etoposide-pediatric-2026",
+      "title": "Effects of Palliative Oral Etoposide on Survival and Treatment Burden in Patients With Relapsed/Refractory Pediatric Malignancies",
+      "authors": "Wang YJ, Lenzen A, Reichek J 외",
+      "authorsEn": "Wang YJ, Lenzen A, Reichek J et al.",
+      "journal": "Journal of Pediatric Hematology/Oncology · 2026 · 온라인 선출판",
+      "journalEn": "Journal of Pediatric Hematology/Oncology · 2026 · Online ahead of print",
+      "date": "2026-09-28",
+      "year": 2026,
+      "doi": "10.1097/MPH.0000000000003285",
+      "pmid": "42804589",
+      "url": "https://www.ovid.com/jnls/jpho-online/abstract/10.1097/mph.0000000000003285~effects-of-palliative-oral-etoposide-on-survival-and?redirectionsource=fulltextview",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42804589/",
+      "summary": "재발·불응성 소아 악성종양에 완화 목적으로 경구 etoposide 단독요법을 사용한 76명을 11년간 검토한 단일기관 후향 연구입니다. 중앙 무사건생존기간은 47일, 전체생존기간은 113일이었으며 영상평가를 받은 48명 중 20명에서 안정병변이 최선 반응으로 확인됐습니다. 가장 최근의 이전 항암치료와 비교해 외래 방문, 입원 횟수와 입원 일수가 감소했습니다. 후향적 설계와 일부 환자에서만 시행된 영상평가 때문에 결과의 일반화와 생존이득의 인과관계 해석에는 한계가 있습니다.",
+      "summaryEn": "This single-center retrospective review examined palliative single-agent oral etoposide in 76 patients with relapsed or refractory pediatric malignancies over 11 years. Median event-free and overall survival were 47 and 113 days, respectively, and 20 of 48 patients with imaging had stable disease as their best response. Compared with the most recent prior cancer treatment, clinic visits, hospital admissions, and hospital days decreased. The retrospective design and incomplete imaging assessment limit generalizability and prevent firm conclusions about a causal survival benefit.",
+      "tags": [
+        "etoposide",
+        "palliative care",
+        "relapsed/refractory"
+      ],
+      "studyType": "Single-center retrospective review",
+      "verification": "pubmed-abstract",
+      "accessLevel": "abstract"
     },
     {
       "id": "blinatumomab-high-risk-2026",
