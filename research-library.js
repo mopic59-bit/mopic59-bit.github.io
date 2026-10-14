@@ -25,9 +25,40 @@ window.researchLibrary = {
     "pLGG",
     "BRAF",
     "MEK",
-    "뇌종양"
+    "뇌종양",
+    "asparaginase",
+    "thrombosis",
+    "osteonecrosis",
+    "late effects",
+    "CSVT",
+    "anticoagulation"
   ],
   "papers": [
+    {
+      "id": "all-asparaginase-thrombosis-meta-analysis-2026",
+      "title": "Incidence and Predictors of Symptomatic Thrombosis During Asparaginase-containing Therapy in Children With Acute Lymphoblastic Leukemia: A Meta-analysis and Narrative Synthesis",
+      "authors": "Cheng C, Tong C, Jiang L 외",
+      "authorsEn": "Cheng C, Tong C, Jiang L et al.",
+      "journal": "Journal of Pediatric Hematology/Oncology · 2026 · 온라인 선출판",
+      "journalEn": "Journal of Pediatric Hematology/Oncology · 2026 · Online ahead of print",
+      "date": "2026-10-13",
+      "year": 2026,
+      "doi": "10.1097/MPH.0000000000003307",
+      "pmid": "42868245",
+      "url": "https://www.ovid.com/jnls/jpho-online/abstract/10.1097/mph.0000000000003307~incidence-and-predictors-of-symptomatic-thrombosis-during?redirectionsource=fulltextview",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42868245/",
+      "summary": "아스파라기나제 포함 치료를 받는 21세 이하 ALL 환자의 증상성 혈전증을 평가한 메타분석·서술적 종합으로, 2026년 4월 15일까지 검색해 23개 연구를 포함했습니다. 발생률 통합에 사용한 15개 연구(17,809명·655건)의 무작위효과 추정치는 5.6%(95% 신뢰구간 3.5–9.0%)였습니다. 나이가 많을수록 위험이 높다는 결과가 가장 일관됐고, 유전성 혈전성향·비O형 혈액형·고위험 ALL·T-ALL의 연관성은 연구마다 달랐습니다. 연구 간 이질성이 매우 높아(I²=96.9%) 전체 발생률이나 특정 위험인자를 모든 환자에게 동일하게 적용하기에는 한계가 있습니다.",
+      "summaryEn": "This meta-analysis and narrative synthesis searched through April 15, 2026 and included 23 studies of symptomatic thrombosis during asparaginase-containing therapy in ALL patients aged 21 or younger. Random-effects incidence pooling used 15 studies with 17,809 children and 655 events, yielding 5.6% (95% CI 3.5–9.0%). Older age was the most consistent predictor; associations with inherited thrombophilia, non-O blood groups, high-risk ALL, and T-ALL varied across cohorts. Very high heterogeneity (I²=96.9%) limits generalization of the pooled rate and individual predictors.",
+      "tags": [
+        "ALL",
+        "asparaginase",
+        "thrombosis",
+        "meta-analysis"
+      ],
+      "articleType": "Meta-analysis and Narrative Synthesis",
+      "verification": "pubmed-abstract-browser-session",
+      "accessLevel": "abstract"
+    },
     {
       "id": "etp-all-clinical-review-2026",
       "title": "Understanding and clinical approach to early T-cell precursor acute lymphoblastic leukemia",
@@ -205,6 +236,31 @@ window.researchLibrary = {
       "issueDate": "2026-09-17"
     },
     {
+      "id": "all-symptomatic-osteonecrosis-austria-2026",
+      "title": "Incidence and Risk Factors of Symptomatic Osteonecrosis in Children With Acute Lymphoblastic Leukemia—A Population-Based Analysis of the Austrian ALL-BFM Study Group",
+      "authors": "Katharina Arnold, Leila Ronceray, Martin Benesch 외",
+      "authorsEn": "Katharina Arnold, Leila Ronceray, Martin Benesch et al.",
+      "journal": "eJHaem · 2026 · 7(2):e70263",
+      "date": "2026-03-23",
+      "year": 2026,
+      "doi": "10.1002/jha2.70263",
+      "pmid": "42344887",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jha2.70263",
+      "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/jha2.70263",
+      "summary": "AIEOP-BFM ALL 2000·2009 치료를 받은 오스트리아 소아청소년 1,127명의 증상성 골괴사 발생과 위험인자를 분석한 인구 기반 코호트 연구입니다. 73명에서 골괴사가 발생했고 5년 누적발생률은 7% ± 1%였으며, ALL 진단부터 골괴사 발생까지 중앙값은 1.64년이었습니다. 10–18세의 5년 발생률은 22% ± 3%로 1–9세의 2% ± 0%보다 높았고, 다변량 분석에서 연령만 독립적 예측인자로 남았습니다. 증상 있는 사례만 수집하고 표준화된 영상 선별검사를 시행하지 않아 전체 골괴사 부담은 과소평가됐을 가능성이 있습니다.",
+      "summaryEn": "This Austrian population-based analysis included 1,127 children and adolescents with newly diagnosed ALL treated on AIEOP-BFM ALL 2000 and 2009 protocols. Symptomatic osteonecrosis occurred in 73 patients; 5-year cumulative incidence was 7% ± 1%, with median onset 1.64 years after diagnosis. Incidence was 22% ± 3% at ages 10–18 versus 2% ± 0% at ages 1–9, and age was the only independent multivariable predictor. Collecting only symptomatic cases without standardized imaging screening may underestimate the overall osteonecrosis burden.",
+      "tags": [
+        "ALL",
+        "osteonecrosis",
+        "late effects"
+      ],
+      "dateNote": "온라인 최초 공개 2026.03.23 · 정식 게재 2026년 4월",
+      "dateNoteEn": "First published online Mar 23, 2026 · Journal issue April 2026",
+      "studyType": "Population-based cohort analysis",
+      "verification": "publisher-full-text",
+      "accessLevel": "fulltext"
+    },
+    {
       "id": "plgg-braf-mek-review-2026",
       "title": "Current Perspectives on Pediatric Low-Grade Gliomas: Focus on BRAF and MEK Inhibition",
       "authors": "Suh JK, Koh KN",
@@ -276,6 +332,32 @@ window.researchLibrary = {
       "citationYear": 2025,
       "dateNote": "온라인 최초 공개 2024.12.07 · 정식 게재 2025.02.27",
       "dateNoteEn": "First published online Dec 7, 2024 · Journal issue Feb 27, 2025"
+    },
+    {
+      "id": "csvt-pediatric-all-2024",
+      "title": "Cerebral Sinus Venous Thrombosis in Pediatric Acute Lymphoblastic Leukemia: Incidence, Clinical Characteristics, and Long-term Neurologic Outcomes",
+      "authors": "Johnson-Bishop L, Karakas C, Kralik SF 외",
+      "authorsEn": "Johnson-Bishop L, Karakas C, Kralik SF et al.",
+      "journal": "Journal of Child Neurology · 2024 · 39(13–14):494–499",
+      "date": "2024-09-26",
+      "year": 2024,
+      "doi": "10.1177/08830738241282910",
+      "pmid": "39324216",
+      "url": "https://journals.sagepub.com/doi/10.1177/08830738241282910",
+      "sourceUrl": "https://journals.sagepub.com/doi/10.1177/08830738241282910",
+      "requestedUrl": "https://www.ovid.com/journals/jcneu/abstract/10.1177/08830738241282910~cerebral-sinus-venous-thrombosis-in-pediatric-acute?redirectionsource=fulltextview",
+      "summary": "텍사스어린이병원에서 2002–2019년 새로 진단되거나 첫 재발한 소아 급성림프모구백혈병 환자의 뇌정맥동혈전증(CSVT)을 분석한 단일기관 후향 코호트 연구입니다. 전체 1,129명 중 19명(1.7%)에서 발생했고, 10세 초과에서 위험이 높았으며 12명(63%)은 유도요법 중 발생했습니다. 항응고치료 후 10명(53%)에서 혈전이 완전히, 8명(42%)에서 부분적으로 해소됐고, 생존자 14명 중 10명은 신경학적 검사 결과가 정상이었습니다. 사례 수가 적고 단일기관 후향 연구이므로, 다른 환자군에 일반화하거나 항응고치료의 인과효과를 확정하는 데 한계가 있습니다.",
+      "summaryEn": "This single-center retrospective cohort examined CSVT in children with newly diagnosed or first-relapse ALL at Texas Children's Hospital during 2002–2019. CSVT occurred in 19 of 1,129 patients (1.7%); age over 10 years was associated with higher risk, and 12 cases (63%) arose during induction. After anticoagulation, thrombosis resolved completely in 10 patients (53%) and partially in eight (42%); 10 of 14 survivors had normal neurologic examinations. The small, single-center retrospective cohort limits generalizability and causal interpretation of anticoagulation outcomes.",
+      "tags": [
+        "ALL",
+        "CSVT",
+        "thrombosis",
+        "anticoagulation"
+      ],
+      "dateNote": "온라인 최초 공개 2024.09.26 · 정식 게재 2024.11",
+      "dateNoteEn": "First published online Sep 26, 2024 · Journal issue Nov 2024",
+      "verification": "publisher-abstract-and-pubmed-metadata",
+      "accessLevel": "abstract"
     }
   ],
   "news": [
