@@ -110,8 +110,8 @@
     "en": "Reset filters"
   },
   "papers.dates": {
-    "ko": "온라인 공개일 기준 최신순 · 서지정보에는 정식 게재 연도가 함께 표시될 수 있습니다.",
-    "en": "Newest online publication first · The citation may also show the year of the journal issue."
+    "ko": "연도별 최신순 · 같은 연도에서는 게재일순 (온라인 공개일 우선, 미확인 시 정식 게재일 기준)",
+    "en": "Newest year first, then publication date · Online publication date where available; otherwise journal issue date."
   },
   "papers.pending": {
     "ko": "선정한 논문을 준비 중입니다. 등록하면 핵심 요약과 주제 태그를 함께 볼 수 있습니다.",

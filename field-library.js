@@ -7,7 +7,7 @@
       count: '선정 논문 {total}편 중 {visible}편 표시', tagCount: '{label} 논문 {count}편',
       noMatches: '조건에 맞는 논문이 없습니다. 태그, 검색어 또는 연도를 바꿔보세요.',
       papersPending: '선정 자료를 준비 중입니다.', summaryPending: '핵심 요약을 준비 중입니다.',
-      onlineDate: '온라인 공개 {date}', original: '원문 ↗', newsPending: '선정 뉴스를 준비 중입니다.',
+      onlineDate: '온라인 공개 {date}', issueDate: '정식 게재 {date}', yearCount: '{count}편', yearCountOne: '{count}편', yearMissing: '연도 미상', original: '원문 ↗', newsPending: '선정 뉴스를 준비 중입니다.',
       dateMissing: '날짜 미등록', newsSummaryPending: '기사 요약을 준비 중입니다.', readArticle: '기사 읽기 ↗'
     },
     en: {
@@ -15,7 +15,7 @@
       count: 'Showing {visible} of {total} selected papers', tagCount: '{label}: {count} papers',
       noMatches: 'No papers match these filters. Try another tag, search term, or year.',
       papersPending: 'Selected papers will be added here.', summaryPending: 'A key findings summary will be added here.',
-      onlineDate: 'Published online {date}', original: 'Full text ↗', newsPending: 'Selected news will be added here.',
+      onlineDate: 'Published online {date}', issueDate: 'Journal issue {date}', yearCount: '{count} papers', yearCountOne: '{count} paper', yearMissing: 'Year unavailable', original: 'Full text ↗', newsPending: 'Selected news will be added here.',
       dateMissing: 'Date unavailable', newsSummaryPending: 'An article summary will be added here.', readArticle: 'Read article ↗'
     }
   };
@@ -56,8 +56,9 @@
         authorsEn: Array.isArray(record.authorsEn) ? record.authorsEn.map(value).filter(Boolean).join(', ') : value(record.authorsEn),
         journal: value(record.journal),
         journalEn: value(record.journalEn),
-        date: validDate(record.date),
-        year: validYear(record.year) || validDate(record.date).slice(0, 4),
+        date: validDate(record.date) || validDate(record.issueDate),
+        dateKind: validDate(record.date) ? 'onlineDate' : 'issueDate',
+        year: validYear(record.year) || (validDate(record.date) || validDate(record.issueDate)).slice(0, 4),
         doi: value(record.doi),
         url: safeUrl(record.url),
         summary: value(record.summary),
@@ -66,7 +67,7 @@
         dateNoteEn: value(record.dateNoteEn),
         tags: unique(Array.isArray(record.tags) ? record.tags.map(value) : [])
       };
-    }).sort(newestFirst);
+    }).sort(papersNewestFirst);
     var taxonomy = unique(Array.isArray(library.tags) ? library.tags.map(value) : defaultTags);
     var presentTags = unique(papers.reduce(function (all, paper) {
       return all.concat(paper.tags);
@@ -172,22 +173,42 @@
         paperList.appendChild(element('p', 'empty', t(papers.length ? 'noMatches' : 'papersPending')));
         return;
       }
+      var activeYear = null;
+      var paperGroup;
       visible.forEach(function (paper) {
+        if (paper.year !== activeYear) {
+          activeYear = paper.year;
+          paperGroup = element('section', 'paper-year-group');
+          var yearHeading = element('h3', 'paper-year-heading');
+          yearHeading.id = 'paper-year-' + (paper.year || 'undated');
+          yearHeading.appendChild(element('span', '', paper.year ? t('year', { year: paper.year }) : t('yearMissing')));
+          var yearCount = visible.filter(function (item) { return item.year === paper.year; }).length;
+          yearHeading.appendChild(element('span', 'paper-year-count', t(yearCount === 1 ? 'yearCountOne' : 'yearCount', { count: yearCount })));
+          paperGroup.setAttribute('aria-labelledby', yearHeading.id);
+          paperGroup.appendChild(yearHeading);
+          paperList.appendChild(paperGroup);
+        }
         var article = element('article', 'paper');
-        article.appendChild(element('div', 'year', paper.year || '—'));
+        var dateNode = element(paper.date ? 'time' : 'span', 'paper-date', paper.date ? paper.date.slice(5).replace('-', '.') : '—');
+        if (paper.date) {
+          dateNode.dateTime = paper.date;
+          dateNode.setAttribute('aria-label', t(paper.dateKind, { date: formatDate(paper.date) }));
+          dateNode.title = t(paper.dateKind, { date: formatDate(paper.date) });
+        }
+        article.appendChild(dateNode);
         var body = element('div', 'paper-content');
         if (paper.tags.length) {
           var paperTags = element('div', 'paper-tags');
           paper.tags.forEach(function (tag) { paperTags.appendChild(filterButton(tag, tagLabel(tag))); });
           body.appendChild(paperTags);
         }
-        var heading = element('h3');
+        var heading = element('h4');
         var doiHref = doiUrl(paper.doi);
         heading.appendChild(linkOrText(localized(paper, 'title') || t('untitled'), paper.url || doiHref));
         body.appendChild(heading);
         var authors = localized(paper, 'authors');
         if (authors) body.appendChild(element('p', 'paper-authors', authors));
-        var citation = [localized(paper, 'journal'), paper.date ? t('onlineDate', { date: formatDate(paper.date) }) : paper.year].filter(Boolean).join(' · ');
+        var citation = [localized(paper, 'journal'), paper.date ? t(paper.dateKind, { date: formatDate(paper.date) }) : paper.year].filter(Boolean).join(' · ');
         if (citation) body.appendChild(element('p', 'paper-citation', citation));
         var dateNote = localized(paper, 'dateNote');
         if (dateNote) body.appendChild(element('p', 'paper-date-note', dateNote));
@@ -199,7 +220,7 @@
           source.className = 'doi';
           article.appendChild(source);
         }
-        paperList.appendChild(article);
+        paperGroup.appendChild(article);
       });
     }
 
@@ -258,6 +279,7 @@
     var parsed = new Date(date + 'T00:00:00Z');
     return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date ? date : '';
   }
+  function papersNewestFirst(a, b) { return Number(b.year || 0) - Number(a.year || 0) || newestFirst(a, b); }
   function newestFirst(a, b) { return a.date === b.date ? 0 : a.date > b.date ? -1 : 1; }
   function formatDate(date) {
     return new Intl.DateTimeFormat(language() === 'en' ? 'en-US' : 'ko-KR', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(date + 'T00:00:00Z'));
