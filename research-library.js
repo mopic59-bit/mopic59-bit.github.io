@@ -41,9 +41,34 @@ window.researchLibrary = {
     "radiotherapy",
     "reirradiation",
     "quizartinib",
-    "FLT3-ITD"
+    "FLT3-ITD",
+    "ICH"
   ],
   "papers": [
+    {
+      "id": "pediatric-acute-leukemia-intracranial-hemorrhage-2026",
+      "title": "Clinical Characteristics of Intracranial Hemorrhage in Pediatric Acute Leukemia",
+      "authors": "Kikui H, Uemura S, Tsuji K 외",
+      "authorsEn": "Kikui H, Uemura S, Tsuji K et al.",
+      "journal": "Pediatric Blood & Cancer · 2026 · e70767 (Early View)",
+      "journalEn": "Pediatric Blood & Cancer · 2026 · e70767 (Early View)",
+      "date": "2026-10-15",
+      "year": 2026,
+      "doi": "10.1002/1545-5017.70767",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/1545-5017.70767",
+      "sourceUrl": "https://onlinelibrary.wiley.com/doi/abs/10.1002/1545-5017.70767",
+      "summary": "새로 진단된 소아 급성백혈병 환자 340명을 후향적으로 검토한 연구에서 11명(3.2%)에게 두개내출혈(ICH)이 확인됐습니다. 조기 ICH(진단 후 7일 이내)는 주로 AML의 다발성 출혈이었고, 후기 ICH는 모두 ALL에서 발생했으며 KMT2A 재배열 B-ALL 영아 3명에서 뇌위축 후 경막하혈종이 보고됐습니다. 5년 전체생존율은 ICH군 55.4%, 비ICH군 90.4%로 차이를 보였습니다. 후향적 설계와 ICH 11례라는 작은 표본 때문에 위험요인의 인과관계와 결과의 일반화에는 한계가 있습니다.",
+      "summaryEn": "This retrospective review of 340 children with newly diagnosed acute leukemia identified intracranial hemorrhage (ICH) in 11 patients (3.2%). Early ICH (within 7 days of diagnosis) predominantly involved AML and multifocal bleeding; late ICH occurred only in ALL, including three infants with KMT2A-rearranged B-ALL who developed cerebral atrophy followed by subdural hematoma. Five-year overall survival was 55.4% with ICH versus 90.4% without ICH. The retrospective design and small number of ICH cases limit causal interpretation of risk factors and generalizability.",
+      "tags": [
+        "ALL",
+        "AML",
+        "infant",
+        "ICH"
+      ],
+      "studyType": "Retrospective review",
+      "verification": "publisher-abstract-browser-session",
+      "accessLevel": "abstract"
+    },
     {
       "id": "quizartinib-induction-refractory-pediatric-aml-2026",
       "title": "Successful Salvage Therapy With Quizartinib Plus Chemotherapy Followed by Quizartinib Monotherapy for Transplant Bridging and Post-Transplant Maintenance in a Child With Induction-Refractory FLT3-ITD-Positive AML",
@@ -93,25 +118,6 @@ window.researchLibrary = {
       "articleType": "Case Series and Literature Review",
       "verification": "publisher-deposited-crossref-abstract",
       "accessLevel": "abstract"
-    },
-    {
-      "id": "clinical-ai-evidence-standards-framework-2026",
-      "title": "From Technical Performance to Clinical Readiness: A Phase-Based Framework for Evidence Standards in Clinical Artificial Intelligence",
-      "authors": "Nenadic I, Loring Z, Noseworthy PA 외",
-      "authorsEn": "Nenadic I, Loring Z, Noseworthy PA et al.",
-      "journal": "NEJM AI · 2026 · 3(10)",
-      "journalEn": "NEJM AI · 2026 · 3(10)",
-      "year": 2026,
-      "doi": "10.1056/AIp2600684",
-      "url": "https://ai.nejm.org/doi/full/10.1056/AIp2600684",
-      "sourceUrl": "https://medresearch.umich.edu/profile/307/venk-murthy",
-      "summary": "임상 인공지능의 기술적 성능에서 임상 적용 준비 단계로 이어지는 근거 기준을 단계별 틀로 다루는 논문입니다. 저자 소속기관의 공식 논문 목록에서 제목과 서지정보를 확인했습니다. 원문은 확인하지 못했으므로 구체적인 방법론이나 임상 결과는 요약하지 않았습니다.",
-      "summaryEn": "This article addresses a phase-based framework for evidence standards linking technical performance to clinical readiness in artificial intelligence. The title and bibliographic metadata were verified in the authors’ official institutional publication lists. The full text was not reviewed, so specific methods or clinical findings are not summarized.",
-      "tags": [],
-      "verification": "author-institution-metadata-and-user-confirmed-publisher-date",
-      "accessLevel": "metadata",
-      "date": "2026-09-17",
-      "dateKind": "publicationDate"
     },
     {
       "id": "adult-ph-positive-all-ponatinib-blinatumomab-2026",
@@ -405,6 +411,25 @@ window.researchLibrary = {
       "studyType": "Single-center retrospective review",
       "verification": "pubmed-abstract",
       "accessLevel": "abstract"
+    },
+    {
+      "id": "clinical-ai-evidence-standards-framework-2026",
+      "title": "From Technical Performance to Clinical Readiness: A Phase-Based Framework for Evidence Standards in Clinical Artificial Intelligence",
+      "authors": "Nenadic I, Loring Z, Noseworthy PA 외",
+      "authorsEn": "Nenadic I, Loring Z, Noseworthy PA et al.",
+      "journal": "NEJM AI · 2026 · 3(10)",
+      "journalEn": "NEJM AI · 2026 · 3(10)",
+      "year": 2026,
+      "doi": "10.1056/AIp2600684",
+      "url": "https://ai.nejm.org/doi/full/10.1056/AIp2600684",
+      "sourceUrl": "https://medresearch.umich.edu/profile/307/venk-murthy",
+      "summary": "임상 인공지능의 기술적 성능에서 임상 적용 준비 단계로 이어지는 근거 기준을 단계별 틀로 다루는 논문입니다. 저자 소속기관의 공식 논문 목록에서 제목과 서지정보를 확인했습니다. 원문은 확인하지 못했으므로 구체적인 방법론이나 임상 결과는 요약하지 않았습니다.",
+      "summaryEn": "This article addresses a phase-based framework for evidence standards linking technical performance to clinical readiness in artificial intelligence. The title and bibliographic metadata were verified in the authors’ official institutional publication lists. The full text was not reviewed, so specific methods or clinical findings are not summarized.",
+      "tags": [],
+      "verification": "author-institution-metadata-and-user-confirmed-publisher-date",
+      "accessLevel": "metadata",
+      "date": "2026-09-17",
+      "dateKind": "publicationDate"
     },
     {
       "id": "blinatumomab-high-risk-2026",
