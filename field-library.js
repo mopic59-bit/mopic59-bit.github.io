@@ -7,7 +7,7 @@
       count: '선정 논문 {total}편 중 {visible}편 표시', tagCount: '{label} 논문 {count}편',
       noMatches: '조건에 맞는 논문이 없습니다. 태그, 검색어 또는 연도를 바꿔보세요.',
       papersPending: '선정 자료를 준비 중입니다.', summaryPending: '핵심 요약을 준비 중입니다.',
-      onlineDate: '온라인 공개 {date}', issueDate: '정식 게재 {date}', yearCount: '{count}편', yearCountOne: '{count}편', yearMissing: '연도 미상', original: '원문 ↗', newsPending: '선정 뉴스를 준비 중입니다.',
+      onlineDate: '온라인 공개 {date}', publicationDate: '게재일 {date}', issueDate: '정식 게재 {date}', yearCount: '{count}편', yearCountOne: '{count}편', yearMissing: '연도 미상', original: '원문 ↗', newsPending: '선정 뉴스를 준비 중입니다.',
       dateMissing: '날짜 미등록', newsSummaryPending: '기사 요약을 준비 중입니다.', readArticle: '기사 읽기 ↗'
     },
     en: {
@@ -15,7 +15,7 @@
       count: 'Showing {visible} of {total} selected papers', tagCount: '{label}: {count} papers',
       noMatches: 'No papers match these filters. Try another tag, search term, or year.',
       papersPending: 'Selected papers will be added here.', summaryPending: 'A key findings summary will be added here.',
-      onlineDate: 'Published online {date}', issueDate: 'Journal issue {date}', yearCount: '{count} papers', yearCountOne: '{count} paper', yearMissing: 'Year unavailable', original: 'Full text ↗', newsPending: 'Selected news will be added here.',
+      onlineDate: 'Published online {date}', publicationDate: 'Published {date}', issueDate: 'Journal issue {date}', yearCount: '{count} papers', yearCountOne: '{count} paper', yearMissing: 'Year unavailable', original: 'Full text ↗', newsPending: 'Selected news will be added here.',
       dateMissing: 'Date unavailable', newsSummaryPending: 'An article summary will be added here.', readArticle: 'Read article ↗'
     }
   };
@@ -57,7 +57,7 @@
         journal: value(record.journal),
         journalEn: value(record.journalEn),
         date: validDate(record.date) || validDate(record.issueDate),
-        dateKind: validDate(record.date) ? 'onlineDate' : 'issueDate',
+        dateKind: validDate(record.date) ? (record.dateKind === 'publicationDate' ? 'publicationDate' : 'onlineDate') : 'issueDate',
         year: validYear(record.year) || (validDate(record.date) || validDate(record.issueDate)).slice(0, 4),
         doi: value(record.doi),
         url: safeUrl(record.url),
