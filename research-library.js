@@ -40,6 +40,25 @@ window.researchLibrary = {
   ],
   "papers": [
     {
+      "id": "clinical-ai-evidence-standards-framework-2026",
+      "title": "From Technical Performance to Clinical Readiness: A Phase-Based Framework for Evidence Standards in Clinical Artificial Intelligence",
+      "authors": "Nenadic I, Loring Z, Noseworthy PA 외",
+      "authorsEn": "Nenadic I, Loring Z, Noseworthy PA et al.",
+      "journal": "NEJM AI · 2026 · 3(10)",
+      "journalEn": "NEJM AI · 2026 · 3(10)",
+      "year": 2026,
+      "doi": "10.1056/AIp2600684",
+      "url": "https://ai.nejm.org/doi/full/10.1056/AIp2600684",
+      "sourceUrl": "https://medresearch.umich.edu/profile/307/venk-murthy",
+      "summary": "임상 인공지능의 기술적 성능에서 임상 적용 준비 단계로 이어지는 근거 기준을 단계별 틀로 다루는 논문입니다. 저자 소속기관의 공식 논문 목록에서 제목과 서지정보를 확인했습니다. 원문은 확인하지 못했으므로 구체적인 방법론이나 임상 결과는 요약하지 않았습니다.",
+      "summaryEn": "This article addresses a phase-based framework for evidence standards linking technical performance to clinical readiness in artificial intelligence. The title and bibliographic metadata were verified in the authors’ official institutional publication lists. The full text was not reviewed, so specific methods or clinical findings are not summarized.",
+      "tags": [],
+      "dateNote": "소속기관 논문 목록의 발행일 2026.09.17 · 온라인 최초 공개일 별도 미확인",
+      "dateNoteEn": "Publication date listed by the author's institution: Sep 17, 2026 · First online publication date not independently verified",
+      "verification": "author-institution-publication-metadata",
+      "accessLevel": "metadata"
+    },
+    {
       "id": "adult-ph-positive-all-ponatinib-blinatumomab-2026",
       "title": "Ponatinib–Blinatumomab or Imatinib–Chemotherapy for Adult Ph-Positive ALL",
       "authors": "Chiaretti S 외",
