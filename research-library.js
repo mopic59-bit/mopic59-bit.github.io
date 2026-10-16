@@ -36,9 +36,64 @@ window.researchLibrary = {
     "prognosis",
     "etoposide",
     "palliative care",
-    "relapsed/refractory"
+    "relapsed/refractory",
+    "DIPG",
+    "radiotherapy",
+    "reirradiation",
+    "quizartinib",
+    "FLT3-ITD"
   ],
   "papers": [
+    {
+      "id": "quizartinib-induction-refractory-pediatric-aml-2026",
+      "title": "Successful Salvage Therapy With Quizartinib Plus Chemotherapy Followed by Quizartinib Monotherapy for Transplant Bridging and Post-Transplant Maintenance in a Child With Induction-Refractory FLT3-ITD-Positive AML",
+      "authors": "Tasaka K, Kawaguchi K, Ogura T 외",
+      "authorsEn": "Tasaka K, Kawaguchi K, Ogura T et al.",
+      "journal": "Pediatric Blood & Cancer · 2026 · e70768",
+      "journalEn": "Pediatric Blood & Cancer · 2026 · e70768",
+      "date": "2026-10-15",
+      "year": 2026,
+      "doi": "10.1002/1545-5017.70768",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70768",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42877984/",
+      "summary": "관해유도에 불응한 FLT3-ITD 양성 AML 소아에서 quizartinib과 화학요법을 병용한 구제치료 후 quizartinib 단독요법을 이식 전 교량치료와 이식 후 유지치료로 사용한 사례를 다룬 서신(Letter)입니다. 제목과 서지정보만 확인했으며, 구체적인 치료 경과와 효과·안전성은 초록 또는 원문 확인 전 요약하지 않았습니다.",
+      "summaryEn": "This letter describes salvage therapy with quizartinib plus chemotherapy, followed by quizartinib monotherapy for transplant bridging and post-transplant maintenance in a child with induction-refractory FLT3-ITD-positive AML. Only the title and bibliographic metadata have been verified; the clinical course, efficacy and safety are not summarized pending review of the abstract or full text.",
+      "tags": [
+        "AML",
+        "HSCT",
+        "bridging therapy",
+        "quizartinib",
+        "FLT3-ITD"
+      ],
+      "verification": "publisher-deposited-crossref-and-pubmed-metadata",
+      "accessLevel": "metadata",
+      "pmid": "42877984",
+      "articleType": "Letter"
+    },
+    {
+      "id": "dipg-third-course-radiotherapy-2026",
+      "title": "Beyond Reirradiation: Third-Course Radiation Therapy in Recurrent Diffuse Intrinsic Pontine Glioma—Case Series and Literature Review",
+      "authors": "Sakagami H, Morokawa K, Mizushima Y 외",
+      "authorsEn": "Sakagami H, Morokawa K, Mizushima Y et al.",
+      "journal": "Journal of Pediatric Hematology/Oncology · 2026 · 온라인 선출판",
+      "journalEn": "Journal of Pediatric Hematology/Oncology · 2026 · Online ahead of print",
+      "date": "2026-10-15",
+      "year": 2026,
+      "doi": "10.1097/MPH.0000000000003304",
+      "url": "https://www.ovid.com/jnls/jpho-online/fulltext/10.1097/mph.0000000000003304~beyond-reirradiation-third-course-radiation-therapy-in",
+      "sourceUrl": "https://api.crossref.org/works/10.1097/MPH.0000000000003304",
+      "summary": "두 번째 재발 때 세 번째 방사선치료를 받은 미만성 내재성 교뇌교종(DIPG) 3례와 문헌고찰입니다. 세 환자 모두 영상학적 질환 안정화를 보였고 1명은 신경학적 증상이 일부 호전됐습니다. 세 번째 치료에 기인한 영구적 중증 독성은 관찰되지 않았으나 2명에서 일시적 의식장애·뇌부종 및/또는 호흡장애가 나타났습니다. 문헌에서 확인한 21례 중 임상자료가 충분한 13례를 분석했으며, 세 번째 조사 후 중앙생존기간은 5.5개월이었습니다. 소수 증례와 제한된 이상반응 자료에 근거하므로 효과와 안전성을 확정할 수 없습니다. 출판사가 Crossref에 등록한 초록을 바탕으로 정리했습니다.",
+      "summaryEn": "This three-case series and literature review addresses a third course of radiotherapy at second recurrence of diffuse intrinsic pontine glioma (DIPG). All three patients had radiologic stabilization, and one had partial neurological improvement. No permanent severe toxicity attributable to the third course was observed, but two patients experienced transient consciousness disturbance, cerebral edema and/or respiratory dysfunction. Of 21 cases identified in the literature, 13 had sufficient clinical data for analysis; median survival after the third irradiation was 5.5 months. Small case numbers and limited adverse-event data preclude firm conclusions about efficacy and safety. This summary is based on the publisher-deposited Crossref abstract.",
+      "tags": [
+        "뇌종양",
+        "DIPG",
+        "radiotherapy",
+        "reirradiation"
+      ],
+      "articleType": "Case Series and Literature Review",
+      "verification": "publisher-deposited-crossref-abstract",
+      "accessLevel": "abstract"
+    },
     {
       "id": "clinical-ai-evidence-standards-framework-2026",
       "title": "From Technical Performance to Clinical Readiness: A Phase-Based Framework for Evidence Standards in Clinical Artificial Intelligence",
