@@ -4,3 +4,6 @@
 
 /* Shared visual language with the research homepage. Status colors remain semantic. */
 .logo{background:#e4f2ff;color:#176bc2;border:1px solid #c5dcee;border-radius:5px}.eyebrow{color:#536f8b;letter-spacing:.12em}.brand{letter-spacing:.02em}.notice,.dose{border-radius:5px}.workspace{border-radius:0 0 5px 5px}.record.selected{background:#e4f2ff}.tabs button.active{color:#176bc2}.header-right a:hover,header>a:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* Workbook filename version: derived from the loaded dataset, not the check date. */
+.title-row{display:flex;align-items:center;flex-wrap:wrap;gap:4px 20px;margin:12px 0}.title-row h1{margin:0}.source-version-date{display:inline-block;font-size:13px;line-height:1.6;font-weight:600;color:var(--muted);background:var(--light);border:1px solid var(--border);border-radius:5px;padding:6px 10px;max-width:100%;overflow-wrap:anywhere}@media(max-width:560px){.title-row{gap:8px}.source-version-date{font-size:12px}}
