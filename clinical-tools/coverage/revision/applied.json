@@ -1,0 +1,309 @@
+{
+  "id": "2100000283320",
+  "notice": "2026-162",
+  "issuedDate": "2026-07-30",
+  "effectiveDate": "2026-07-31",
+  "sourceUrl": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000283320",
+  "files": [
+    {
+      "key": "0001-00-200201-hanFlSeq",
+      "annex": "[별표 1] 가정간호 산정특례 대상 (제2조 관련)",
+      "bylSeq": "3277701",
+      "flSeq": "167660407",
+      "format": "hwp",
+      "sha256": "4b916940c65042d41cf7e47c6355387cfaf70c5a18e884f3ceea12df6aef04f3",
+      "bytes": 11162,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660407"
+    },
+    {
+      "key": "0001-00-200201-pdfFlSeq",
+      "annex": "[별표 1] 가정간호 산정특례 대상 (제2조 관련)",
+      "bylSeq": "3277701",
+      "flSeq": "167660411",
+      "format": "pdf",
+      "sha256": "44316a0ecffb13bd1277fe668b4ea874dd2d8b7c33f11a256202b10cae425e03",
+      "bytes": 63458,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660411"
+    },
+    {
+      "key": "0001-00-200203-hanFlSeq",
+      "annex": "[별지 1] 건강보험 (암) 산정특례 등록 신청서",
+      "bylSeq": "3277715",
+      "flSeq": "167660523",
+      "format": "hwp",
+      "sha256": "7b7787400f4259adf0cea03523bdaacf9bef9b7ad7c5ed42f7ab81b9b44dbb1b",
+      "bytes": 21830,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660523"
+    },
+    {
+      "key": "0001-00-200203-pdfFlSeq",
+      "annex": "[별지 1] 건강보험 (암) 산정특례 등록 신청서",
+      "bylSeq": "3277715",
+      "flSeq": "167660529",
+      "format": "pdf",
+      "sha256": "98817a39aeab2195e6acf2c10dbd7f1805ad965565555c81fd5da7e6609cf2a1",
+      "bytes": 104982,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660529"
+    },
+    {
+      "key": "0001-00-200207-hanFlSeq",
+      "annex": "[별첨 1] 본인부담금 산정특례 뇌혈관질환의 상병명 및 수술명",
+      "bylSeq": "3277725",
+      "flSeq": "167660563",
+      "format": "hwp",
+      "sha256": "b816760a61ef3f118328c91322b30cedacdec719f00b9e4b8f2bccc9f3ef4fe8",
+      "bytes": 10720,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660563"
+    },
+    {
+      "key": "0001-00-200207-pdfFlSeq",
+      "annex": "[별첨 1] 본인부담금 산정특례 뇌혈관질환의 상병명 및 수술명",
+      "bylSeq": "3277725",
+      "flSeq": "167660567",
+      "format": "pdf",
+      "sha256": "e425077840acc4d3b6d42a24356b0cb82c4f920e264e5e4d3813345783ddf028",
+      "bytes": 57594,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660567"
+    },
+    {
+      "key": "0001-02-200203-hanFlSeq",
+      "annex": "[별지 1의 2] 건강보험 (중증화상) 산정특례 등록 신청서",
+      "bylSeq": "3277717",
+      "flSeq": "167660531",
+      "format": "hwp",
+      "sha256": "76aafc1771fd2f60993a7c40d907670de4896f92c862e142fbd35b51424602c6",
+      "bytes": 21330,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660531"
+    },
+    {
+      "key": "0001-02-200203-pdfFlSeq",
+      "annex": "[별지 1의 2] 건강보험 (중증화상) 산정특례 등록 신청서",
+      "bylSeq": "3277717",
+      "flSeq": "167660537",
+      "format": "pdf",
+      "sha256": "d67553a9b1bbd5f54a06427bc03886eebfd2c1cfb1805207d0e19d2f5a3cde54",
+      "bytes": 95296,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660537"
+    },
+    {
+      "key": "0002-00-200201-hanFlSeq",
+      "annex": "[별표 2] 가정형 호스피스 산정특례 대상(제2조의2 관련)",
+      "bylSeq": "3277703",
+      "flSeq": "167660413",
+      "format": "hwp",
+      "sha256": "f009f87cba1d44ed6d6d79d2f453675696e7fb29a126c0ab9366623451c80adb",
+      "bytes": 10580,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660413"
+    },
+    {
+      "key": "0002-00-200201-pdfFlSeq",
+      "annex": "[별표 2] 가정형 호스피스 산정특례 대상(제2조의2 관련)",
+      "bylSeq": "3277703",
+      "flSeq": "167660417",
+      "format": "pdf",
+      "sha256": "b59a1b953d57c591e983197bbffb2eaac6a672cf13fba045872cbbe517b18c3c",
+      "bytes": 54940,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660417"
+    },
+    {
+      "key": "0002-00-200203-hanFlSeq",
+      "annex": "[별지 2] 건강보험 (희귀, 중증난치, 중증치매) 산정특례 등록 신청서",
+      "bylSeq": "3277719",
+      "flSeq": "167660539",
+      "format": "hwp",
+      "sha256": "e60bce8f8d0b5d044914d60c5de8dde765f8fd04d228244fd866c787c7da6dc1",
+      "bytes": 22431,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660539"
+    },
+    {
+      "key": "0002-00-200203-pdfFlSeq",
+      "annex": "[별지 2] 건강보험 (희귀, 중증난치, 중증치매) 산정특례 등록 신청서",
+      "bylSeq": "3277719",
+      "flSeq": "167660545",
+      "format": "pdf",
+      "sha256": "0e7d333e6824bd2564885e883d4742c640207508902c12aee0c817c2b39ded6e",
+      "bytes": 106893,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660545"
+    },
+    {
+      "key": "0002-00-200207-hanFlSeq",
+      "annex": "[별첨 2] 본인부담금산정특례 심장질환의 상병명, 수술명 및 약제성분명",
+      "bylSeq": "3277727",
+      "flSeq": "167660569",
+      "format": "hwp",
+      "sha256": "2bdd1c944eb6cae5a24e9d20bec61c916c90d23acf18b9f2d663f3dc1cf46b7a",
+      "bytes": 13392,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660569"
+    },
+    {
+      "key": "0002-00-200207-pdfFlSeq",
+      "annex": "[별첨 2] 본인부담금산정특례 심장질환의 상병명, 수술명 및 약제성분명",
+      "bylSeq": "3277727",
+      "flSeq": "167660577",
+      "format": "pdf",
+      "sha256": "981f2c78367955071e5cfa51575a753dded007de1ca8e87ca10db478966a4937",
+      "bytes": 79053,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660577"
+    },
+    {
+      "key": "0003-00-200201-hanFlSeq",
+      "annex": "[별표 3] 중증질환자 산정특례 대상 (제4조 관련)",
+      "bylSeq": "3277705",
+      "flSeq": "167660419",
+      "format": "hwp",
+      "sha256": "c5630916dc12f13358f3887049cb7236c9c15dbef5dedb16a59408f106eecf4b",
+      "bytes": 13275,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660419"
+    },
+    {
+      "key": "0003-00-200201-pdfFlSeq",
+      "annex": "[별표 3] 중증질환자 산정특례 대상 (제4조 관련)",
+      "bylSeq": "3277705",
+      "flSeq": "167660423",
+      "format": "pdf",
+      "sha256": "473fde2d3d360969507877541f2b77d16f786e847965ad72e59247cf184e7c9c",
+      "bytes": 77884,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660423"
+    },
+    {
+      "key": "0003-00-200203-hanFlSeq",
+      "annex": "[별지 3] 건강보험 (결핵) 산정특례 등록 신청서",
+      "bylSeq": "3277721",
+      "flSeq": "167660547",
+      "format": "hwp",
+      "sha256": "daad73c26bd98c852e35ceffc37248c816f49c5b054146db0acfadc7e00d05ec",
+      "bytes": 21481,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660547"
+    },
+    {
+      "key": "0003-00-200203-pdfFlSeq",
+      "annex": "[별지 3] 건강보험 (결핵) 산정특례 등록 신청서",
+      "bylSeq": "3277721",
+      "flSeq": "167660553",
+      "format": "pdf",
+      "sha256": "cf59fc0cd5bfe14fa0e2103a8f9e16e1ea7e7c453a99c35d709e657b05ceaf79",
+      "bytes": 104446,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660553"
+    },
+    {
+      "key": "0003-00-200207-hanFlSeq",
+      "annex": "[별첨 3] 본인부담금 산정특례 중증화상의 상병명 및 수술명",
+      "bylSeq": "3277729",
+      "flSeq": "167660579",
+      "format": "hwp",
+      "sha256": "c5c1727f971e9d08109aa00d83418cf1fa8edcddd6cb5cd9e0019d2a9753af07",
+      "bytes": 12688,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660579"
+    },
+    {
+      "key": "0003-00-200207-pdfFlSeq",
+      "annex": "[별첨 3] 본인부담금 산정특례 중증화상의 상병명 및 수술명",
+      "bylSeq": "3277729",
+      "flSeq": "167660585",
+      "format": "pdf",
+      "sha256": "2cfcf155a37840f21a705aedffdae056631c92768836242da4246e8081e2d5a2",
+      "bytes": 50144,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660585"
+    },
+    {
+      "key": "0003-02-200203-hanFlSeq",
+      "annex": "[별지 3의 2] 건강보험 (잠복결핵감염) 산정특례 등록 신청서",
+      "bylSeq": "3277723",
+      "flSeq": "167660555",
+      "format": "hwp",
+      "sha256": "0714e463ad62aea9fb0d268c66c07bf79ac87b54db727ed1501308d6c32ab0e4",
+      "bytes": 19223,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660555"
+    },
+    {
+      "key": "0003-02-200203-pdfFlSeq",
+      "annex": "[별지 3의 2] 건강보험 (잠복결핵감염) 산정특례 등록 신청서",
+      "bylSeq": "3277723",
+      "flSeq": "167660561",
+      "format": "pdf",
+      "sha256": "d544f9bb3ac5c1cc4751a72725e1a8c517a22be73707a21b455a3da68589cb0c",
+      "bytes": 92217,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660561"
+    },
+    {
+      "key": "0004-00-200201-hanFlSeq",
+      "annex": "[별표 4] 희귀질환자 산정특례 대상 (제5조 관련)",
+      "bylSeq": "3277707",
+      "flSeq": "167660425",
+      "format": "hwp",
+      "sha256": "2f43dcfcb9f4dd80445fe09e09806213a31573ae1af33a25fcd06e5ca7b01537",
+      "bytes": 63416,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660425"
+    },
+    {
+      "key": "0004-00-200201-pdfFlSeq",
+      "annex": "[별표 4] 희귀질환자 산정특례 대상 (제5조 관련)",
+      "bylSeq": "3277707",
+      "flSeq": "167660475",
+      "format": "pdf",
+      "sha256": "c4ebbb28d8d1a61862b74cb3715ef6e6c880860cd72d46f2e41a864c2866ec82",
+      "bytes": 5423522,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660475"
+    },
+    {
+      "key": "0004-02-200201-hanFlSeq",
+      "annex": "[별표 4의 2] 중증난치질환자 산정특례 대상(제5조 관련)",
+      "bylSeq": "3277709",
+      "flSeq": "167660477",
+      "format": "hwp",
+      "sha256": "b0236493aa063e1987be5c9059841df298e2bb22f8412b09f8aa5677218ea6b1",
+      "bytes": 29114,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660477"
+    },
+    {
+      "key": "0004-02-200201-pdfFlSeq",
+      "annex": "[별표 4의 2] 중증난치질환자 산정특례 대상(제5조 관련)",
+      "bylSeq": "3277709",
+      "flSeq": "167660495",
+      "format": "pdf",
+      "sha256": "64d83bcd62ad9a899a84e52a5d42c595a2f3b44d0121d83a4ddb3fecd775ad0b",
+      "bytes": 1721936,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660495"
+    },
+    {
+      "key": "0005-00-200201-hanFlSeq",
+      "annex": "[별표 5] 시행령 별표2 제3호 가목 3)에 따른 결핵질환의 적용 범위",
+      "bylSeq": "3277711",
+      "flSeq": "167660497",
+      "format": "hwp",
+      "sha256": "95d0d225954e516dfa630b2f44adc6c195c259f1cb4109aec657e52267738a1b",
+      "bytes": 12362,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660497"
+    },
+    {
+      "key": "0005-00-200201-pdfFlSeq",
+      "annex": "[별표 5] 시행령 별표2 제3호 가목 3)에 따른 결핵질환의 적용 범위",
+      "bylSeq": "3277711",
+      "flSeq": "167660501",
+      "format": "pdf",
+      "sha256": "09b91d7e7078799a7b9caca63054bedc7bcdd18992b8f0778d29ec2234097793",
+      "bytes": 58376,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660501"
+    },
+    {
+      "key": "0006-00-200201-hanFlSeq",
+      "annex": "[별표 6] 약국 요양급여비용총액의 본인부담률 산정특례 대상 (제6조 관련)",
+      "bylSeq": "3277713",
+      "flSeq": "167660503",
+      "format": "hwp",
+      "sha256": "8d36b240e90f92912d1b31ed32861b168edef57bd6b7f14d7dac435f467fd71a",
+      "bytes": 32792,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660503"
+    },
+    {
+      "key": "0006-00-200201-pdfFlSeq",
+      "annex": "[별표 6] 약국 요양급여비용총액의 본인부담률 산정특례 대상 (제6조 관련)",
+      "bylSeq": "3277713",
+      "flSeq": "167660521",
+      "format": "pdf",
+      "sha256": "1bf005642ea4503402c1406cee52d6bd1914f5dc20dc94a55f17136194372468",
+      "bytes": 876635,
+      "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660521"
+    }
+  ]
+}
