@@ -1,6 +1,6 @@
 import{matches,csv,compareDocuments}from'./search.js';
 import{setupRare}from'./rare.js';
-import{setupAnnex}from'./annex.js';
+import{setupAnnex}from'./annex.js?v=annex-20261017-2';
 const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const url=u=>{try{const x=new URL(u,location.href);return ['https:','http:'].includes(x.protocol)?esc(x.href):'#'}catch{return'#'}};
 let rareController,annexController;
