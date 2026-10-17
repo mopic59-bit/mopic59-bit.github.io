@@ -9,9 +9,10 @@ export function renderStatus(s, target = box) {
  row('반영 기준 시행일',s.applied.effectiveDate);
  row('마지막 공식 원문 확인',date(s.lastSuccessfulCheckAt));
  const fail=s.checkState!=='success';const pending=s.revisionState==='pending';
- row('새 개정 여부',pending?'개정 발견·승인 대기':fail?'확인 실패 · 변경 여부 미확정':'확인 범위 내 변경 없음');
+ row('새 개정 여부',pending?(s.pending?.governingChange===false?'관련자료 변경·승인 대기':'개정 발견·승인 대기'):fail?'확인 실패 · 변경 여부 미확정':'확인 범위 내 변경 없음');
  target.append(grid);
  if(fail) target.append(node('p','최근 확인 실패: '+(s.lastError||'확인 결과를 읽을 수 없습니다.')+' 마지막 성공한 확인일과 반영 기준을 유지합니다.'));
+ if(pending && s.pending?.governingChange===false) target.append(node('p','질의응답·지침 또는 행정예고의 변경입니다. 적용 고시의 개정으로 간주하지 않으며 승인 전에는 검색·표를 바꾸지 않습니다.'));
  if(pending) target.append(node('p',`관측 고시: 제${s.observed?.notice||'미확인'}호 · 시행 ${s.observed?.effectiveDate||'미확인'}. 새 자료는 검토 대기 중이며, 승인 전에는 검색·표·반영 기준을 바꾸지 않습니다.`));
  target.append(node('p',`최근 확인 시도: ${date(s.lastAttemptAt)} · 국가법령정보센터 현행 고시 메타데이터와 부속서 원본 SHA-256 비교. 개별 적용 여부는 원문 확인이 필요합니다.`));
  if(s.secondary) target.append(node('p',s.secondary.summary));

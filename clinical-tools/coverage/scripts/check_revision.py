@@ -102,7 +102,7 @@ def main():
    for change in changes:
     f=change.get('after')
     if isinstance(f,dict) and 'sha256' in f: name=f['sha256']+'.'+f['format'];(folder/name).write_bytes((staging/name).read_bytes())
-   status['pending']={'fingerprint':fingerprint,'detectedAt':(status.get('pending') or {}).get('detectedAt',now),'changeCount':len(changes),'reportPath':'revision/pending/'+fingerprint+'/changes.json','observationPath':'revision/pending/'+fingerprint+'/observation.json'}
+   status['pending']={'fingerprint':fingerprint,'detectedAt':(status.get('pending') or {}).get('detectedAt',now),'changeCount':len(changes),'governingChange':any(c['field']!='secondary_notice' or c.get('classification') in ('governing_notice','review_required') for c in changes),'reportPath':'revision/pending/'+fingerprint+'/changes.json','observationPath':'revision/pending/'+fingerprint+'/observation.json'}
   else: status['pending']=None
   report={'checkedAt':now,'result':status['revisionState'],'notifyChange':new,'changes':changes,'checkedFiles':len(observed['files']),'checkedAnnexes':observed['annexCount'],'secondaryState':'partial' if partial else 'success','secondaryError':partial}
  except Exception as e:
