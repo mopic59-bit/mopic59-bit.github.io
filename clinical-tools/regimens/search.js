@@ -1,0 +1,3 @@
+export const norm=s=>String(s??'').normalize('NFKC').toLowerCase().replace(/[‐‑–—]/g,'-').replace(/\s+/g,' ').trim();
+export function matches(r,{drug='',disease='',query='',status='all'}){return(status==='all'||r.status===status)&&(!drug||norm(r.regimen).includes(norm(drug)))&&(!disease||r.disease===disease)&&(!query||norm([r.code,r.disease,r.subtype,r.regimen,r.eligibility,r.line,r.purpose,r.reimbursement,r.dose,r.notes,r.reason].join(' ')).includes(norm(query)));}
+export function historyMatches(h,{drug='',disease='',query=''},records){return(!drug||norm(h.before.regimen+' '+h.after.regimen).includes(norm(drug)))&&(!query||norm(JSON.stringify(h)).includes(norm(query)))&&(!disease||records.some(r=>r.disease===disease&&(r.code===h.before.code||r.code===h.after.code)));}
