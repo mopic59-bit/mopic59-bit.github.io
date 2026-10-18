@@ -42,9 +42,36 @@ window.researchLibrary = {
     "reirradiation",
     "quizartinib",
     "FLT3-ITD",
-    "ICH"
+    "ICH",
+    "IMI",
+    "antifungal prophylaxis"
   ],
   "papers": [
+    {
+      "id": "pediatric-acute-leukemia-invasive-mold-infection-2026",
+      "title": "Incidence and Risk Factors for Invasive Mold Infections in Children During First-Line Chemotherapy for Primary Acute Leukemia: A National Retrospective Cohort Study",
+      "authors": "Duus RM, Joergensen ES, Offendal EB 외",
+      "authorsEn": "Duus RM, Joergensen ES, Offendal EB et al.",
+      "journal": "Journal of the Pediatric Infectious Diseases Society · 2026 · piag112 (게재 승인 원고)",
+      "journalEn": "Journal of the Pediatric Infectious Diseases Society · 2026 · piag112 (Accepted manuscript)",
+      "date": "2026-10-16",
+      "year": 2026,
+      "doi": "10.1093/jpids/piag112",
+      "pmid": "42886024",
+      "url": "https://academic.oup.com/jpids/advance-article-abstract/doi/10.1093/jpids/piag112/8931544",
+      "sourceUrl": "https://academic.oup.com/jpids/advance-article-abstract/doi/10.1093/jpids/piag112/8931544",
+      "summary": "2008–2022년 덴마크에서 ALL·AML 1차 화학요법을 시작한 18세 미만 환자 621명을 대상으로 침습성 사상균감염(IMI)을 조사한 전국 후향 코호트 연구입니다. IMI는 43명(6.9%)에서 발생했고 AML에서는 15.6%, ALL에서는 5.5%였으며, 보정 분석에서도 AML의 감염 위험도가 더 높았습니다. 감염의 약 절반은 1차 화학요법 시작 후 90일을 지나 발생했으며, IMI 관련 치명률은 23%였습니다. 관찰연구이므로 이러한 연관성만으로 인과관계나 항진균 예방요법의 비교 효과를 확정할 수는 없습니다.",
+      "summaryEn": "This nationwide retrospective cohort included 621 children under 18 starting first-line ALL or AML chemotherapy in Denmark during 2008–2022. Invasive mold infection (IMI) occurred in 43 patients (6.9%): 15.6% of AML patients versus 5.5% of ALL patients, with higher adjusted hazard in AML. Nearly half the IMIs occurred over 90 days after first-line chemotherapy initiation, and IMI-associated deaths represented 23% of cases. The retrospective design limits causal inference, including conclusions about prophylaxis effectiveness.",
+      "tags": [
+        "ALL",
+        "AML",
+        "IMI",
+        "antifungal prophylaxis"
+      ],
+      "studyType": "Nationwide retrospective cohort study",
+      "verification": "publisher-abstract",
+      "accessLevel": "abstract"
+    },
     {
       "id": "pediatric-acute-leukemia-intracranial-hemorrhage-2026",
       "title": "Clinical Characteristics of Intracranial Hemorrhage in Pediatric Acute Leukemia",
