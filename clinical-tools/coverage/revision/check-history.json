@@ -56,5 +56,17 @@
     "checkedAnnexes": 15,
     "secondaryState": "success",
     "secondaryError": null
+  },
+  {
+    "checkedAt": "2026-10-21T23:44:16.825735+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "공식 고시 메타데이터 누락: prmlNo"
+  },
+  {
+    "checkedAt": "2026-10-21T23:45:24.926914+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "The read operation timed out"
   }
 ]
