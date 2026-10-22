@@ -755,6 +755,18 @@ window.researchLibrary = {
   ],
   "news": [
     {
+      "id": "pediatric-lp-devices-2026",
+      "title": "소아 요추천자 및 척수강내 항암제 투여를 위한 신기술: IQ-Tip과 AI 초음파 유도",
+      "titleEn": "Emerging devices for pediatric lumbar puncture and intrathecal chemotherapy",
+      "date": "2026-10-22",
+      "publisher": "소아혈액종양 의료기술 동향",
+      "publisherEn": "Pediatric Hematology-Oncology Technology Review",
+      "url": "https://doi.org/10.1038/s41598-022-10915-4",
+      "summary": "소아 ALL 환자의 반복 요추천자와 척수강내 항암제 투여를 보조할 수 있는 기술을 검토했습니다. Injeq IQ-Tip은 바늘 끝의 생체전기저항으로 CSF 진입을 감지하며, 소아 ALL 50명에서 시행한 152회 시술을 평가한 전향적 단일군 연구가 있습니다. RIVANNA Accuro 3S는 AI 기반 척추 초음파로 천자 위치 및 경로 설정을 지원하며, Smoltap은 어린 영아의 LP 자세를 안정화합니다. 기존 표준 시술 대비 traumatic LP 감소나 항암제 투여 결과 개선은 아직 확정적으로 입증되지 않았으며, 국내 의료기기 허가 및 구매 가능 여부는 별도 확인이 필요합니다.",
+      "summaryEn": "New technologies may assist repeated lumbar punctures and intrathecal chemotherapy in pediatric ALL. Injeq IQ-Tip uses needle-tip bioimpedance to detect CSF and has been evaluated in a prospective single-arm study involving 50 children and 152 procedures. RIVANNA Accuro 3S provides AI-assisted spinal ultrasound guidance; Smoltap supports infant positioning. Comparative benefits for traumatic punctures or treatment outcomes are not established, and Korean regulatory and distribution status remains to be verified.",
+      "sourceUrl": "https://doi.org/10.1038/s41598-022-10915-4"
+    },
+    {
       "id": "bosa-3011186",
       "title": "혈액암 치료제 '폴라이비·블린사이토', 9월부터 급여 적용·확대",
       "titleEn": "Insurance coverage for blood cancer treatments Polivy and Blincyto introduced or expanded in September",
