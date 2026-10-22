@@ -1,6 +1,10 @@
 {
-  "checkedAt": "2026-10-21T23:45:24.926914+00:00",
-  "result": "failed",
+  "checkedAt": "2026-10-22T23:18:45.020954+00:00",
+  "result": "unchanged",
   "notifyChange": false,
-  "error": "The read operation timed out"
+  "changes": [],
+  "checkedFiles": 30,
+  "checkedAnnexes": 15,
+  "secondaryState": "success",
+  "secondaryError": null
 }

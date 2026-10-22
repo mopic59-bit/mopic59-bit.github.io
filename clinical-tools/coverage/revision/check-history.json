@@ -68,5 +68,21 @@
     "result": "failed",
     "notifyChange": false,
     "error": "The read operation timed out"
+  },
+  {
+    "checkedAt": "2026-10-22T23:17:46.195840+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-10-22T23:18:45.020954+00:00",
+    "result": "unchanged",
+    "notifyChange": false,
+    "changes": [],
+    "checkedFiles": 30,
+    "checkedAnnexes": 15,
+    "secondaryState": "success",
+    "secondaryError": null
   }
 ]
