@@ -85,7 +85,8 @@ window.researchLibrary = {
       "summaryEn": "This AAN abstract reports a randomized paired simulation involving four residents and 12 participants, without needle puncture. Accuro 3S improved rated likelihood of success (3.15 vs 2.02) and confidence (3.42 vs 2.77). It did not establish actual LP success, complication rates, or efficacy in pediatric oncology. Summary based on the official conference abstract.",
       "dateNote": "학회 초록 · 모의 시술 연구",
       "dateNoteEn": "Conference abstract · simulated procedures",
-      "addedOn": "2026-10-23"
+      "addedOn": "2026-10-23",
+      "dateKind": "publicationDate"
     },
     {
       "id": "ultrasound-guidance-lumbar-puncture-review-2016",
