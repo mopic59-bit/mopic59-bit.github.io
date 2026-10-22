@@ -36,7 +36,7 @@
 
   var controller = new AbortController();
   var timeout = setTimeout(function () { controller.abort(); }, 8000);
-  fetch('https://mopic.goatcounter.com/counter/%2F.json?start=2026-10-23', {
+  fetch('https://mopic.goatcounter.com/counter/%2F.json?start=2026-10-22', {
     credentials: 'omit',
     referrerPolicy: 'no-referrer',
     signal: controller.signal
