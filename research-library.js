@@ -73,7 +73,8 @@ window.researchLibrary = {
       "accessLevel": "abstract",
       "year": 2026,
       "journalEn": "European Journal of Pediatrics · 2026 · 185:864",
-      "sourceUrl": "https://link.springer.com/article/10.1007/s00431-026-07523-z"
+      "sourceUrl": "https://link.springer.com/article/10.1007/s00431-026-07523-z",
+      "addedOn": "2026-10-22"
     },
     {
       "id": "hepatitis-associated-aplastic-anemia-review-2026",
@@ -94,7 +95,8 @@ window.researchLibrary = {
       "accessLevel": "abstract",
       "year": 2026,
       "journalEn": "European Journal of Haematology · 2026 · ejh.70342",
-      "sourceUrl": "https://api.crossref.org/works/10.1111/ejh.70342"
+      "sourceUrl": "https://api.crossref.org/works/10.1111/ejh.70342",
+      "addedOn": "2026-10-22"
     },
     {
       "id": "inotuzumab-standard-alternative-dosing-2026",
@@ -117,7 +119,8 @@ window.researchLibrary = {
       "accessLevel": "abstract",
       "year": 2026,
       "journalEn": "British Journal of Haematology · 2026 · bjh.70892",
-      "sourceUrl": "https://api.crossref.org/works/10.1111/bjh.70892"
+      "sourceUrl": "https://api.crossref.org/works/10.1111/bjh.70892",
+      "addedOn": "2026-10-22"
     },
     {
       "id": "saa-transplant-conditioning-comparison-2026",
@@ -141,7 +144,8 @@ window.researchLibrary = {
       "accessLevel": "fulltext",
       "year": 2026,
       "journalEn": "Frontiers in Immunology · 2026 · 17:1936533",
-      "sourceUrl": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1936533/full"
+      "sourceUrl": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1936533/full",
+      "addedOn": "2026-10-22"
     },
     {
       "id": "ewing-ee2012-dose-reduction-delay-2026",
@@ -164,7 +168,8 @@ window.researchLibrary = {
       "accessLevel": "abstract",
       "year": 2026,
       "journalEn": "European Journal of Cancer · 2026 · 247:117057",
-      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42766959/"
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42766959/",
+      "addedOn": "2026-10-22"
     },
     {
       "id": "pediatric-acute-leukemia-invasive-mold-infection-2026",

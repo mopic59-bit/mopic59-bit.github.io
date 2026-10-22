@@ -56,6 +56,7 @@
         authorsEn: Array.isArray(record.authorsEn) ? record.authorsEn.map(value).filter(Boolean).join(', ') : value(record.authorsEn),
         journal: value(record.journal),
         journalEn: value(record.journalEn),
+        addedOn: validDate(record.addedOn),
         date: validDate(record.date) || validDate(record.issueDate),
         dateKind: validDate(record.date) ? (record.dateKind === 'publicationDate' ? 'publicationDate' : 'onlineDate') : 'issueDate',
         year: validYear(record.year) || (validDate(record.date) || validDate(record.issueDate)).slice(0, 4),
@@ -76,7 +77,10 @@
       return taxonomy.indexOf(tag) < 0;
     }));
     var years = unique(papers.map(function (paper) { return paper.year; })).sort(function (a, b) { return Number(b) - Number(a); });
-    var state = { tag: '', q: '', year: '' };
+    var latestAdded = papers.map(function (paper) { return paper.addedOn; }).filter(Boolean).sort().reverse()[0] || '';
+    var recentNav = element('p', 'paper-recent-links');
+    tagList.parentNode.insertBefore(recentNav, tagList);
+    var state = { tag: '', q: '', year: '', added: '' };
 
     renderYears();
     readQuery();
@@ -93,7 +97,7 @@
     });
     var resetButton = document.getElementById('topic-reset');
     if (resetButton) resetButton.addEventListener('click', function () {
-      state = { tag: '', q: '', year: '' };
+      state = { tag: '', q: '', year: '', added: '' };
       searchInput.value = '';
       yearSelect.value = '';
       applyFilters();
@@ -125,7 +129,7 @@
       var params = new URL(window.location.href).searchParams;
       var tag = params.get('tag') || '';
       var year = params.get('year') || '';
-      state = { tag: tags.indexOf(tag) >= 0 ? tag : '', q: params.get('q') || '', year: years.indexOf(year) >= 0 ? year : '' };
+      state = { tag: tags.indexOf(tag) >= 0 ? tag : '', q: params.get('q') || '', year: years.indexOf(year) >= 0 ? year : '', added: params.get('added') === latestAdded ? latestAdded : '' };
       searchInput.value = state.q;
       yearSelect.value = state.year;
     }
@@ -133,7 +137,7 @@
     function applyFilters() {
       renderPapers();
       var url = new URL(window.location.href);
-      ['tag', 'q', 'year'].forEach(function (key) {
+      ['tag', 'q', 'year', 'added'].forEach(function (key) {
         if (state[key]) url.searchParams.set(key, state[key]);
         else url.searchParams.delete(key);
       });
@@ -154,8 +158,20 @@
     }
 
     function renderPapers() {
+      recentNav.replaceChildren();
+      if (latestAdded) {
+        var recentCount = papers.filter(function (paper) { return paper.addedOn === latestAdded; }).length;
+        var recentLink = element('a', 'topic-tag', language() === 'en' ? 'Recently added: ' + recentCount + ' papers (' + latestAdded + ')' : '최근 추가 ' + recentCount + '편 보기 (' + latestAdded + ')');
+        recentLink.href = '?added=' + latestAdded + '#topic-papers';
+        recentNav.appendChild(recentLink);
+        recentNav.appendChild(document.createTextNode(' · '));
+        var allLink = element('a', '', language() === 'en' ? 'View all papers' : '전체 논문 보기');
+        allLink.href = '?view=all#topic-papers';
+        recentNav.appendChild(allLink);
+      }
       var query = state.q.trim().toLocaleLowerCase();
       var matching = papers.filter(function (paper) {
+        if (state.added && paper.addedOn !== state.added) return false;
         if (state.year && paper.year !== state.year) return false;
         if (!query) return true;
         return [paper.title, paper.titleEn, paper.authors, paper.authorsEn, paper.journal, paper.journalEn, paper.summary, paper.summaryEn, paper.doi, paper.tags.join(' '), paper.tags.map(function (tag) { return tagLabelsEn[tag] || tag; }).join(' ')].join(' ').toLocaleLowerCase().indexOf(query) >= 0;
