@@ -129,7 +129,7 @@
       var params = new URL(window.location.href).searchParams;
       var tag = params.get('tag') || '';
       var year = params.get('year') || '';
-      state = { tag: tags.indexOf(tag) >= 0 ? tag : '', q: params.get('q') || '', year: years.indexOf(year) >= 0 ? year : '', added: params.get('added') === latestAdded ? latestAdded : '' };
+      state = { tag: tags.indexOf(tag) >= 0 ? tag : '', q: params.get('q') || '', year: years.indexOf(year) >= 0 ? year : '', added: papers.some(function (paper) { return paper.addedOn && paper.addedOn === params.get('added'); }) ? params.get('added') : '' };
       searchInput.value = state.q;
       yearSelect.value = state.year;
     }
