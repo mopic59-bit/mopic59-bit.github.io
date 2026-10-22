@@ -162,11 +162,11 @@
       if (latestAdded) {
         var recentCount = papers.filter(function (paper) { return paper.addedOn === latestAdded; }).length;
         var recentLink = element('a', 'topic-tag', language() === 'en' ? 'Recently added: ' + recentCount + ' papers (' + latestAdded + ')' : '최근 추가 ' + recentCount + '편 보기 (' + latestAdded + ')');
-        recentLink.href = '?added=' + latestAdded + '#topic-papers';
+        recentLink.href = '?added=' + latestAdded + '&v=recent-' + latestAdded + '-' + recentCount + '#topic-papers';
         recentNav.appendChild(recentLink);
         recentNav.appendChild(document.createTextNode(' · '));
         var allLink = element('a', '', language() === 'en' ? 'View all papers' : '전체 논문 보기');
-        allLink.href = '?view=all#topic-papers';
+        allLink.href = '?view=all&v=recent-' + latestAdded + '-' + recentCount + '#topic-papers';
         recentNav.appendChild(allLink);
       }
       var query = state.q.trim().toLocaleLowerCase();
