@@ -50,9 +50,35 @@ window.researchLibrary = {
     "aplastic anemia",
     "inotuzumab",
     "Ewing sarcoma",
-    "dose intensity"
+    "dose intensity",
+    "지지요법",
+    "oral mucositis",
+    "photobiomodulation"
   ],
   "papers": [
+    {
+      "id": "pediatric-mucositis-extraoral-intraoral-pbm-2026",
+      "title": "Comparable efficacy of extraoral and intraoral photobiomodulation in preventing oral mucositis during high-dose methotrexate therapy in pediatric oncology: A single-blind randomized controlled trial",
+      "authors": "Freitas IOP, Schuartz I, Renz GLK 외",
+      "authorsEn": "Freitas IOP, Schuartz I, Renz GLK et al.",
+      "journal": "Supportive Care in Cancer · 2026 · 34:1125",
+      "journalEn": "Supportive Care in Cancer · 2026 · 34:1125",
+      "year": 2026,
+      "date": "2026-10-19",
+      "addedOn": "2026-10-22",
+      "doi": "10.1007/s00520-026-11372-9",
+      "url": "https://link.springer.com/article/10.1007/s00520-026-11372-9",
+      "sourceUrl": "https://link.springer.com/article/10.1007/s00520-026-11372-9",
+      "verification": "publisher-full-text",
+      "accessLevel": "fulltext",
+      "tags": [
+        "지지요법",
+        "oral mucositis",
+        "photobiomodulation"
+      ],
+      "summary": "고용량 메토트렉세이트를 받는 1–18세 환자의 구강점막염 예방을 위해 구강 내·외 광생체조절을 비교한 단일맹검 무작위 연구입니다. 분석 대상 155명에서 점막염은 구강 내 41.1%, 구강 외 30.5%로 유의한 차이가 없었으며(p=0.168), 조사 시간은 약 6분과 30초였습니다. 비열등성 시험은 아니므로 차이가 없다는 결과를 동등성 확증으로 해석할 수 없습니다. 공개 원문 기반 요약입니다.",
+      "summaryEn": "A single-blind randomized study compared intraoral and extraoral photobiomodulation during high-dose methotrexate in patients aged 1–18 years. Among 155 analyzed patients, mucositis occurred in 41.1% versus 30.5% (p=0.168); irradiation took approximately six minutes versus 30 seconds. This was not a noninferiority trial, so a nonsignificant difference does not establish equivalence. Open full-text summary."
+    },
     {
       "id": "neuroblastoma-mibg-dose-escalation-2026",
       "title": "Impact of 131I-MIBG dose escalation (12 vs. 18 mCi/kg) during conditioning for autologous hematopoietic stem cell transplantation in pediatric neuroblastoma: a retrospective cohort study",
@@ -156,7 +182,7 @@ window.researchLibrary = {
       "date": "2026-09-16",
       "doi": "10.1016/j.ejca.2026.117057",
       "pmid": "42766959",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42766959/",
+      "url": "https://www.ejcancer.com/article/S0959-8049(26)00839-7/fulltext",
       "summary": "Euro Ewing 2012의 VDC/IE 유도요법 자료로 용량 감량·치료 지연과 EFS의 관계를 표적시험 모방 방식으로 분석했습니다. 감량 HR 0.69(95% CI 0.39–1.24), 지연 HR 1.02(0.90–1.15)로 모두 통계적으로 유의하지 않았습니다. 프로토콜에 따른 독성 관리 조정의 유해성을 입증하지 못했으나, 후향적 분석이므로 임의 감량·지연의 안전성이나 동등성을 의미하지 않습니다. PubMed 초록 기반 요약입니다.",
       "summaryEn": "A target-trial emulation using Euro Ewing 2012 VDC/IE data examined dose reduction and treatment delay. EFS hazard ratios were 0.69 (95% CI 0.39–1.24) and 1.02 (0.90–1.15), respectively; neither was significant. This retrospective analysis does not establish equivalence or justify unplanned reductions or delays. PubMed-abstract summary.",
       "tags": [
