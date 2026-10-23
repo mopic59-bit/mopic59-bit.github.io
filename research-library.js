@@ -58,9 +58,36 @@ window.researchLibrary = {
     "ultrasound",
     "AI",
     "ruxolitinib",
-    "CNS germ cell tumour"
+    "CNS germ cell tumour",
+    "obesity",
+    "pharmacokinetics"
   ],
   "papers": [
+    {
+      "id": "obesity-pediatric-all-pharmacokinetics-review-2026",
+      "title": "Impact of Obesity on Chemotherapy Pharmacokinetics, Toxicity, and Survival Outcomes in Pediatric Acute Lymphoblastic Leukemia",
+      "authors": "Nair A, Graifman G, Tahir U 외",
+      "authorsEn": "Nair A, Graifman G, Tahir U et al.",
+      "journal": "Cureus · 2026 · 18(9):e116568",
+      "journalEn": "Cureus · 2026 · 18(9):e116568",
+      "year": 2026,
+      "date": "2026-09-20",
+      "addedOn": "2026-10-23",
+      "doi": "10.7759/cureus.116568",
+      "url": "https://www.cureus.com/articles/532342-impact-of-obesity-on-chemotherapy-pharmacokinetics-toxicity-and-survival-outcomes-in-pediatric-acute-lymphoblastic-leukemia",
+      "sourceUrl": "https://www.cureus.com/articles/532342-impact-of-obesity-on-chemotherapy-pharmacokinetics-toxicity-and-survival-outcomes-in-pediatric-acute-lymphoblastic-leukemia",
+      "articleType": "Narrative review",
+      "verification": "publisher-full-text",
+      "accessLevel": "fulltext",
+      "tags": [
+        "ALL",
+        "obesity",
+        "pharmacokinetics",
+        "지지요법"
+      ],
+      "summary": "소아 ALL에서 비만과 항암제 약동학·독성·생존의 연관성을 정리한 서술적 종설입니다. 약제별 영향은 다르며, 일부 코호트에서 독성·재발 위험 증가 또는 생존 저하가 관찰됐지만 이를 약물 노출 변화만으로 설명할 수는 없습니다. 비만만을 이유로 일률적으로 항암제 용량을 줄일 근거는 없다고 강조합니다. 신규 임상시험이나 메타분석이 아니며, 출판사 공개 원문 기반 요약입니다.",
+      "summaryEn": "This narrative review examines obesity in pediatric ALL and its associations with chemotherapy pharmacokinetics, toxicity and survival. Effects differ by drug; adverse outcomes in some cohorts cannot be attributed solely to altered drug exposure. The authors find no evidence for generalized dose reduction based on obesity alone. This is not a new trial or meta-analysis. Summary based on the publisher’s open full text."
+    },
     {
       "id": "pediatric-ruxolitinib-steroid-refractory-gvhd-2026",
       "title": "Ruxolitinib for the treatment of pediatric acute and chronic steroid-refractory graft-versus-host disease: Efficacy, safety, and outcomes",
