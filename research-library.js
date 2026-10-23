@@ -67,9 +67,37 @@ window.researchLibrary = {
     "minibeam",
     "methotrexate",
     "neurotoxicity",
-    "aminophylline"
+    "aminophylline",
+    "EBV",
+    "PTLD",
+    "항체·면역치료"
   ],
   "papers": [
+    {
+      "id": "ebv-associated-lymphoma-review-2026",
+      "title": "Epstein–Barr virus-associated lymphoma: current understanding and treatment strategies",
+      "authors": "Ju HY",
+      "authorsEn": "Ju HY",
+      "journal": "Blood Research · 2026 · 61:12",
+      "journalEn": "Blood Research · 2026 · 61:12",
+      "year": 2026,
+      "date": "2026-03-07",
+      "addedOn": "2026-10-24",
+      "doi": "10.1007/s44313-026-00127-4",
+      "url": "https://www.bloodresearch.or.kr/journal/view.html?uid=2772&vmd=Full",
+      "sourceUrl": "https://www.bloodresearch.or.kr/journal/view.html?uid=2772&vmd=Full",
+      "articleType": "Narrative review",
+      "verification": "publisher-full-text",
+      "accessLevel": "fulltext",
+      "tags": [
+        "림프종",
+        "EBV",
+        "PTLD",
+        "항체·면역치료"
+      ],
+      "summary": "EBV 관련 림프종의 발병 기전, WHO-HAEM5 분류와 치료 전략을 정리한 종설입니다. 소아 EBV 양성 T/NK세포 질환과 PTLD를 포함하며, EBV-DNA의 임상적 의미 및 용해기 유도·면역관문억제·EBV 특이 T세포치료를 다룹니다. 소아만을 대상으로 한 신규 임상시험이나 메타분석은 아니며, 소개된 치료를 모든 소아 림프종의 표준치료로 일반화할 수 없습니다. 학회 공개 원문 기반 요약입니다.",
+      "summaryEn": "This narrative review covers EBV-driven lymphomagenesis, WHO-HAEM5 classification and therapeutic strategies, including childhood EBV-positive T/NK-cell disorders and PTLD. It discusses EBV-DNA biomarkers, lytic induction, checkpoint inhibition and EBV-specific T-cell therapy. It is neither a new pediatric-only trial nor a meta-analysis; the approaches discussed should not be generalized as standard care for all pediatric lymphomas. Summary based on the journal’s open full text."
+    },
     {
       "journal": "Pediatric Blood & Cancer · 2026 · 온라인 선게재",
       "journalEn": "Pediatric Blood & Cancer · 2026 · Early view",
