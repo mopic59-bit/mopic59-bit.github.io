@@ -1017,7 +1017,7 @@ window.researchLibrary = {
       "summary": "2026년 9월부터 폴라이비의 성인 미만성 거대 B세포 림프종 1차 치료 급여가 적용되고, 블린사이토는 MRD 음성 전구 B세포 ALL의 1차 관해공고요법으로 급여 범위가 확대됐습니다. 기사에서는 소아를 포함한 블린사이토 적용 대상과 인정 주기, 환자단체의 치료 접근성 개선 요구를 소개합니다.",
       "summaryEn": "From September 2026, Korean national health insurance covers Polivy for first-line treatment of adult diffuse large B-cell lymphoma and expands Blincyto coverage to first-line consolidation therapy for MRD-negative precursor B-cell ALL. The article explains Blincyto eligibility, including pediatric patients, the covered treatment cycles, and patient groups' calls for improved access to treatment.",
       "sourceUrl": "https://www.bosa.co.kr/news/articleView.html?idxno=3011186",
-      "dateSourceUrl": "https://v.daum.net/v/VWh1oZd8SS"
+      "dateSourceUrl": "https://www.bosa.co.kr/news/articleView.html?idxno=3011186"
     }
   ]
 };
