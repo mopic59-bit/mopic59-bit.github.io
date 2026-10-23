@@ -272,16 +272,20 @@
   "external.yuMedicalLibrary": {
     "ko": "영남대학교 의학도서관 ↗",
     "en": "Yeungnam University Medical Library ↗"
+  },
+  "about.downloadCv": {
+    "ko": "CV 다운로드 (PDF) ↓",
+    "en": "Download CV (PDF) ↓"
   }
 };
   var storageKey = 'research-lab-language';
-  var language = 'ko';
+  var language = 'en';
   var requested = new URL(window.location.href).searchParams.get('lang');
   var saved = null;
   try {
     saved = window.localStorage.getItem(storageKey);
   } catch (error) { /* The site also works when browser storage is unavailable. */ }
-  language = requested === 'en' || requested === 'ko' ? requested : saved === 'en' ? 'en' : 'ko';
+  language = requested === 'en' || requested === 'ko' ? requested : saved === 'en' || saved === 'ko' ? saved : 'en';
 
   function t(key, values) {
     var entry = messages[key];
