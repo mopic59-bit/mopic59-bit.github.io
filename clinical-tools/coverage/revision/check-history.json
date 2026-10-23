@@ -84,5 +84,17 @@
     "checkedAnnexes": 15,
     "secondaryState": "success",
     "secondaryError": null
+  },
+  {
+    "checkedAt": "2026-10-23T23:07:46.335659+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-10-23T23:08:12.674434+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
   }
 ]
