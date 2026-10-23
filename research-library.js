@@ -63,9 +63,64 @@ window.researchLibrary = {
     "pharmacokinetics",
     "림프종",
     "glofitamab",
-    "polatuzumab vedotin"
+    "polatuzumab vedotin",
+    "minibeam",
+    "methotrexate",
+    "neurotoxicity",
+    "aminophylline"
   ],
   "papers": [
+    {
+      "journal": "Pediatric Blood & Cancer · 2026 · 온라인 선게재",
+      "journalEn": "Pediatric Blood & Cancer · 2026 · Early view",
+      "year": 2026,
+      "date": "2026-10-22",
+      "addedOn": "2026-10-23",
+      "id": "minibeam-pediatric-refractory-sarcoma-2026",
+      "title": "Minibeam Radiotherapy in Pediatric Cancer: First Clinical Use in a Treatment-Refractory Sarcoma",
+      "authors": "Kowalchuk RO, Grams MP, Quintero Mateus C 외",
+      "authorsEn": "Kowalchuk RO, Grams MP, Quintero Mateus C et al.",
+      "doi": "10.1002/1545-5017.70781",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70781",
+      "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70781",
+      "articleType": "Letter to the Editor",
+      "verification": "publisher-metadata-and-crossref",
+      "accessLevel": "metadata",
+      "tags": [
+        "sarcoma",
+        "radiotherapy",
+        "minibeam",
+        "relapsed/refractory"
+      ],
+      "summary": "치료 불응성 소아 육종에서 minibeam 방사선치료의 첫 임상 사용을 다룬 독자 서신입니다. 출판사 페이지에서 제목·저자·발행일·문헌 유형을 확인했습니다. 공개 초록과 원문 전체를 확인하지 못했으므로 환자 특성, 방사선량, 반응·독성·추적 결과는 요약하지 않았습니다. 서지정보 확인 범위의 소개이며 치료 효과나 안전성이 입증됐다는 의미는 아닙니다.",
+      "summaryEn": "This Letter to the Editor concerns the first clinical use of minibeam radiotherapy in treatment-refractory pediatric sarcoma. The publisher confirms the title, authors, publication date and article type. Neither an abstract nor the complete text was available for review, so patient characteristics, dose, response, toxicity and follow-up are not summarized. This metadata-only entry does not imply established efficacy or safety."
+    },
+    {
+      "journal": "Pediatric Blood & Cancer · 2026 · 온라인 선게재",
+      "journalEn": "Pediatric Blood & Cancer · 2026 · Early view",
+      "year": 2026,
+      "date": "2026-10-22",
+      "addedOn": "2026-10-23",
+      "id": "aminophylline-mtx-neurotoxicity-pediatric-series-2026",
+      "title": "Aminophylline Administration for Treatment of Methotrexate-Induced Neurotoxicity in Pediatric Cancer Patients: A Single-Center Case Series",
+      "authors": "Guerrettaz R, Bodenbach E, Watson L 외",
+      "authorsEn": "Guerrettaz R, Bodenbach E, Watson L et al.",
+      "doi": "10.1002/1545-5017.70772",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70772",
+      "sourceUrl": "https://onlinelibrary.wiley.com/doi/10.1002/1545-5017.70772",
+      "articleType": "Single-center case series (Brief Report)",
+      "verification": "publisher-abstract-and-crossref-metadata",
+      "accessLevel": "abstract",
+      "tags": [
+        "ALL",
+        "methotrexate",
+        "neurotoxicity",
+        "aminophylline",
+        "지지요법"
+      ],
+      "summary": "Methotrexate 유발 신경독성 후 aminophylline을 투여받은 소아암 환자 7명의 단일기관 증례군 보고입니다. 투여 후 증상 호전까지 중앙값 9시간, 완전 해소까지 36시간이었고 모든 환자에서 증상이 완전히 해소됐습니다. 소규모 비대조 증례군이므로 자연 회복과 약물 효과를 구분하거나 표준치료 대비 우월성·안전성을 확정할 수 없습니다. 출판사 공개 초록 기반 요약이며 원문 전체는 확인하지 못했습니다.",
+      "summaryEn": "This single-center case series reports seven pediatric cancer patients given aminophylline for methotrexate-induced neurotoxicity. Median time to improvement was 9 hours and to complete resolution 36 hours; all patients had full symptom resolution. The small uncontrolled series cannot distinguish spontaneous recovery from drug effect or establish comparative efficacy or safety. Summary based on the publisher’s public abstract; the complete text was not reviewed."
+    },
     {
       "id": "glofitamab-polatuzumab-pediatric-rr-bnhl-2026",
       "title": "Glofitamab plus polatuzumab vedotin: a novel safe, and highly effective chemotherapy-free regimen for pediatric relapsed/refractory B-cell non-Hodgkin lymphoma",
