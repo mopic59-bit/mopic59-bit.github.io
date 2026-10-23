@@ -1,0 +1,4 @@
+(function(){'use strict';
+function bind(triggerId,dialogId){var button=document.getElementById(triggerId),dialog=document.getElementById(dialogId);if(!button||!dialog)return;button.addEventListener('click',function(){if(typeof dialog.showModal==='function'){if(!dialog.open)dialog.showModal();}else{window.open('https://www.mdpi.com/journal/jcm/special_issues/74C35JBB40','_blank','noopener,noreferrer');}});dialog.querySelector('.close').addEventListener('click',function(){dialog.close();});dialog.addEventListener('click',function(event){if(event.target!==dialog)return;var r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();});dialog.addEventListener('close',function(){button.focus();});}
+bind('si-submission','si-submit-dialog');bind('si-poster','si-poster-dialog');
+}());
