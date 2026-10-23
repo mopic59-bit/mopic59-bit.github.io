@@ -60,9 +60,38 @@ window.researchLibrary = {
     "ruxolitinib",
     "CNS germ cell tumour",
     "obesity",
-    "pharmacokinetics"
+    "pharmacokinetics",
+    "림프종",
+    "glofitamab",
+    "polatuzumab vedotin"
   ],
   "papers": [
+    {
+      "id": "glofitamab-polatuzumab-pediatric-rr-bnhl-2026",
+      "title": "Glofitamab plus polatuzumab vedotin: a novel safe, and highly effective chemotherapy-free regimen for pediatric relapsed/refractory B-cell non-Hodgkin lymphoma",
+      "authors": "Dong S, Wang M, Luo Z 외",
+      "authorsEn": "Dong S, Wang M, Luo Z et al.",
+      "journal": "Haematologica · 2026 · 온라인 선게재",
+      "journalEn": "Haematologica · 2026 · Early view",
+      "year": 2026,
+      "date": "2026-06-18",
+      "addedOn": "2026-10-23",
+      "doi": "10.3324/haematol.2026.300836",
+      "url": "https://haematologica.org/article/view/14242",
+      "sourceUrl": "https://haematologica.org/article/view/14242/80422",
+      "articleType": "Two-patient case report (Letter to the Editor)",
+      "verification": "publisher-full-text-pdf",
+      "accessLevel": "fulltext",
+      "tags": [
+        "림프종",
+        "glofitamab",
+        "polatuzumab vedotin",
+        "relapsed/refractory",
+        "bridging therapy"
+      ],
+      "summary": "CNS 침범을 동반한 재발·불응성 B세포 비호지킨림프종 소아 2명(DLBCL·Burkitt 각 1명)의 증례 보고입니다. Glofitamab–polatuzumab 병용 후 모두 완전대사반응을 얻어 자가 조혈모세포이식으로 연결됐고, 이식 후 glofitamab 유지요법을 받았습니다. 1명에서 1등급 CRS가 보고됐습니다. 관해 추적은 3–4개월에 불과해 장기 효과·안전성이나 기존 치료 대비 우월성을 확정할 수 없습니다. 출판사 공개 원문 PDF 기반 요약입니다.",
+      "summaryEn": "This two-patient report describes pediatric relapsed/refractory B-NHL with CNS involvement (one DLBCL and one Burkitt lymphoma). Both achieved complete metabolic responses with glofitamab–polatuzumab and proceeded to autologous HSCT followed by glofitamab maintenance. One patient had grade 1 CRS. Remission follow-up was only 3–4 months; the report cannot establish long-term efficacy, safety or superiority over existing treatment. Summary based on the publisher’s full-text PDF."
+    },
     {
       "id": "obesity-pediatric-all-pharmacokinetics-review-2026",
       "title": "Impact of Obesity on Chemotherapy Pharmacokinetics, Toxicity, and Survival Outcomes in Pediatric Acute Lymphoblastic Leukemia",
