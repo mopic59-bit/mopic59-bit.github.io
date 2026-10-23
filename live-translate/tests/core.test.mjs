@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {ingest,rowsFrom,ordered,plain,docx,zip} from '../core.mjs';
+const fresh=()=>({blocks:[],empty:true,lang:'en'});
+test('revising a translation replaces its block without duplicate rows',()=>{const s=fresh();ingest(s,{source:'Hello.',target:'안녕.'},1000);ingest(s,{source:'Hello.',target:'안녕하세요.'},2000);assert.equal(s.blocks.length,1);assert.equal(rowsFrom(s,5000)[0].target,'안녕하세요.');assert.equal(rowsFrom(s,5000)[0].draft,false);});
+test('new sentences retain earlier observation times',()=>{const s=fresh();ingest(s,{source:'First.',target:'첫째.'},1000);ingest(s,{source:'First. Second.',target:'첫째. 둘째.'},5000);const rows=rowsFrom(s,8000);assert.deepEqual(rows.map(r=>r.at),[1000,5000]);assert.equal(ordered(rows).reverse()[0].source,'Second.');});
+test('unequal sentence counts remain one honest block',()=>{const s=fresh();ingest(s,{source:'One. Two.',target:'하나와 둘.'},1000);assert.equal(rowsFrom(s,4000).length,1);});
+test('input reset starts next block, repeated identical speech is preserved',()=>{const s=fresh();ingest(s,{source:'Hello.',target:'안녕.'},1000);ingest(s,{source:'',target:''},3000);ingest(s,{source:'Hello.',target:'안녕.'},4000);assert.equal(rowsFrom(s,8000).length,2);});
+test('missing translation and unstable output remain marked draft',()=>{const s=fresh();ingest(s,{source:'Hello.',target:''},1000);assert.equal(rowsFrom(s,5000)[0].draft,true);ingest(s,{source:'Hello.',target:'안녕.'},6000);assert.equal(rowsFrom(s,7000)[0].draft,true);assert.equal(rowsFrom(s,9000)[0].draft,false);});
+test('document order is oldest first regardless of UI order',()=>{const s={title:'Lecture',started:1000,rows:[{at:5000,seq:1,source:'Second',target:'둘째'},{at:1000,seq:0,source:'First',target:'첫째'}]};assert(plain(s).indexOf('First')<plain(s).indexOf('Second'));assert.equal(s.rows[0].source,'Second');});
+test('ZIP/DOCX are real ZIP archives with XML escaping',async()=>{const b=docx({title:'A & B',rows:[{at:1000,seq:0,source:'<script>',target:'한글'}]});const bytes=new Uint8Array(await b.arrayBuffer());assert.deepEqual([...bytes.slice(0,4)],[80,75,3,4]);const str=new TextDecoder().decode(bytes);assert(str.includes('word/document.xml'));assert(str.includes('&lt;script&gt;'));assert(str.includes('A &amp; B'));assert(str.includes('한글'));});
