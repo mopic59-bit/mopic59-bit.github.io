@@ -1078,6 +1078,18 @@ window.researchLibrary = {
   ],
   "news": [
     {
+        "id": "accuro-3s-pediatric-lp-2026",
+        "title": "AI 초음파 기반 소아 요추천자 유도: RIVANNA Accuro 3S의 기술과 소아 ALL 적용 가능성",
+        "titleEn": "RIVANNA Accuro 3S: AI-assisted ultrasound guidance for pediatric lumbar puncture",
+        "date": "2026-10-25",
+        "publisher": "소아혈액종양 의료기술 동향",
+        "publisherEn": "Pediatric Hematology-Oncology Technology Review",
+        "url": "https://mopic59-bit.github.io/news/accuro-3s-pediatric-lp.html",
+        "summary": "Accuro 3S의 AI 척추 초음파 및 바늘 유도 기술, 미국 FDA 허가와 NCI 소아용 연구개발 현황을 정리했습니다. 소아 ALL 환자의 반복 LP 및 척수강내 항암치료에 적용 가능성이 있지만, traumatic LP 감소 효과는 아직 직접 입증되지 않았습니다. 제품 사진·영상 링크와 관련 임상논문을 제공합니다.",
+        "summaryEn": "A review of the Accuro 3S AI-assisted spinal ultrasound and needle-guidance system, FDA clearances, and NCI-supported pediatric development. Potential applications include repeated lumbar punctures and intrathecal chemotherapy in pediatric ALL, but direct evidence for reducing traumatic taps remains insufficient.",
+        "sourceUrl": "https://www.sbir.gov/awards/219391"
+    },
+    {
       "id": "pediatric-lp-devices-2026",
       "title": "소아 요추천자 및 척수강내 항암제 투여를 위한 신기술: IQ-Tip과 AI 초음파 유도",
       "titleEn": "Emerging devices for pediatric lumbar puncture and intrathecal chemotherapy",
