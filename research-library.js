@@ -1077,6 +1077,18 @@ window.researchLibrary = {
   ],
   "news": [
     {
+      "id": "pivo-pro-venocare-navi-2026",
+      "title": "반복 채혈의 바늘 부담을 줄일 수 있을까? BD PIVO Pro와 Venocare Navi 비교",
+      "titleEn": "Needle-free blood collection: BD PIVO Pro versus Venocare Navi",
+      "date": "2026-10-25",
+      "publisher": "소아혈액종양 의료기술 동향",
+      "publisherEn": "Pediatric Hematology-Oncology Technology Review",
+      "url": "https://mopic59-bit.github.io/news/pivo-pro-venocare-navi.html",
+      "summary": "기존 말초정맥관을 활용하는 두 채혈 기기의 원리·호환성, 소아 환자의 반복 천자·채혈량 부담 감소 가능성, 임상근거와 국내 허가·유통 확인 현황을 비교했습니다. 공식 사진·영상 자료와 임상논문 링크를 제공하며 소아암에서의 효과는 아직 확립되지 않았습니다.",
+      "summaryEn": "A comparison of two devices for blood collection through existing peripheral IV catheters, including compatibility, potential pediatric benefits, clinical evidence, official media links and unconfirmed Korean distribution status. Benefits in pediatric oncology remain unestablished.",
+      "sourceUrl": "https://www.bd.com/en-us/products-and-solutions/products/product-families/pivo-pro-needle-free-blood-draw-device"
+    },
+    {
       "id": "accuro-3s-pediatric-lp-2026",
       "title": "AI 초음파 기반 소아 요추천자 유도: RIVANNA Accuro 3S의 기술과 소아 ALL 적용 가능성",
       "titleEn": "RIVANNA Accuro 3S: AI-assisted ultrasound guidance for pediatric lumbar puncture",
