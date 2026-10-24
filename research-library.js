@@ -1,4 +1,3 @@
-// 직접 선정하고 출처를 확인한 자료만 등록합니다.
 window.researchLibrary = {
   "tags": [
     "ALL",
@@ -1078,27 +1077,27 @@ window.researchLibrary = {
   ],
   "news": [
     {
-        "id": "accuro-3s-pediatric-lp-2026",
-        "title": "AI 초음파 기반 소아 요추천자 유도: RIVANNA Accuro 3S의 기술과 소아 ALL 적용 가능성",
-        "titleEn": "RIVANNA Accuro 3S: AI-assisted ultrasound guidance for pediatric lumbar puncture",
-        "date": "2026-10-25",
-        "publisher": "소아혈액종양 의료기술 동향",
-        "publisherEn": "Pediatric Hematology-Oncology Technology Review",
-        "url": "https://mopic59-bit.github.io/news/accuro-3s-pediatric-lp.html",
-        "summary": "Accuro 3S의 AI 척추 초음파 및 바늘 유도 기술, 미국 FDA 허가와 NCI 소아용 연구개발 현황을 정리했습니다. 소아 ALL 환자의 반복 LP 및 척수강내 항암치료에 적용 가능성이 있지만, traumatic LP 감소 효과는 아직 직접 입증되지 않았습니다. 제품 사진·영상 링크와 관련 임상논문을 제공합니다.",
-        "summaryEn": "A review of the Accuro 3S AI-assisted spinal ultrasound and needle-guidance system, FDA clearances, and NCI-supported pediatric development. Potential applications include repeated lumbar punctures and intrathecal chemotherapy in pediatric ALL, but direct evidence for reducing traumatic taps remains insufficient.",
-        "sourceUrl": "https://www.sbir.gov/awards/219391"
-    },
-    {
-      "id": "pediatric-lp-devices-2026",
-      "title": "소아 요추천자 및 척수강내 항암제 투여를 위한 신기술: IQ-Tip과 AI 초음파 유도",
-      "titleEn": "Emerging devices for pediatric lumbar puncture and intrathecal chemotherapy",
-      "date": "2026-10-22",
+      "id": "accuro-3s-pediatric-lp-2026",
+      "title": "AI 초음파 기반 소아 요추천자 유도: RIVANNA Accuro 3S의 기술과 소아 ALL 적용 가능성",
+      "titleEn": "RIVANNA Accuro 3S: AI-assisted ultrasound guidance for pediatric lumbar puncture",
+      "date": "2026-10-25",
       "publisher": "소아혈액종양 의료기술 동향",
       "publisherEn": "Pediatric Hematology-Oncology Technology Review",
-      "url": "https://mopic59-bit.github.io/news/pediatric-lp-devices.html",
-      "summary": "소아 ALL 환자의 반복 요추천자와 척수강내 항암제 투여를 보조할 수 있는 기술을 검토했습니다. Injeq IQ-Tip은 바늘 끝의 생체전기저항으로 CSF 진입을 감지하며, 소아 ALL 50명에서 시행한 152회 시술을 평가한 전향적 단일군 연구가 있습니다. RIVANNA Accuro 3S는 AI 기반 척추 초음파로 천자 위치 및 경로 설정을 지원하며, Smoltap은 어린 영아의 LP 자세를 안정화합니다. 기존 표준 시술 대비 traumatic LP 감소나 항암제 투여 결과 개선은 아직 확정적으로 입증되지 않았으며, 국내 의료기기 허가 및 구매 가능 여부는 별도 확인이 필요합니다.",
-      "summaryEn": "New technologies may assist repeated lumbar punctures and intrathecal chemotherapy in pediatric ALL. Injeq IQ-Tip uses needle-tip bioimpedance to detect CSF and has been evaluated in a prospective single-arm study involving 50 children and 152 procedures. RIVANNA Accuro 3S provides AI-assisted spinal ultrasound guidance; Smoltap supports infant positioning. Comparative benefits for traumatic punctures or treatment outcomes are not established, and Korean regulatory and distribution status remains to be verified.",
+      "url": "https://mopic59-bit.github.io/news/accuro-3s-pediatric-lp.html",
+      "summary": "Accuro 3S의 AI 척추 초음파 및 바늘 유도 기술, 미국 FDA 허가와 NCI 소아용 연구개발 현황을 정리했습니다. 소아 ALL 환자의 반복 LP 및 척수강내 항암치료에 적용 가능성이 있지만, traumatic LP 감소 효과는 아직 직접 입증되지 않았습니다. 제품 사진·영상 링크와 관련 임상논문을 제공합니다.",
+      "summaryEn": "A review of the Accuro 3S AI-assisted spinal ultrasound and needle-guidance system, FDA clearances, and NCI-supported pediatric development. Potential applications include repeated lumbar punctures and intrathecal chemotherapy in pediatric ALL, but direct evidence for reducing traumatic taps remains insufficient.",
+      "sourceUrl": "https://www.sbir.gov/awards/219391"
+    },
+    {
+      "id": "iq-tip-pediatric-all-2026",
+      "title": "CSF 진입을 감지하는 스마트 요추천자 바늘: Injeq IQ-Tip과 소아 ALL",
+      "titleEn": "Injeq IQ-Tip: bioimpedance-guided CSF detection in pediatric ALL lumbar puncture",
+      "date": "2026-10-25",
+      "publisher": "소아혈액종양 의료기술 동향",
+      "publisherEn": "Pediatric Hematology-Oncology Technology Review",
+      "url": "https://mopic59-bit.github.io/news/iq-tip-pediatric-all.html",
+      "summary": "IQ-Tip은 바늘 끝의 생체전기저항을 측정해 CSF 진입을 감지하는 기술입니다. 소아 ALL 환자 50명에서 152회 시술을 평가한 전향적 단일군 연구가 있으나, 기존 바늘 대비 traumatic LP 감소 효과는 아직 입증되지 않았습니다.",
+      "summaryEn": "IQ-Tip uses needle-tip bioimpedance to assist detection of CSF entry. A prospective single-arm study evaluated 152 procedures in 50 children with ALL, but superiority for traumatic tap reduction is unproven.",
       "sourceUrl": "https://doi.org/10.1038/s41598-022-10915-4"
     },
     {
