@@ -8,7 +8,7 @@
   },
   "lastSuccessfulCheckAt": "2026-10-24T23:05:01.035919+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-10-24T23:05:01.035919+00:00",
+  "lastAttemptAt": "2026-10-25T23:53:18.341685+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,8 +110,8 @@
       }
     ]
   },
-  "lastError": null,
-  "checkState": "success",
+  "lastError": "HTTP Error 503: Service Unavailable",
+  "checkState": "failed",
   "revisionState": "unchanged",
   "secondary": {
     "checkedAt": "2026-10-24T23:05:01.035919+00:00",
