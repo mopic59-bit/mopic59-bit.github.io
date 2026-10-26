@@ -6,9 +6,9 @@
     "effectiveDate": "2026-07-31",
     "sourceUrl": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000283320"
   },
-  "lastSuccessfulCheckAt": "2026-10-24T23:05:01.035919+00:00",
+  "lastSuccessfulCheckAt": "2026-10-26T23:31:45.804395+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-10-25T23:53:18.341685+00:00",
+  "lastAttemptAt": "2026-10-26T23:31:45.804395+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,13 +110,13 @@
       }
     ]
   },
-  "lastError": "HTTP Error 503: Service Unavailable",
-  "checkState": "failed",
+  "lastError": null,
+  "checkState": "success",
   "revisionState": "unchanged",
   "secondary": {
-    "checkedAt": "2026-10-24T23:05:01.035919+00:00",
+    "checkedAt": "2026-10-26T23:31:45.804395+00:00",
     "summary": "보건복지부 산정특례 제목 검색·고시 목록 확인. 질의응답·지침과 행정예고는 고시 개정과 구분합니다. HIRA는 교차확인 참고 출처이며 전수 검색 범위에 포함하지 않습니다.",
     "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80"
   },
-  "lastPrimaryCheckAt": "2026-10-24T23:05:01.035919+00:00"
+  "lastPrimaryCheckAt": "2026-10-26T23:31:45.804395+00:00"
 }
