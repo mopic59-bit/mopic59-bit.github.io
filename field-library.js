@@ -5,6 +5,8 @@
     ko: {
       all: '전체', allYears: '모든 연도', year: '{year}년', untitled: '제목 미등록',
       count: '선정 논문 {total}편 중 {visible}편 표시', tagCount: '{label} 논문 {count}편',
+      countMixed: '선정 자료 {total}건 중 {visible}건 표시 (논문 {papers}편 · 임상시험 등록 {trials}건)', tagCountMixed: '{label} 자료 {count}건',
+      yearRecords: '{count}건', yearRecordOne: '{count}건', clinicalTrial: '임상시험 등록', preclinical: '전임상 연구', registryDate: '최초 등록 {date}', registryUpdated: '등록 갱신 {date}', trialLink: '등록 정보 ↗',
       noMatches: '조건에 맞는 논문이 없습니다. 태그, 검색어 또는 연도를 바꿔보세요.',
       papersPending: '선정 자료를 준비 중입니다.', summaryPending: '핵심 요약을 준비 중입니다.',
       onlineDate: '온라인 공개 {date}', publicationDate: '게재일 {date}', issueDate: '정식 게재 {date}', yearCount: '{count}편', yearCountOne: '{count}편', yearMissing: '연도 미상', original: '원문 ↗', newsPending: '선정 뉴스를 준비 중입니다.',
@@ -13,6 +15,8 @@
     en: {
       all: 'All', allYears: 'All years', year: '{year}', untitled: 'Untitled',
       count: 'Showing {visible} of {total} selected papers', tagCount: '{label}: {count} papers',
+      countMixed: 'Showing {visible} of {total} selected records ({papers} publications; clinical trial records: {trials})', tagCountMixed: '{label}: {count} records',
+      yearRecords: '{count} records', yearRecordOne: '{count} record', clinicalTrial: 'Clinical trial registration', preclinical: 'Preclinical study', registryDate: 'First posted {date}', registryUpdated: 'Registry updated {date}', trialLink: 'Registry ↗',
       noMatches: 'No papers match these filters. Try another tag, search term, or year.',
       papersPending: 'Selected papers will be added here.', summaryPending: 'A key findings summary will be added here.',
       onlineDate: 'Published online {date}', publicationDate: 'Published {date}', issueDate: 'Journal issue {date}', yearCount: '{count} papers', yearCountOne: '{count} paper', yearMissing: 'Year unavailable', original: 'Full text ↗', newsPending: 'Selected news will be added here.',
@@ -50,6 +54,7 @@
     var papers = (Array.isArray(library.papers) ? library.papers : []).filter(isRecord).map(function (record, index) {
       return {
         id: value(record.id) || 'paper-' + index,
+        recordType: record.recordType === 'clinical-trial' ? 'clinical-trial' : record.recordType === 'preclinical' ? 'preclinical' : 'publication',
         title: value(record.title),
         titleEn: value(record.titleEn),
         authors: Array.isArray(record.authors) ? record.authors.map(value).filter(Boolean).join(', ') : value(record.authors),
@@ -58,7 +63,7 @@
         journalEn: value(record.journalEn),
         addedOn: validDate(record.addedOn),
         date: validDate(record.date) || validDate(record.issueDate),
-        dateKind: validDate(record.date) ? (record.dateKind === 'publicationDate' ? 'publicationDate' : 'onlineDate') : 'issueDate',
+        dateKind: validDate(record.date) ? (['publicationDate', 'registryDate', 'registryUpdated'].indexOf(record.dateKind) >= 0 ? record.dateKind : 'onlineDate') : 'issueDate',
         year: validYear(record.year) || (validDate(record.date) || validDate(record.issueDate)).slice(0, 4),
         doi: value(record.doi),
         url: safeUrl(record.url),
@@ -69,6 +74,8 @@
         tags: unique(Array.isArray(record.tags) ? record.tags.map(value) : [])
       };
     }).sort(papersNewestFirst);
+    var trialCount = papers.filter(function (paper) { return paper.recordType === 'clinical-trial'; }).length;
+    var mixedRecords = trialCount > 0;
     var taxonomy = unique(Array.isArray(library.tags) ? library.tags.map(value) : defaultTags);
     var presentTags = unique(papers.reduce(function (all, paper) {
       return all.concat(paper.tags);
@@ -161,11 +168,12 @@
       recentNav.replaceChildren();
       if (latestAdded) {
         var recentCount = papers.filter(function (paper) { return paper.addedOn === latestAdded; }).length;
-        var recentLink = element('a', 'topic-tag', language() === 'en' ? 'Recently added: ' + recentCount + ' papers (' + latestAdded + ')' : '최근 추가 ' + recentCount + '편 보기 (' + latestAdded + ')');
+        var recentUnit = mixedRecords ? (language() === 'en' ? ' records' : '건') : (language() === 'en' ? ' papers' : '편');
+        var recentLink = element('a', 'topic-tag', language() === 'en' ? 'Recently added: ' + recentCount + recentUnit + ' (' + latestAdded + ')' : '최근 추가 ' + recentCount + recentUnit + ' 보기 (' + latestAdded + ')');
         recentLink.href = '?added=' + latestAdded + '&v=recent-' + latestAdded + '-' + recentCount + '#topic-papers';
         recentNav.appendChild(recentLink);
         recentNav.appendChild(document.createTextNode(' · '));
-        var allLink = element('a', '', language() === 'en' ? 'View all papers' : '전체 논문 보기');
+        var allLink = element('a', '', language() === 'en' ? (mixedRecords ? 'View all records' : 'View all papers') : (mixedRecords ? '전체 자료 보기' : '전체 논문 보기'));
         allLink.href = '?view=all&v=recent-' + latestAdded + '-' + recentCount + '#topic-papers';
         recentNav.appendChild(allLink);
       }
@@ -183,7 +191,7 @@
         var count = matching.filter(function (paper) { return paper.tags.indexOf(tag) >= 0; }).length;
         tagList.appendChild(filterButton(tag, tagLabel(tag), count));
       });
-      countNode.textContent = t('count', { total: papers.length, visible: visible.length });
+      countNode.textContent = t(mixedRecords ? 'countMixed' : 'count', { total: papers.length, visible: visible.length, papers: papers.length - trialCount, trials: trialCount });
       paperList.replaceChildren();
       if (!visible.length) {
         paperList.appendChild(element('p', 'empty', t(papers.length ? 'noMatches' : 'papersPending')));
@@ -199,12 +207,13 @@
           yearHeading.id = 'paper-year-' + (paper.year || 'undated');
           yearHeading.appendChild(element('span', '', paper.year ? t('year', { year: paper.year }) : t('yearMissing')));
           var yearCount = visible.filter(function (item) { return item.year === paper.year; }).length;
-          yearHeading.appendChild(element('span', 'paper-year-count', t(yearCount === 1 ? 'yearCountOne' : 'yearCount', { count: yearCount })));
+          yearHeading.appendChild(element('span', 'paper-year-count', t(mixedRecords ? (yearCount === 1 ? 'yearRecordOne' : 'yearRecords') : (yearCount === 1 ? 'yearCountOne' : 'yearCount'), { count: yearCount })));
           paperGroup.setAttribute('aria-labelledby', yearHeading.id);
           paperGroup.appendChild(yearHeading);
           paperList.appendChild(paperGroup);
         }
         var article = element('article', 'paper');
+        article.setAttribute('data-record-type', paper.recordType);
         var dateNode = element(paper.date ? 'time' : 'span', 'paper-date', paper.date ? paper.date.slice(5).replace('-', '.') : '—');
         if (paper.date) {
           dateNode.dateTime = paper.date;
@@ -213,6 +222,9 @@
         }
         article.appendChild(dateNode);
         var body = element('div', 'paper-content');
+        if (paper.recordType === 'clinical-trial' || paper.recordType === 'preclinical') {
+          body.appendChild(element('p', 'paper-record-type', t(paper.recordType === 'clinical-trial' ? 'clinicalTrial' : 'preclinical')));
+        }
         if (paper.tags.length) {
           var paperTags = element('div', 'paper-tags');
           paper.tags.forEach(function (tag) { paperTags.appendChild(filterButton(tag, tagLabel(tag))); });
@@ -232,7 +244,7 @@
         article.appendChild(body);
         var reference = doiHref || paper.url;
         if (reference) {
-          var source = linkOrText(doiHref ? 'DOI ↗' : t('original'), reference);
+          var source = linkOrText(doiHref ? 'DOI ↗' : t(paper.recordType === 'clinical-trial' ? 'trialLink' : 'original'), reference);
           source.className = 'doi';
           article.appendChild(source);
         }
@@ -247,7 +259,7 @@
       button.setAttribute('aria-pressed', String(state.tag === tag));
       if (typeof count === 'number') {
         button.appendChild(element('span', 'tag-count', ' ' + count));
-        button.setAttribute('aria-label', t('tagCount', { label: label, count: count }));
+        button.setAttribute('aria-label', t(mixedRecords ? 'tagCountMixed' : 'tagCount', { label: label, count: count }));
       }
       button.addEventListener('click', function () { chooseTag(tag); });
       return button;
