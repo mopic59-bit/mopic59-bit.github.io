@@ -126,9 +126,38 @@ window.researchLibrary = {
     "scATAC-seq",
     "PTCy",
     "bile acids",
-    "preprint"
+    "preprint",
+    "methylphenidate",
+    "fatigue"
   ],
   "papers": [
+    {
+      "id": "methylphenidate-hematologic-cancer-fatigue-rct",
+      "title": "Methylphenidate for Hematologic Cancer–Related Fatigue: A Randomized Clinical Trial",
+      "titleEn": "Methylphenidate for Hematologic Cancer–Related Fatigue: A Randomized Clinical Trial",
+      "journal": "Journal of Clinical Oncology",
+      "journalEn": "Journal of Clinical Oncology",
+      "doi": "10.1200/JCO-26-00578",
+      "url": "https://ascopubs.org/doi/10.1200/JCO-26-00578",
+      "sourceUrl": "https://ascopubs.org/doi/10.1200/JCO-26-00578",
+      "publisherUrl": "https://ascopubs.org/doi/10.1200/JCO-26-00578",
+      "summary": "혈액암 관련 피로에 대한 methylphenidate 무작위 임상시험입니다. 서지정보와 원문 확인 전이며, 소아 대상 여부 및 효과·안전성 결과는 확인되지 않았습니다.",
+      "summaryEn": "A randomized clinical trial of methylphenidate for hematologic cancer–related fatigue. Bibliographic details and the original article are pending verification; the age group, efficacy, and safety results have not been confirmed.",
+      "tags": [
+        "지지요법",
+        "methylphenidate",
+        "fatigue"
+      ],
+      "articleType": "Randomized clinical trial (per user-provided title)",
+      "studyType": "Randomized clinical trial (per user-provided title)",
+      "verification": "user-provided-title-and-doi",
+      "accessLevel": "citation-only",
+      "addedOn": "2026-11-01",
+      "selectedOn": "2026-11-01",
+      "selectionSource": "User-provided article title and ASCO DOI link",
+      "dateNote": "제목·DOI 등록 · 저자·게재일·원문 확인 대기",
+      "dateNoteEn": "Title and DOI added · Authors, publication date, and full text pending verification"
+    },
     {
       "id": "neuroblastoma-next-generation-car-review-2026",
       "title": "Next-generation CAR immunotherapy for neuroblastoma: expanding the role of immune cell platforms",
