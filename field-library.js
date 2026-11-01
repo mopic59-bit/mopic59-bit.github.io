@@ -3,6 +3,10 @@
 
   var labels = {
     ko: {
+      sortLabel: '정렬', sortAdded: '홈페이지 게시일순', sortPublication: '출판일순',
+      addedOn: '홈페이지 게시일 {date}', addedUnknown: '홈페이지 게시일 미기록',
+      sortNoteAdded: '홈페이지에 게시한 날짜가 최신인 순서입니다. 게시일 기록이 없는 기존 자료는 마지막에 표시됩니다.',
+      sortNotePublication: '출판연도와 출판날짜가 최신인 순서입니다. 온라인 공개일이 확인되면 이를 우선합니다.',
       all: '전체', allYears: '모든 연도', year: '{year}년', untitled: '제목 미등록',
       count: '선정 논문 {total}편 중 {visible}편 표시', tagCount: '{label} 논문 {count}편',
       countMixed: '선정 자료 {total}건 중 {visible}건 표시 (논문 {papers}편 · 임상시험 등록 {trials}건)', tagCountMixed: '{label} 자료 {count}건',
@@ -13,6 +17,10 @@
       dateMissing: '날짜 미등록', newsSummaryPending: '기사 요약을 준비 중입니다.', readArticle: '기사 읽기 ↗'
     },
     en: {
+      sortLabel: 'Sort by', sortAdded: 'Date added', sortPublication: 'Publication date',
+      addedOn: 'Added to website {date}', addedUnknown: 'Website added date unrecorded',
+      sortNoteAdded: 'Newest website additions first. Earlier records without a recorded added date appear last.',
+      sortNotePublication: 'Newest publication year and date first. Online publication date is used when available.',
       all: 'All', allYears: 'All years', year: '{year}', untitled: 'Untitled',
       count: 'Showing {visible} of {total} selected papers', tagCount: '{label}: {count} papers',
       countMixed: 'Showing {visible} of {total} selected records ({papers} publications; clinical trial records: {trials})', tagCountMixed: '{label}: {count} records',
@@ -87,7 +95,28 @@
     var latestAdded = papers.map(function (paper) { return paper.addedOn; }).filter(Boolean).sort().reverse()[0] || '';
     var recentNav = element('p', 'paper-recent-links');
     tagList.parentNode.insertBefore(recentNav, tagList);
-    var state = { tag: '', q: '', year: '', added: '' };
+    var state = { tag: '', q: '', year: '', added: '', sort: 'publication' };
+    var sortPanel = element('div', 'paper-sort');
+    var sortControls = element('div', 'paper-sort-controls');
+    sortControls.setAttribute('role', 'group');
+    var sortLabel = element('span', 'paper-sort-label');
+    sortControls.appendChild(sortLabel);
+    var sortButtons = {};
+    ['added', 'publication'].forEach(function (mode) {
+      var button = element('button', 'topic-tag paper-sort-button');
+      button.type = 'button';
+      button.setAttribute('data-paper-sort', mode);
+      button.addEventListener('click', function () {
+        state.sort = mode;
+        applyFilters();
+      });
+      sortButtons[mode] = button;
+      sortControls.appendChild(button);
+    });
+    var sortNote = element('p', 'count paper-sort-note');
+    sortPanel.appendChild(sortControls);
+    sortPanel.appendChild(sortNote);
+    tagList.parentNode.insertBefore(sortPanel, tagList);
 
     renderYears();
     readQuery();
@@ -104,7 +133,7 @@
     });
     var resetButton = document.getElementById('topic-reset');
     if (resetButton) resetButton.addEventListener('click', function () {
-      state = { tag: '', q: '', year: '', added: '' };
+      state = { tag: '', q: '', year: '', added: '', sort: state.sort };
       searchInput.value = '';
       yearSelect.value = '';
       applyFilters();
@@ -136,7 +165,7 @@
       var params = new URL(window.location.href).searchParams;
       var tag = params.get('tag') || '';
       var year = params.get('year') || '';
-      state = { tag: tags.indexOf(tag) >= 0 ? tag : '', q: params.get('q') || '', year: years.indexOf(year) >= 0 ? year : '', added: papers.some(function (paper) { return paper.addedOn && paper.addedOn === params.get('added'); }) ? params.get('added') : '' };
+      state = { tag: tags.indexOf(tag) >= 0 ? tag : '', q: params.get('q') || '', year: years.indexOf(year) >= 0 ? year : '', added: papers.some(function (paper) { return paper.addedOn && paper.addedOn === params.get('added'); }) ? params.get('added') : '', sort: params.get('sort') === 'added' ? 'added' : 'publication' };
       searchInput.value = state.q;
       yearSelect.value = state.year;
     }
@@ -148,6 +177,8 @@
         if (state[key]) url.searchParams.set(key, state[key]);
         else url.searchParams.delete(key);
       });
+      if (state.sort === 'added') url.searchParams.set('sort', 'added');
+      else url.searchParams.delete('sort');
       url.hash = 'publications';
       try { window.history.replaceState(window.history.state, '', url.href); } catch (error) { /* File previews may restrict history updates. */ }
     }
@@ -165,16 +196,24 @@
     }
 
     function renderPapers() {
+      sortControls.setAttribute('aria-label', t('sortLabel'));
+      sortLabel.textContent = t('sortLabel');
+      sortButtons.added.textContent = t('sortAdded');
+      sortButtons.publication.textContent = t('sortPublication');
+      Object.keys(sortButtons).forEach(function (mode) {
+        sortButtons[mode].setAttribute('aria-pressed', String(state.sort === mode));
+      });
+      sortNote.textContent = t(state.sort === 'added' ? 'sortNoteAdded' : 'sortNotePublication');
       recentNav.replaceChildren();
       if (latestAdded) {
         var recentCount = papers.filter(function (paper) { return paper.addedOn === latestAdded; }).length;
         var recentUnit = mixedRecords ? (language() === 'en' ? ' records' : '건') : (language() === 'en' ? ' papers' : '편');
         var recentLink = element('a', 'topic-tag', language() === 'en' ? 'Recently added: ' + recentCount + recentUnit + ' (' + latestAdded + ')' : '최근 추가 ' + recentCount + recentUnit + ' 보기 (' + latestAdded + ')');
-        recentLink.href = '?added=' + latestAdded + '&v=recent-' + latestAdded + '-' + recentCount + '#topic-papers';
+        recentLink.href = '?added=' + latestAdded + '&v=recent-' + latestAdded + '-' + recentCount + (state.sort === 'added' ? '&sort=added' : '') + '#topic-papers';
         recentNav.appendChild(recentLink);
         recentNav.appendChild(document.createTextNode(' · '));
         var allLink = element('a', '', language() === 'en' ? (mixedRecords ? 'View all records' : 'View all papers') : (mixedRecords ? '전체 자료 보기' : '전체 논문 보기'));
-        allLink.href = '?view=all&v=recent-' + latestAdded + '-' + recentCount + '#topic-papers';
+        allLink.href = '?view=all&v=recent-' + latestAdded + '-' + recentCount + (state.sort === 'added' ? '&sort=added' : '') + '#topic-papers';
         recentNav.appendChild(allLink);
       }
       var query = state.q.trim().toLocaleLowerCase();
@@ -185,6 +224,7 @@
         return [paper.title, paper.titleEn, paper.authors, paper.authorsEn, paper.journal, paper.journalEn, paper.summary, paper.summaryEn, paper.doi, paper.tags.join(' '), paper.tags.map(function (tag) { return tagLabelsEn[tag] || tag; }).join(' ')].join(' ').toLocaleLowerCase().indexOf(query) >= 0;
       });
       var visible = matching.filter(function (paper) { return !state.tag || paper.tags.indexOf(state.tag) >= 0; });
+      visible.sort(state.sort === 'added' ? papersAddedNewestFirst : papersNewestFirst);
       tagList.replaceChildren();
       tagList.appendChild(filterButton('', t('all'), matching.length));
       tags.slice().sort(function (a, b) {
@@ -199,16 +239,20 @@
         paperList.appendChild(element('p', 'empty', t(papers.length ? 'noMatches' : 'papersPending')));
         return;
       }
-      var activeYear = null;
+      var activeGroup = null;
       var paperGroup;
       visible.forEach(function (paper) {
-        if (paper.year !== activeYear) {
-          activeYear = paper.year;
+        var groupKey = state.sort === 'added' ? paper.addedOn : paper.year;
+        if (groupKey !== activeGroup) {
+          activeGroup = groupKey;
           paperGroup = element('section', 'paper-year-group');
           var yearHeading = element('h3', 'paper-year-heading');
-          yearHeading.id = 'paper-year-' + (paper.year || 'undated');
-          yearHeading.appendChild(element('span', '', paper.year ? t('year', { year: paper.year }) : t('yearMissing')));
-          var yearCount = visible.filter(function (item) { return item.year === paper.year; }).length;
+          yearHeading.id = 'paper-' + (state.sort === 'added' ? 'added-' : 'year-') + (groupKey || 'undated');
+          var groupLabel = state.sort === 'added'
+            ? (groupKey ? t('addedOn', { date: formatDate(groupKey) }) : t('addedUnknown'))
+            : (groupKey ? t('year', { year: groupKey }) : t('yearMissing'));
+          yearHeading.appendChild(element('span', '', groupLabel));
+          var yearCount = visible.filter(function (item) { return (state.sort === 'added' ? item.addedOn : item.year) === groupKey; }).length;
           yearHeading.appendChild(element('span', 'paper-year-count', t(mixedRecords ? (yearCount === 1 ? 'yearRecordOne' : 'yearRecords') : (yearCount === 1 ? 'yearCountOne' : 'yearCount'), { count: yearCount })));
           paperGroup.setAttribute('aria-labelledby', yearHeading.id);
           paperGroup.appendChild(yearHeading);
@@ -216,11 +260,13 @@
         }
         var article = element('article', 'paper');
         article.setAttribute('data-record-type', paper.recordType);
-        var dateNode = element(paper.date ? 'time' : 'span', 'paper-date', paper.date ? paper.date.slice(5).replace('-', '.') : '—');
-        if (paper.date) {
-          dateNode.dateTime = paper.date;
-          dateNode.setAttribute('aria-label', t(paper.dateKind, { date: formatDate(paper.date) }));
-          dateNode.title = t(paper.dateKind, { date: formatDate(paper.date) });
+        var displayDate = state.sort === 'added' ? paper.addedOn : paper.date;
+        var displayDateKind = state.sort === 'added' ? 'addedOn' : paper.dateKind;
+        var dateNode = element(displayDate ? 'time' : 'span', 'paper-date', displayDate ? displayDate.slice(5).replace('-', '.') : '—');
+        if (displayDate) {
+          dateNode.dateTime = displayDate;
+          dateNode.setAttribute('aria-label', t(displayDateKind, { date: formatDate(displayDate) }));
+          dateNode.title = t(displayDateKind, { date: formatDate(displayDate) });
         }
         article.appendChild(dateNode);
         var body = element('div', 'paper-content');
@@ -240,6 +286,7 @@
         if (authors) body.appendChild(element('p', 'paper-authors', authors));
         var citation = [localized(paper, 'journal'), paper.date ? t(paper.dateKind, { date: formatDate(paper.date) }) : paper.year].filter(Boolean).join(' · ');
         if (citation) body.appendChild(element('p', 'paper-citation', citation));
+        if (paper.addedOn) body.appendChild(element('p', 'paper-added-on', t('addedOn', { date: formatDate(paper.addedOn) })));
         var dateNote = localized(paper, 'dateNote');
         if (dateNote) body.appendChild(element('p', 'paper-date-note', dateNote));
         body.appendChild(element('p', 'paper-summary', localized(paper, 'summary') || t('summaryPending')));
@@ -308,6 +355,9 @@
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return '';
     var parsed = new Date(date + 'T00:00:00Z');
     return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date ? date : '';
+  }
+  function papersAddedNewestFirst(a, b) {
+    return (a.addedOn === b.addedOn ? 0 : a.addedOn > b.addedOn ? -1 : 1) || papersNewestFirst(a, b);
   }
   function papersNewestFirst(a, b) { return Number(b.year || 0) - Number(a.year || 0) || newestFirst(a, b); }
   function newestFirst(a, b) { return a.date === b.date ? 0 : a.date > b.date ? -1 : 1; }
