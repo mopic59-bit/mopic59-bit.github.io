@@ -187,7 +187,9 @@
       var visible = matching.filter(function (paper) { return !state.tag || paper.tags.indexOf(state.tag) >= 0; });
       tagList.replaceChildren();
       tagList.appendChild(filterButton('', t('all'), matching.length));
-      tags.forEach(function (tag) {
+      tags.slice().sort(function (a, b) {
+        return tagLabel(a).localeCompare(tagLabel(b), language(), { sensitivity: 'base', numeric: true });
+      }).forEach(function (tag) {
         var count = matching.filter(function (paper) { return paper.tags.indexOf(tag) >= 0; }).length;
         tagList.appendChild(filterButton(tag, tagLabel(tag), count));
       });
