@@ -1,6 +1,10 @@
 {
-  "checkedAt": "2026-10-30T23:17:08.914397+00:00",
-  "result": "failed",
+  "checkedAt": "2026-10-31T23:59:20.752517+00:00",
+  "result": "unchanged",
   "notifyChange": false,
-  "error": "HTTP Error 503: Service Unavailable"
+  "changes": [],
+  "checkedFiles": 30,
+  "checkedAnnexes": 15,
+  "secondaryState": "success",
+  "secondaryError": null
 }
