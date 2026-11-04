@@ -220,5 +220,17 @@
     "result": "failed",
     "notifyChange": false,
     "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-11-04T23:19:49.068439+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-11-04T23:21:22.675986+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
   }
 ]
