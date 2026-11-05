@@ -2,6 +2,16 @@
 // { url: 'https://...', title: '기사 제목', summary: '간단한 요약', date: '2026-10-10', publisher: '매체명' }
 const newsItems = [
   {
+    "url": "https://www.etoday.co.kr/news/view/2641746",
+    "title": "재발 기다리지 않고 먼저 치료⋯소아 백혈병 치료 선택지 넓어졌다 [메디컬 줌인]",
+    "titleEn": "Treating before relapse: expanding treatment options for childhood leukemia [Medical Zoom-in]",
+    "summary": "이재민 양산부산대병원 교수 인터뷰. 소아 B세포 급성림프모구백혈병에서 블리나투모맙 공고요법 급여 확대의 의미와 재발 예방, 완치 이후의 삶, MRD 양성 환자의 치료 접근성 개선 과제를 소개합니다.",
+    "summaryEn": "In an interview, Professor Jae Min Lee discusses expanded insurance coverage for blinatumomab consolidation in childhood B-cell acute lymphoblastic leukemia, relapse prevention, life after cure, and remaining access barriers for children with MRD-positive disease.",
+    "date": "2026-10-30",
+    "publisher": "이투데이",
+    "publisherEn": "EToday"
+  },
+  {
     "url": "https://www.newsmp.com/news/articleView.html?idxno=254207",
     "title": "양산부산대병원ㆍ부산의대 연구팀, 국립암센터 CAR-T 개발과제 선정",
     "titleEn": "Pusan National University Yangsan Hospital and School of Medicine team selected for a National Cancer Center CAR-T development project",
