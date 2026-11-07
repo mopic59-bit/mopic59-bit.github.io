@@ -1,6 +1,16 @@
 const publications = [
   {
     "year": 2026,
+    "date": "2026-10-22",
+    "title": "The 2025 KSPNO Guideline for the Diagnosis and Treatment of Medulloblastoma",
+    "authors": "Nalee Kim, Jaeho Cho, Tae-Young Jung, et al. (including Jae Min Lee)",
+    "journal": "Brain Tumor Research and Treatment 14(4), 207–218",
+    "doi": "10.14791/btrt.2026.0027",
+    "publisher": "https://btrt.org/DOIx.php?id=10.14791/btrt.2026.0027",
+    "type": "journal-article"
+  },
+  {
+    "year": 2026,
     "date": "2026-08-13",
     "title": "ImmunoPET-guided, antigen-stratified CAR T-cell therapy for neuroblastoma.",
     "authors": "Chung JH, Lee JM, Hong C",
