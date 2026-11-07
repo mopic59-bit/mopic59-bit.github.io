@@ -1,10 +1,6 @@
 {
-  "checkedAt": "2026-11-06T23:07:53.307611+00:00",
-  "result": "unchanged",
+  "checkedAt": "2026-11-07T23:16:39.472329+00:00",
+  "result": "failed",
   "notifyChange": false,
-  "changes": [],
-  "checkedFiles": 30,
-  "checkedAnnexes": 15,
-  "secondaryState": "success",
-  "secondaryError": null
+  "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
 }

@@ -8,7 +8,7 @@
   },
   "lastSuccessfulCheckAt": "2026-11-06T23:07:53.307611+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-11-06T23:07:53.307611+00:00",
+  "lastAttemptAt": "2026-11-07T23:16:39.472329+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,8 +110,8 @@
       }
     ]
   },
-  "lastError": null,
-  "checkState": "success",
+  "lastError": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+  "checkState": "failed",
   "revisionState": "unchanged",
   "secondary": {
     "checkedAt": "2026-11-06T23:07:53.307611+00:00",
