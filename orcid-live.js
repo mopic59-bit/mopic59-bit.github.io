@@ -9,7 +9,7 @@
   ko: {
    searchLabel: '논문 검색', searchPlaceholder: '논문 제목·저자·학술지 검색', yearLabel: '발행 연도',
    allYears: '모든 연도', undated: '연도 미등록', refresh: '지금 갱신 ↻', refreshing: '갱신 중…',
-   count: 'ORCID 공개 기록 {total}건 중 {shown}건 표시 · 최신 발행일순', source: 'ORCID 기록 ↗',
+   count: '논문 {total}건 중 {shown}건 표시 · 최신 발행일순', source: 'ORCID 기록 ↗',
    sourceLabel: '{title} ORCID 기록', articleLabel: '{title} 원문 또는 ORCID 기록',
    empty: '검색 조건에 맞는 논문이 없습니다.', stored: '저장된 ORCID 기록',
    storedDate: '저장된 ORCID 기록 · {date}', cached: '마지막 갱신 · {date} (한국시간)', cachedUndated: '이전 ORCID 갱신 기록',
@@ -19,7 +19,7 @@
   en: {
    searchLabel: 'Search publications', searchPlaceholder: 'Search titles, authors, or journals', yearLabel: 'Publication year',
    allYears: 'All years', undated: 'Year not recorded', refresh: 'Refresh now ↻', refreshing: 'Refreshing…',
-   count: 'Showing {shown} of {total} public ORCID records · newest publication first', source: 'ORCID record ↗',
+   count: 'Showing {shown} of {total} publications · newest publication first', source: 'ORCID record ↗',
    sourceLabel: 'ORCID record for {title}', articleLabel: 'Full article or ORCID record for {title}',
    empty: 'No publications match your search.', stored: 'Saved ORCID records',
    storedDate: 'Saved ORCID records · {date}', cached: 'Last update · {date} (Korea time)', cachedUndated: 'Last ORCID update (cached)',
@@ -31,6 +31,11 @@
  function t(key, values = {}) {
   return messages[language()][key].replace(/\{(\w+)\}/g, (_, name) => String(values[name] ?? ''));
  }
+ const publisherPapers = publications.filter(p => p.publisher);
+ function includePublisherPapers(records) {
+  const dois = new Set(records.map(p => (p.doi || '').toLowerCase()));
+  return [...records, ...publisherPapers.filter(p => !dois.has(p.doi.toLowerCase()))];
+ }
  let papers = [...publications], loading = false, lastRefresh = 0;
  const savedDate = status.textContent.match(/\d{4}-\d{2}-\d{2}/)?.[0] || '';
  let syncState = { kind: savedDate ? 'storedDate' : 'stored', date: savedDate };
@@ -38,7 +43,7 @@
  try {
   const cached = JSON.parse(localStorage.getItem(cacheKey));
   if (cached && Array.isArray(cached.papers)) {
-   papers = cached.papers;
+   papers = includePublisherPapers(cached.papers);
    syncState = { kind: 'cached', date: cached.updatedAt || '', iso: cached.updatedAtIso || '' };
   }
  } catch {}
@@ -70,7 +75,7 @@
    const body = document.createElement('div'), title = document.createElement('h3'); title.textContent = p.title; body.append(title);
    if (p.authors) { const authors = document.createElement('p'); authors.textContent = p.authors; body.append(authors); }
    const journal = document.createElement('p'); journal.textContent = [p.journal, p.date].filter(Boolean).join(' · '); body.append(journal);
-   const source = document.createElement('a'); source.href = `https://orcid.org/${ORCID}`; source.textContent = t('source'); source.target = '_blank'; source.rel = 'noopener noreferrer'; source.style.fontSize = '12px'; source.setAttribute('aria-label', t('sourceLabel', { title: p.title })); body.append(source);
+   const source = document.createElement('a'); source.href = p.publisher || `https://orcid.org/${ORCID}`; source.textContent = p.publisher ? (language() === 'en' ? 'Publisher ↗' : '학술지 원문 ↗') : t('source'); source.target = '_blank'; source.rel = 'noopener noreferrer'; source.style.fontSize = '12px'; source.setAttribute('aria-label', t(p.publisher ? 'articleLabel' : 'sourceLabel', { title: p.title })); body.append(source);
    const link = document.createElement('a'); link.className = 'doi'; link.href = p.doi ? `https://doi.org/${encodeURI(p.doi)}` : `https://orcid.org/${ORCID}`; link.textContent = p.doi ? 'DOI ↗' : 'ORCID ↗'; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', t('articleLabel', { title: p.title }));
    row.append(date, body, link); container.append(row);
   }
@@ -118,7 +123,7 @@
      }
     } catch {}
    }
-   papers = next; lastRefresh = Date.now();
+   papers = includePublisherPapers(next); lastRefresh = Date.now();
    const updatedAtIso = new Date().toISOString();
    const updatedAt = new Date(updatedAtIso).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', hour12: false });
    syncState = { kind: 'success', iso: updatedAtIso, date: updatedAt };
