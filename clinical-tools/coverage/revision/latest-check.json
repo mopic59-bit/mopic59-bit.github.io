@@ -1,26 +1,56 @@
 {
-  "checkedAt": "2026-11-08T23:17:16.602412+00:00",
-  "result": "partial",
+  "checkedAt": "2026-11-09T23:11:06.524386+00:00",
+  "result": "unchanged",
   "notifyChange": false,
   "changes": [],
   "checkedFiles": 30,
   "checkedAnnexes": 15,
   "secondaryState": "success",
   "secondaryError": null,
-  "primaryResult": "unchanged",
   "hira": {
-    "state": "partial",
-    "attemptedAt": "2026-11-08T23:17:16.602412+00:00",
-    "summary": "심평원 공식 게시물 접근 실패(HTTP 503 Service Unavailable; 웹 열기 TimeoutError). 검색 색인의 기존 제2026-162호만 교차확인했으며 최신 공식 검색·전체 출처 변경 없음은 확정하지 않았습니다.",
+    "state": "success",
+    "attemptedAt": "2026-11-09T23:13:02.910834+00:00",
+    "checkedAt": "2026-11-09T23:13:02.911794+00:00",
+    "summary": "심평원 공식 통합검색에서 고시명 및 산정특례 질의응답을 제목·날짜순으로 확인했습니다. 고시명 검색의 제도·정책과 뉴스·알림 최신 결과는 기존 제2026-162호이며 해당 공식 게시물도 직접 확인했습니다. 지정 검색 범위에서 새 변경을 발견하지 않았으며 전수 검색을 의미하지 않습니다.",
     "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
     "searchQueries": [
-      "site:hira.or.kr \"본인일부부담금 산정특례에 관한 기준\"",
-      "site:hira.or.kr \"산정특례\" \"2026\" \"질의응답\""
+      "본인일부부담금 산정특례에 관한 기준",
+      "산정특례 질의응답"
     ],
     "indexedNotice": "2026-162",
-    "directFetchError": "HTTP Error 503: Service Unavailable",
-    "webOpenError": "TimeoutError",
-    "comprehensiveSearchConfirmed": false
+    "officialSearchConfirmed": true,
+    "comprehensiveSearchConfirmed": false,
+    "searches": [
+      {
+        "query": "본인일부부담금 산정특례에 관한 기준",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+        "checkedAt": "2026-11-09T23:13:02.910834+00:00",
+        "httpStatus": 200,
+        "sort": "date_descending",
+        "searchField": "title",
+        "resultCount": 74,
+        "sha256": "2b997400d13c90c183dbe25af482efb704ede4c56a33063eb636266e95bda79e"
+      },
+      {
+        "query": "산정특례 질의응답",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
+        "checkedAt": "2026-11-09T23:13:02.911794+00:00",
+        "httpStatus": 200,
+        "sort": "date_descending",
+        "searchField": "title",
+        "resultCount": 14,
+        "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7"
+      }
+    ],
+    "noticeEvidence": {
+      "notice": "2026-162",
+      "issuedDate": "2026-07-30",
+      "effectiveDate": "2026-07-31",
+      "postedDate": "2026-07-31",
+      "httpStatus": 200,
+      "sha256": "e718530d756c3ad5790f81b18eb8de2578c8d4d8e195e2cad4847e0815425993"
+    },
+    "auxiliaryWebOpenError": "Timeout fetching; direct official HTTP requests succeeded"
   },
-  "partialError": "심평원 공식 게시물 접근 실패(HTTP 503 Service Unavailable; 웹 열기 TimeoutError). 검색 색인의 기존 제2026-162호만 교차확인했으며 최신 공식 검색·전체 출처 변경 없음은 확정하지 않았습니다."
+  "primaryResult": "unchanged"
 }
