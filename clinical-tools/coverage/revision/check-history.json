@@ -425,5 +425,344 @@
       ],
       "summary": "현행 고시 메타데이터와 확보한 원본 24개 해시는 기존 기준과 같습니다. HTTP 503으로 전체 30개 원본 비교를 완료하지 못했으므로 변경 없음으로 확정하지 않습니다."
     }
+  },
+  {
+    "checkedAt": "2026-11-11T23:34:46.358015+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-11-11T23:36:06.111950+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable",
+    "hira": {
+      "state": "partial",
+      "attemptedAt": "2026-11-11T23:35:18.651443+00:00",
+      "checkedAt": "2026-11-11T23:37:43.439404+00:00",
+      "summary": "심평원 공식 제목·날짜순 검색과 제2026-162호 게시물에 접근했습니다. 고시명 통합검색은 총 2건 표시와 뉴스·알림 30건 표시가 불일치하고, 범주별 검색도 최신 결과가 일관되지 않아 검색 범위 전체의 변경 없음은 확정하지 않았습니다. 질의응답 검색 14건과 확인된 기존 고시는 새 변경이 없으나, 이번 심평원 확인은 일부 확인으로 기록합니다.",
+      "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
+      "searchQueries": [
+        "본인일부부담금 산정특례에 관한 기준",
+        "산정특례 질의응답"
+      ],
+      "indexedNotice": "2026-162",
+      "officialSearchConfirmed": true,
+      "latestSearchCoverageConfirmed": false,
+      "comprehensiveSearchConfirmed": false,
+      "searches": [
+        {
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+          "attemptedAt": "2026-11-11T23:35:18.651443+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-11T23:35:26.731041+00:00",
+          "sha256": "a554c7d73e71406e0d0359447e6e6413679d6f90023d89c4acff9bab2d4ea9eb",
+          "query": "본인일부부담금 산정특례에 관한 기준",
+          "sort": "date_descending",
+          "searchField": "title",
+          "resultCount": 2
+        },
+        {
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
+          "attemptedAt": "2026-11-11T23:35:18.652703+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-11T23:35:25.371703+00:00",
+          "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7",
+          "query": "산정특례 질의응답",
+          "sort": "date_descending",
+          "searchField": "title",
+          "resultCount": 14
+        }
+      ],
+      "categorySearches": [
+        {
+          "collection": "payinfo",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
+          "attemptedAt": "2026-11-11T23:36:28.413131+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-11T23:36:36.581687+00:00",
+          "sha256": "e2b0eef0984b0cade1bc9b464dc9d0ec00bbd59f44edd5173aaf733dc45709cf"
+        },
+        {
+          "collection": "news",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
+          "attemptedAt": "2026-11-11T23:36:28.414007+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-11T23:36:36.489791+00:00",
+          "sha256": "24c687516559b0f9ab826eb2083be1529818497891f55c5f546c8fcd61ce439b"
+        }
+      ],
+      "recheck": {
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+        "attemptedAt": "2026-11-11T23:37:36.842324+00:00",
+        "httpStatus": 200,
+        "checkedAt": "2026-11-11T23:37:43.439404+00:00",
+        "sha256": "a554c7d73e71406e0d0359447e6e6413679d6f90023d89c4acff9bab2d4ea9eb"
+      },
+      "validationErrors": [
+        "고시명 통합검색 총 2건·뉴스/알림 탭 2건과 본문 뉴스/알림 30건 및 실제 표시 3건이 불일치합니다.",
+        "뉴스/알림 범주 조회는 2022년·2015년 결과만 반환하여 통합검색의 2026년 결과와 일관되지 않습니다."
+      ],
+      "noticeEvidence": {
+        "notice": "2026-162",
+        "issuedDate": "2026-07-30",
+        "effectiveDate": "2026-07-31",
+        "postedDate": "2026-07-31",
+        "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
+        "attemptedAt": "2026-11-11T23:35:18.654531+00:00",
+        "httpStatus": 200,
+        "checkedAt": "2026-11-11T23:35:25.492834+00:00",
+        "sha256": "bd31f0d5b28b13af42972b2a9889c10419b50bd42b0ced4a56020a194e486b4c"
+      }
+    },
+    "secondaryState": "success",
+    "secondaryCheckedAt": "2026-11-11T23:36:57.201097+00:00",
+    "secondaryChanges": [],
+    "secondarySourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80",
+    "primaryEvidence": {
+      "metadataState": "success",
+      "metadataFetchedAt": "2026-11-11T23:36:17.733597+00:00",
+      "id": "2100000283320",
+      "notice": "2026-162",
+      "issuedDate": "2026-07-30",
+      "effectiveDate": "2026-07-31",
+      "sourceUrl": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000283320",
+      "discoveryUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
+      "attachmentsState": "incomplete",
+      "matchingFiles": 28,
+      "expectedFiles": 30,
+      "checkedAnnexes": 15,
+      "unverifiedFileKeys": [
+        "0003-00-200207-hanFlSeq",
+        "0003-00-200207-pdfFlSeq"
+      ],
+      "unverifiedFiles": [
+        {
+          "key": "0003-00-200207-hanFlSeq",
+          "annex": "[별첨 3] 본인부담금 산정특례 중증화상의 상병명 및 수술명",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660579"
+        },
+        {
+          "key": "0003-00-200207-pdfFlSeq",
+          "annex": "[별첨 3] 본인부담금 산정특례 중증화상의 상병명 및 수술명",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660585"
+        }
+      ],
+      "comparisonWindowStartedAt": "2026-11-11T23:34:46.358015+00:00",
+      "scriptAttempts": [
+        "2026-11-11T23:34:46.358015+00:00",
+        "2026-11-11T23:36:06.111950+00:00"
+      ],
+      "verifiedFiles": [
+        {
+          "key": "0001-00-200201-hanFlSeq",
+          "sha256": "4b916940c65042d41cf7e47c6355387cfaf70c5a18e884f3ceea12df6aef04f3",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660407",
+          "fetchedAt": "2026-11-11T23:36:27.414730+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-00-200201-pdfFlSeq",
+          "sha256": "44316a0ecffb13bd1277fe668b4ea874dd2d8b7c33f11a256202b10cae425e03",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660411",
+          "fetchedAt": "2026-11-11T23:36:32.639952+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-00-200203-hanFlSeq",
+          "sha256": "7b7787400f4259adf0cea03523bdaacf9bef9b7ad7c5ed42f7ab81b9b44dbb1b",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660523",
+          "fetchedAt": "2026-11-11T23:36:49.631568+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-00-200203-pdfFlSeq",
+          "sha256": "98817a39aeab2195e6acf2c10dbd7f1805ad965565555c81fd5da7e6609cf2a1",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660529",
+          "fetchedAt": "2026-11-11T23:36:54.997303+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-00-200207-hanFlSeq",
+          "sha256": "b816760a61ef3f118328c91322b30cedacdec719f00b9e4b8f2bccc9f3ef4fe8",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660563",
+          "fetchedAt": "2026-11-11T23:37:01.160178+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-00-200207-pdfFlSeq",
+          "sha256": "e425077840acc4d3b6d42a24356b0cb82c4f920e264e5e4d3813345783ddf028",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660567",
+          "fetchedAt": "2026-11-11T23:37:07.857038+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-02-200203-hanFlSeq",
+          "sha256": "76aafc1771fd2f60993a7c40d907670de4896f92c862e142fbd35b51424602c6",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660531",
+          "fetchedAt": "2026-11-11T23:36:49.472654+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0001-02-200203-pdfFlSeq",
+          "sha256": "d67553a9b1bbd5f54a06427bc03886eebfd2c1cfb1805207d0e19d2f5a3cde54",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660537",
+          "fetchedAt": "2026-11-11T23:35:32.274536+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0002-00-200201-hanFlSeq",
+          "sha256": "f009f87cba1d44ed6d6d79d2f453675696e7fb29a126c0ab9366623451c80adb",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660413",
+          "fetchedAt": "2026-11-11T23:36:27.414425+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0002-00-200201-pdfFlSeq",
+          "sha256": "b59a1b953d57c591e983197bbffb2eaac6a672cf13fba045872cbbe517b18c3c",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660417",
+          "fetchedAt": "2026-11-11T23:36:32.778062+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0002-00-200203-hanFlSeq",
+          "sha256": "e60bce8f8d0b5d044914d60c5de8dde765f8fd04d228244fd866c787c7da6dc1",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660539",
+          "fetchedAt": "2026-11-11T23:36:49.469361+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0002-00-200203-pdfFlSeq",
+          "sha256": "0e7d333e6824bd2564885e883d4742c640207508902c12aee0c817c2b39ded6e",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660545",
+          "fetchedAt": "2026-11-11T23:36:55.026488+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0002-00-200207-hanFlSeq",
+          "sha256": "2bdd1c944eb6cae5a24e9d20bec61c916c90d23acf18b9f2d663f3dc1cf46b7a",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660569",
+          "fetchedAt": "2026-11-11T23:37:01.160178+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0002-00-200207-pdfFlSeq",
+          "sha256": "981f2c78367955071e5cfa51575a753dded007de1ca8e87ca10db478966a4937",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660577",
+          "fetchedAt": "2026-11-11T23:37:07.647406+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0003-00-200201-hanFlSeq",
+          "sha256": "c5630916dc12f13358f3887049cb7236c9c15dbef5dedb16a59408f106eecf4b",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660419",
+          "fetchedAt": "2026-11-11T23:36:27.415058+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0003-00-200201-pdfFlSeq",
+          "sha256": "473fde2d3d360969507877541f2b77d16f786e847965ad72e59247cf184e7c9c",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660423",
+          "fetchedAt": "2026-11-11T23:36:31.764794+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0003-00-200203-hanFlSeq",
+          "sha256": "daad73c26bd98c852e35ceffc37248c816f49c5b054146db0acfadc7e00d05ec",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660547",
+          "fetchedAt": "2026-11-11T23:35:39.187314+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0003-00-200203-pdfFlSeq",
+          "sha256": "cf59fc0cd5bfe14fa0e2103a8f9e16e1ea7e7c453a99c35d709e657b05ceaf79",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660553",
+          "fetchedAt": "2026-11-11T23:35:42.439605+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0003-02-200203-hanFlSeq",
+          "sha256": "0714e463ad62aea9fb0d268c66c07bf79ac87b54db727ed1501308d6c32ab0e4",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660555",
+          "fetchedAt": "2026-11-11T23:37:01.187704+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0003-02-200203-pdfFlSeq",
+          "sha256": "d544f9bb3ac5c1cc4751a72725e1a8c517a22be73707a21b455a3da68589cb0c",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660561",
+          "fetchedAt": "2026-11-11T23:37:07.795309+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0004-00-200201-hanFlSeq",
+          "sha256": "2f43dcfcb9f4dd80445fe09e09806213a31573ae1af33a25fcd06e5ca7b01537",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660425",
+          "fetchedAt": "2026-11-11T23:36:27.565139+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0004-00-200201-pdfFlSeq",
+          "sha256": "c4ebbb28d8d1a61862b74cb3715ef6e6c880860cd72d46f2e41a864c2866ec82",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660475",
+          "fetchedAt": "2026-11-11T23:36:42.733275+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0004-02-200201-hanFlSeq",
+          "sha256": "b0236493aa063e1987be5c9059841df298e2bb22f8412b09f8aa5677218ea6b1",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660477",
+          "fetchedAt": "2026-11-11T23:36:38.907667+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0004-02-200201-pdfFlSeq",
+          "sha256": "64d83bcd62ad9a899a84e52a5d42c595a2f3b44d0121d83a4ddb3fecd775ad0b",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660495",
+          "fetchedAt": "2026-11-11T23:36:47.697540+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0005-00-200201-hanFlSeq",
+          "sha256": "95d0d225954e516dfa630b2f44adc6c195c259f1cb4109aec657e52267738a1b",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660497",
+          "fetchedAt": "2026-11-11T23:36:38.713132+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0005-00-200201-pdfFlSeq",
+          "sha256": "09b91d7e7078799a7b9caca63054bedc7bcdd18992b8f0778d29ec2234097793",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660501",
+          "fetchedAt": "2026-11-11T23:36:42.238855+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0006-00-200201-hanFlSeq",
+          "sha256": "8d36b240e90f92912d1b31ed32861b168edef57bd6b7f14d7dac435f467fd71a",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660503",
+          "fetchedAt": "2026-11-11T23:36:38.741303+00:00",
+          "matchesApplied": true
+        },
+        {
+          "key": "0006-00-200201-pdfFlSeq",
+          "sha256": "1bf005642ea4503402c1406cee52d6bd1914f5dc20dc94a55f17136194372468",
+          "sourceUrl": "https://www.law.go.kr/LSW/flDownload.do?flSeq=167660521",
+          "fetchedAt": "2026-11-11T23:36:43.533595+00:00",
+          "matchesApplied": true
+        }
+      ],
+      "detectedChanges": [],
+      "summary": "두 차례 공식 확인 시도에서 현행 고시 메타데이터와 현행 원본 식별자·해시 28개는 기존 기준과 같습니다. HTTP 503으로 별첨 3의 원본 목록 및 HWP·PDF 비교를 완료하지 못하여 전체 변경 여부를 확정하지 않습니다.",
+      "currentFileIdsVerified": 28,
+      "unverifiedAnnexContents": [
+        {
+          "bylSeq": "3277729",
+          "title": "[별첨 3] 본인부담금 산정특례 중증화상의 상병명 및 수술명",
+          "sourceUrl": "https://www.law.go.kr/LSW/admRulBylContentsInfoR.do?bylSeq=3277729&bylNo=0003&bylBrNo=00&bylClsCd=200207&admRulId=36368"
+        }
+      ]
+    },
+    "partialError": "국가법령정보센터 원본 확인 절차 실패: HTTP 503 Service Unavailable. 두 차례 시도에서 전체 30개 중 28개 원본 해시를 확인했으나 별첨 3의 원본 목록 및 HWP·PDF는 미확인입니다. 심평원 검색 결과 건수·범주 응답도 불일치하여 일부 확인으로 기록합니다."
   }
 ]
