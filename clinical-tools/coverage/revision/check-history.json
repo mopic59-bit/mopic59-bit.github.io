@@ -1053,5 +1053,73 @@
       "unverifiedFiles": []
     },
     "secondaryNoticeCount": 10
+  },
+  {
+    "checkedAt": "2026-11-13T23:35:56.116807+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "국가법령정보센터 시스템 점검(11월 13일 21:00~11월 14일 21:00, 한국시간) 안내 페이지로 현행 판본 식별 및 별표·서식 원본 해시 비교 불가. 심평원 제도·정책 범주 결과도 불완전.",
+    "primaryEvidence": {
+      "state": "failed",
+      "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
+      "checkedAt": "2026-11-13T23:35:56.116807+00:00",
+      "responseTitle": "시스템 점검",
+      "maintenanceWindow": "2026-11-13T21:00:00+09:00/2026-11-14T21:00:00+09:00",
+      "sha256": "85cc9873ab3139418c3d42ef90ed00229663137fd49e895e8fd6424726b018e0",
+      "checkedFiles": 0,
+      "checkedAnnexes": 0
+    },
+    "secondaryState": "success",
+    "secondaryNoticeCount": 10,
+    "secondaryChanges": [],
+    "hira": {
+      "state": "partial",
+      "checkedAt": "2026-11-13T23:36:21.433754+00:00",
+      "summary": "공식 고시명 제목 검색 74건 및 질의응답 제목 검색을 확인했습니다. 뉴스·알림 최신 결과는 제2026-162호이나 제도·정책 집계 41건에 비해 범주 상세는 0건으로 표시되어 최신 범위 교차확인을 완료하지 못했습니다. 전수 확인 아님.",
+      "officialSearchConfirmed": true,
+      "latestSearchCoverageConfirmed": false,
+      "comprehensiveSearchConfirmed": false,
+      "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+      "indexedNotice": "2026-162",
+      "searches": [
+        {
+          "name": "hira-title",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+          "attemptedAt": "2026-11-13T23:36:11.556448+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-13T23:36:17.198521+00:00",
+          "sha256": "2b997400d13c90c183dbe25af482efb704ede4c56a33063eb636266e95bda79e"
+        },
+        {
+          "name": "hira-qa",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
+          "attemptedAt": "2026-11-13T23:36:11.557395+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-13T23:36:17.118533+00:00",
+          "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7"
+        }
+      ],
+      "categorySearches": [
+        {
+          "collection": "payinfo",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
+          "attemptedAt": "2026-11-13T23:36:17.283385+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-13T23:36:21.194179+00:00",
+          "sha256": "95ce2570c0a7771d2cfdddc589a044c3721397f4ce70dc1de22ef3fe0c11a13a"
+        },
+        {
+          "collection": "news",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
+          "attemptedAt": "2026-11-13T23:36:17.284377+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-13T23:36:21.433754+00:00",
+          "sha256": "b25274bc2fe84daa84475b8c9714c84e6c2564d61daeda4686fb2a37139f5978"
+        }
+      ],
+      "validationErrors": [
+        "제도·정책 집계 41건과 상세 0건 불일치"
+      ]
+    }
   }
 ]
