@@ -4636,6 +4636,23 @@ window.researchLibrary = {
     }
   ],
   "news": [
+    {
+      "id": "mohw-rare-disease-fast-listing-20261106",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788196",
+      "sourceUrl": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788196",
+      "sourceDocumentUrl": "https://www.korea.kr/common/download.do?fileId=198586281&tblKey=GMN",
+      "title": "희귀질환 치료 위한 신속 등재 대상 약제 5종 선정",
+      "titleEn": "Five rare-disease medicines selected for Korea’s expedited reimbursement-listing pilot",
+      "date": "2026-11-06",
+      "publisher": "보건복지부 · 대한민국 정책브리핑",
+      "publisherEn": "Ministry of Health and Welfare · Korea Policy Briefing",
+      "summary": "보건복지부가 희귀질환치료제 신속등재 시범사업 대상으로 스페비고주, 아감리현탁액, 조엔자정, 칼소디주, 아이커보정 5종을 선정했습니다. 활성화된 PI3K 델타증후군(APDS) 치료제 조엔자정이 포함됩니다. 사전 비용효과성 평가를 등재 후 임상 성과에 따른 사후평가로 전환하며, 선정 약제는 계획서 보완 등을 거쳐 늦어도 2027년 1월까지 등재 신청을 완료해야 합니다. 이번 발표는 시범사업 대상 선정으로, 건강보험 급여 등재 완료나 적용 시작을 의미하지 않습니다.",
+      "summaryEn": "Korea’s Ministry of Health and Welfare selected Spevigo, Agamree, Joenja, Qalsody and Iqirvo for a pilot that shifts cost-effectiveness assessment from before reimbursement listing to post-listing evaluation of clinical outcomes. Joenja, a treatment for activated PI3K delta syndrome (APDS), is included. After completing requirements such as evaluation-plan revisions, selected products must apply for listing by January 2027 at the latest. Selection for the pilot does not mean reimbursement listing has been completed or coverage has begun.",
+      "addedOn": "2026-11-14",
+      "selectedOn": "2026-11-14",
+      "verification": "official-press-release-and-attached-pdf",
+      "articleType": "Official press release"
+    },
       {
         "id": "report-2026-11-12-n01",
         "reportId": "2026-11-12-N01",
