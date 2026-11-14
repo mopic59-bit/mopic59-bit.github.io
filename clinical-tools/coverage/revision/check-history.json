@@ -1121,5 +1121,195 @@
         "제도·정책 집계 41건과 상세 0건 불일치"
       ]
     }
+  },
+  {
+    "checkedAt": "2026-11-14T23:41:41.297414+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-11-14T23:42:35.548119+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "국가법령정보센터 현행 이름 조회가 두 차례 HTTP 503으로 실패하여 고시 메타데이터·별표·서식 원본 해시를 확인하지 못했습니다. 보건복지부 제목 검색도 두 차례 HTTP 503으로 실패했습니다. 심평원 고시명 검색 집계와 상세 목록이 불일치하여 최신 변경 확인은 미완료입니다.",
+    "primaryEvidence": {
+      "state": "failed",
+      "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
+      "checkedAt": "2026-11-14T23:42:33.267782+00:00",
+      "httpStatus": 503,
+      "error": "HTTP Error 503: Service Unavailable",
+      "responseSummary": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+      "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+      "scriptAttempts": [
+        "2026-11-14T23:41:41.297414+00:00",
+        "2026-11-14T23:42:35.548119+00:00"
+      ],
+      "checkedFiles": 0,
+      "checkedAnnexes": 0,
+      "alternativeAccessChecks": [
+        {
+          "name": "law-apex-name",
+          "sourceUrl": "https://law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
+          "attemptedAt": "2026-11-14T23:45:05.503987+00:00",
+          "httpStatus": 503,
+          "error": "HTTP Error 503: Service Unavailable",
+          "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+          "bytes": 91,
+          "responseTitle": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+          "metadata": {
+            "prmlNo": null,
+            "prmlYd": null,
+            "efYd": null
+          },
+          "finishedAt": "2026-11-14T23:45:15.004423+00:00"
+        },
+        {
+          "name": "law-known-edition",
+          "sourceUrl": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000283320",
+          "attemptedAt": "2026-11-14T23:45:05.505447+00:00",
+          "httpStatus": 503,
+          "error": "HTTP Error 503: Service Unavailable",
+          "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+          "bytes": 91,
+          "responseTitle": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+          "metadata": {
+            "prmlNo": null,
+            "prmlYd": null,
+            "efYd": null
+          },
+          "finishedAt": "2026-11-14T23:45:14.614390+00:00"
+        },
+        {
+          "name": "law-known-annexes",
+          "sourceUrl": "https://www.law.go.kr/LSW/admRulBylInfoR.do?admRulSeq=2100000283320",
+          "attemptedAt": "2026-11-14T23:45:05.506210+00:00",
+          "httpStatus": 503,
+          "error": "HTTP Error 503: Service Unavailable",
+          "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+          "bytes": 91,
+          "responseTitle": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+          "metadata": {
+            "prmlNo": null,
+            "prmlYd": null,
+            "efYd": null
+          },
+          "finishedAt": "2026-11-14T23:45:14.613233+00:00"
+        }
+      ]
+    },
+    "secondaryState": "failed",
+    "secondaryError": "HTTP Error 503: Service Unavailable",
+    "secondary": {
+      "state": "failed",
+      "attemptedAt": "2026-11-14T23:43:00.567147+00:00",
+      "lastSuccessfulCheckAt": "2026-11-13T23:36:35.781334+00:00",
+      "summary": "이번 보건복지부 산정특례 제목 검색은 HTTP 503으로 확인하지 못했습니다. 심평원도 고시명 검색 집계와 실제 목록이 불일치하여 일부만 확인했습니다. 국가법령정보센터 원문·해시 확인까지 실패했으므로 전체 출처의 변경 없음으로 확정하지 않으며 마지막 성공일과 반영 기준을 유지합니다.",
+      "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80",
+      "error": "HTTP Error 503: Service Unavailable",
+      "attempts": [
+        {
+          "attemptedAt": "2026-11-14T23:42:12.998924+00:00",
+          "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80",
+          "state": "failed",
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        {
+          "attemptedAt": "2026-11-14T23:43:00.567147+00:00",
+          "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80",
+          "state": "failed",
+          "error": "HTTP Error 503: Service Unavailable"
+        }
+      ],
+      "existingNoticeAccessCheck": {
+        "name": "mohw-known-notice",
+        "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&act=view&list_no=1491466",
+        "attemptedAt": "2026-11-14T23:45:05.506974+00:00",
+        "httpStatus": 503,
+        "error": "HTTP Error 503: Service Unavailable",
+        "sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+        "bytes": 91,
+        "responseTitle": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+        "metadata": {
+          "prmlNo": null,
+          "prmlYd": null,
+          "efYd": null
+        },
+        "finishedAt": "2026-11-14T23:45:15.412670+00:00"
+      }
+    },
+    "hira": {
+      "state": "partial",
+      "checkedAt": "2026-11-14T23:43:00.562007+00:00",
+      "summary": "심평원 고시명 제목·날짜순 검색은 총 74건(제도·정책 41건, 뉴스·알림 30건)으로 집계되지만 실제 목록과 범주별 상세는 0건입니다. 질의응답 제목 검색 14건과 기존 제2026-162호 게시물은 직접 확인했으나 최신 고시명 검색 범위를 확인하지 못했습니다. 전수 확인이 아니며 변경 없음으로 확정하지 않습니다.",
+      "officialSearchConfirmed": true,
+      "latestSearchCoverageConfirmed": false,
+      "comprehensiveSearchConfirmed": false,
+      "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+      "indexedNotice": "2026-162",
+      "searches": [
+        {
+          "name": "hira-title",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+          "attemptedAt": "2026-11-14T23:41:57.473740+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-14T23:42:04.545735+00:00",
+          "sha256": "beaae58ba754d2369614c50644ab0e99b47d422b7afc8213fa8e9de91d42b2c6",
+          "bytes": 142033,
+          "resultCount": 74,
+          "sort": "date_descending",
+          "searchField": "title"
+        },
+        {
+          "name": "hira-qa",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
+          "attemptedAt": "2026-11-14T23:41:57.474398+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-14T23:42:03.343213+00:00",
+          "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7",
+          "bytes": 154466,
+          "resultCount": 14,
+          "sort": "date_descending",
+          "searchField": "title"
+        }
+      ],
+      "categorySearches": [
+        {
+          "name": "hira-payinfo",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
+          "attemptedAt": "2026-11-14T23:42:54.822829+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-14T23:43:00.466159+00:00",
+          "sha256": "cfc343f33e84a0f20c57a57819b4cec6fd2c44c3856e6775e59898b937cf54ea",
+          "resultCount": 0
+        },
+        {
+          "name": "hira-news",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
+          "attemptedAt": "2026-11-14T23:42:54.823808+00:00",
+          "httpStatus": 200,
+          "checkedAt": "2026-11-14T23:43:00.562007+00:00",
+          "sha256": "d6d5f031320875a0d61fc374b68fc898eea6336c267bf98b815f4c7dc95328ee",
+          "resultCount": 0
+        }
+      ],
+      "noticeEvidence": {
+        "name": "hira-notice",
+        "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
+        "attemptedAt": "2026-11-14T23:41:57.475053+00:00",
+        "httpStatus": 200,
+        "checkedAt": "2026-11-14T23:42:03.347990+00:00",
+        "sha256": "e5a613255c6ef7ae2b7d26e4f9d4fd051f3f63a8b79f34ed04515217d2937e33",
+        "bytes": 174387,
+        "notice": "2026-162",
+        "issuedDate": "2026-07-30",
+        "effectiveDate": "2026-07-31",
+        "postedDate": "2026-07-31"
+      },
+      "validationErrors": [
+        "고시명 검색 총 74건 집계와 실제 결과 목록 0건 불일치",
+        "제도·정책 41건·뉴스·알림 30건 집계와 각 범주 상세 0건 불일치"
+      ]
+    }
   }
 ]
