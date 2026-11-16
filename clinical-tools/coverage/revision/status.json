@@ -8,7 +8,7 @@
   },
   "lastSuccessfulCheckAt": "2026-11-12T23:40:12.671989+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-11-16T01:03:51.500263+00:00",
+  "lastAttemptAt": "2026-11-16T23:49:04.795871+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,210 +110,65 @@
       }
     ]
   },
-  "lastError": "현행 판본 식별 파서는 수정되어 고시·별표/서식 목록 조회를 통과했으나, 원본 수집 중 HTTP 503으로 두 차례 실패했습니다. 이번 마지막 실행에서 원본 21개 해시는 기준과 일치했지만 나머지 9개 확인은 완료되지 않았으며, 이전 캐시로 성공을 대체하지 않습니다.",
+  "lastError": "국가법령정보센터 공식 검사 두 차례 HTTP 503 실패. 복지부 제목 검색도 HTTP 503 실패. 심평원 뉴스/알림 집계 30건과 표시 목록 0건이 불일치하여 일부 확인으로 기록하며 변경 없음으로 판단하지 않습니다.",
   "checkState": "failed",
   "revisionState": "unchanged",
   "secondary": {
-    "attemptedAt": "2026-11-16T01:06:51.318976+00:00",
-    "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80",
-    "state": "success",
-    "pageEvidence": {
-      "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&nPage=1",
-      "sha256": "3562403c8525b2801ef520a055533960b326b6a7c6c7d362a6b73fb18e42635c",
-      "bytes": 120719
-    },
-    "checkedAt": "2026-11-16T01:06:58.222357+00:00",
-    "lastSuccessfulCheckAt": "2026-11-16T01:06:58.222357+00:00",
-    "checkedRows": 10,
-    "changeCount": 0,
-    "summary": "보건복지부 산정특례 제목 검색 10건과 본문 미리보기는 기존 기준과 일치하며 질의응답·지침을 고시 개정과 구분했습니다. 심평원 고시명·질의응답 제목 검색 및 날짜순 제도/정책·뉴스/알림 첫 페이지도 재확인했습니다. 심평원 전수 검색은 아니며, 법령센터 원본 수집 실패로 전체 변경 없음 또는 성공으로 처리하지 않습니다."
+    "state": "failed",
+    "checkedAt": "2026-11-16T23:49:13.797990+00:00",
+    "summary": "보건복지부 제목 검색 HTTP 503",
+    "error": "HTTP Error 503: Service Unavailable"
   },
   "lastPrimaryCheckAt": "2026-11-12T23:40:12.671989+00:00",
   "hira": {
-    "state": "success",
-    "checkedAt": "2026-11-16T01:04:38.206357+00:00",
-    "summary": "심평원 고시명 및 질의응답 제목·날짜순 검색과 고시명 제도·정책/뉴스·알림 범주의 첫 페이지를 확인했습니다. 집계와 실제 목록이 정상 표시되며 최신 고시는 기존 제2026-162호입니다. 해당 공식 게시물도 확인했으며 지정 검색 범위에서 새 변경을 발견하지 않았습니다. 전수 검색은 아닙니다.",
-    "officialSearchConfirmed": true,
-    "latestSearchCoverageConfirmed": true,
+    "state": "partial",
+    "checkedAt": "2026-11-16T23:49:04.795871+00:00",
+    "officialSearchConfirmed": false,
+    "latestSearchCoverageConfirmed": false,
     "comprehensiveSearchConfirmed": false,
-    "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
-    "indexedNotice": "2026-162",
-    "searches": [
+    "summary": "고시명·질의응답 및 범주 검색을 시도했습니다. 제도/정책에는 기존 제2026-162호가 보이지만 뉴스/알림 집계와 목록 불일치로 최신 전체 범위 확인 불가.",
+    "evidence": [
       {
         "name": "hira-title",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
-        "attemptedAt": "2026-11-16T01:04:12.486865+00:00",
+        "checkedAt": "2026-11-16T23:49:04.795737+00:00",
         "httpStatus": 200,
-        "sha256": "2b997400d13c90c183dbe25af482efb704ede4c56a33063eb636266e95bda79e",
-        "bytes": 158846,
-        "finishedAt": "2026-11-16T01:04:38.201167+00:00",
-        "sort": "date_descending",
-        "searchField": "title",
-        "checkedAt": "2026-11-16T01:04:38.201152+00:00",
-        "resultCount": 74,
-        "visibleListsChecked": 2,
-        "visibleRowsChecked": 6,
-        "resultListsMatchEarlierCheck": true,
-        "categoryCounts": {
-          "ALL": 74,
-          "menu": 0,
-          "hospital": 0,
-          "druginfo": 0,
-          "payinfo": 41,
-          "dictionary": 3,
-          "cms": 0,
-          "news": 30,
-          "qna": 0,
-          "webdoc": 0
-        },
-        "state": "success"
+        "bytes": 148344,
+        "sha256": "6bb260f3935f9d6a272127fdac7e93d252996060e954b577168f8720459606dc"
       },
       {
         "name": "hira-qa",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
-        "attemptedAt": "2026-11-16T01:04:12.488280+00:00",
+        "checkedAt": "2026-11-16T23:49:04.796975+00:00",
         "httpStatus": 200,
-        "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7",
         "bytes": 154466,
-        "finishedAt": "2026-11-16T01:04:38.063321+00:00",
-        "sort": "date_descending",
-        "searchField": "title",
-        "checkedAt": "2026-11-16T01:04:38.063303+00:00",
-        "resultCount": 14,
-        "visibleListsChecked": 2,
-        "visibleRowsChecked": 6,
-        "resultListsMatchEarlierCheck": true,
-        "categoryCounts": {
-          "ALL": 14,
-          "menu": 0,
-          "hospital": 0,
-          "druginfo": 0,
-          "payinfo": 9,
-          "dictionary": 0,
-          "cms": 0,
-          "news": 5,
-          "qna": 0,
-          "webdoc": 0
-        },
-        "state": "success"
-      }
-    ],
-    "categorySearches": [
+        "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7"
+      },
       {
         "name": "hira-payinfo",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
-        "attemptedAt": "2026-11-16T01:04:12.489064+00:00",
+        "checkedAt": "2026-11-16T23:49:04.797807+00:00",
         "httpStatus": 200,
-        "sha256": "e2b0eef0984b0cade1bc9b464dc9d0ec00bbd59f44edd5173aaf733dc45709cf",
-        "bytes": 162258,
-        "finishedAt": "2026-11-16T01:04:37.251814+00:00",
-        "sort": "date_descending",
-        "searchField": "title",
-        "checkedAt": "2026-11-16T01:04:37.251794+00:00",
-        "categoryResultCount": 41,
-        "visibleListsChecked": 1,
-        "visibleRowsChecked": 10,
-        "resultListsMatchEarlierCheck": true,
-        "categoryCounts": {
-          "ALL": 74,
-          "menu": 0,
-          "hospital": 0,
-          "druginfo": 0,
-          "payinfo": 41,
-          "dictionary": 3,
-          "cms": 0,
-          "news": 30,
-          "qna": 0,
-          "webdoc": 0
-        },
-        "state": "success"
+        "bytes": 164708,
+        "sha256": "2ed3139cc222eda887f5e52a5ff643f53653a3f921eb9b508fdbe259586a8248"
       },
       {
         "name": "hira-news",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
-        "attemptedAt": "2026-11-16T01:04:12.489694+00:00",
+        "checkedAt": "2026-11-16T23:49:04.798444+00:00",
         "httpStatus": 200,
-        "sha256": "b25274bc2fe84daa84475b8c9714c84e6c2564d61daeda4686fb2a37139f5978",
-        "bytes": 163525,
-        "finishedAt": "2026-11-16T01:04:37.188488+00:00",
-        "sort": "date_descending",
-        "searchField": "title",
-        "checkedAt": "2026-11-16T01:04:37.188468+00:00",
-        "categoryResultCount": 30,
-        "visibleListsChecked": 1,
-        "visibleRowsChecked": 10,
-        "resultListsMatchEarlierCheck": true,
-        "categoryCounts": {
-          "ALL": 74,
-          "menu": 0,
-          "hospital": 0,
-          "druginfo": 0,
-          "payinfo": 41,
-          "dictionary": 3,
-          "cms": 0,
-          "news": 30,
-          "qna": 0,
-          "webdoc": 0
-        },
-        "state": "success"
+        "bytes": 141677,
+        "sha256": "13afb447579680e2ccf2894e63495a04e194d7206bdd61dbac36e48801ac31c3"
+      },
+      {
+        "name": "hira-notice",
+        "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
+        "checkedAt": "2026-11-16T23:49:04.799329+00:00",
+        "httpStatus": 200,
+        "bytes": 174387,
+        "sha256": "3e06e38126f79efaf62e1e1dcd3695a5f1e0e0831b4da5a5cf0ce146680ede7b"
       }
-    ],
-    "noticeEvidence": {
-      "name": "hira-notice",
-      "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
-      "attemptedAt": "2026-11-16T01:04:12.490724+00:00",
-      "httpStatus": 200,
-      "sha256": "3920b9cd1dc0db38cb3b8856cbd08f2cc99c39cc6748dd9c9634f36d8a16a484",
-      "bytes": 174387,
-      "finishedAt": "2026-11-16T01:04:37.057801+00:00",
-      "notice": "2026-162",
-      "issuedDate": "2026-07-30",
-      "effectiveDate": "2026-07-31",
-      "postedDate": "2026-07-31",
-      "checkedAt": "2026-11-16T01:04:37.057782+00:00",
-      "state": "success"
-    },
-    "priorAttempt": {
-      "state": "partial",
-      "checkedAt": "2026-11-16T01:02:39.556517+00:00",
-      "searches": [
-        {
-          "name": "hira-title",
-          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
-          "httpStatus": 200,
-          "sha256": "ec48cbb3168b3b87f0317b9a4facb59f199ce459aa0f46a8d6e7493cffe39fd0",
-          "checkedAt": "2026-11-16T01:02:39.261964+00:00",
-          "state": "failed",
-          "error": "No visible result lists"
-        },
-        {
-          "name": "hira-qa",
-          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
-          "httpStatus": 200,
-          "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7",
-          "checkedAt": "2026-11-16T01:02:39.552291+00:00",
-          "state": "success"
-        },
-        {
-          "name": "hira-payinfo",
-          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
-          "httpStatus": 200,
-          "sha256": "cfc343f33e84a0f20c57a57819b4cec6fd2c44c3856e6775e59898b937cf54ea",
-          "checkedAt": "2026-11-16T01:02:38.316626+00:00",
-          "state": "failed",
-          "error": "No visible result lists"
-        },
-        {
-          "name": "hira-news",
-          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
-          "httpStatus": 200,
-          "sha256": "d6d5f031320875a0d61fc374b68fc898eea6336c267bf98b815f4c7dc95328ee",
-          "checkedAt": "2026-11-16T01:02:39.283660+00:00",
-          "state": "failed",
-          "error": "No visible result lists"
-        }
-      ]
-    }
+    ]
   },
   "primaryAttemptEvidence": {
     "state": "failed",
