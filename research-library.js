@@ -339,7 +339,7 @@ window.researchLibrary = {
     {
       "id": "pmid-43037666",
       "reportId": "2026-11-17-P08",
-      "title": "Zellulärer Ursprung des DICER1-Sarkoms: Universale Fibroblasten als Ursprungszellen",
+      "title": "Zellulärer Ursprung des DICER1-Sarkoms: Universelle Fibroblasten als Ursprungszelle",
       "titleEn": "Cellular origin of DICER1 sarcoma: Universal fibroblasts as the cell of origin",
       "journal": "Die Pathologie",
       "journalEn": "Die Pathologie",
