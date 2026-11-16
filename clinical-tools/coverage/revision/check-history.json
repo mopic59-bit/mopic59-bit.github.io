@@ -2588,5 +2588,76 @@
       "liveDynamicEditionIdentified": true,
       "officialFullCheckSucceeded": false
     }
+  },
+  {
+    "checkedAt": "2026-11-16T23:48:09.943078+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "HTTP Error 503: Service Unavailable"
+  },
+  {
+    "checkedAt": "2026-11-16T23:49:04.795871+00:00",
+    "result": "failed",
+    "notifyChange": false,
+    "error": "국가법령정보센터 공식 검사 두 차례 HTTP 503 실패. 복지부 제목 검색도 HTTP 503 실패. 심평원 뉴스/알림 집계 30건과 표시 목록 0건이 불일치하여 일부 확인으로 기록하며 변경 없음으로 판단하지 않습니다.",
+    "checkerError": "HTTP Error 503: Service Unavailable",
+    "secondaryEvidence": {
+      "checkedAt": "2026-11-16T23:49:13.797990+00:00",
+      "state": "failed",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    "hiraEvidence": {
+      "state": "partial",
+      "checkedAt": "2026-11-16T23:49:04.795871+00:00",
+      "officialSearchConfirmed": false,
+      "latestSearchCoverageConfirmed": false,
+      "comprehensiveSearchConfirmed": false,
+      "summary": "고시명·질의응답 및 범주 검색을 시도했습니다. 제도/정책에는 기존 제2026-162호가 보이지만 뉴스/알림 집계와 목록 불일치로 최신 전체 범위 확인 불가.",
+      "evidence": [
+        {
+          "name": "hira-title",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
+          "checkedAt": "2026-11-16T23:49:04.795737+00:00",
+          "httpStatus": 200,
+          "bytes": 148344,
+          "sha256": "6bb260f3935f9d6a272127fdac7e93d252996060e954b577168f8720459606dc"
+        },
+        {
+          "name": "hira-qa",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
+          "checkedAt": "2026-11-16T23:49:04.796975+00:00",
+          "httpStatus": 200,
+          "bytes": 154466,
+          "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7"
+        },
+        {
+          "name": "hira-payinfo",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
+          "checkedAt": "2026-11-16T23:49:04.797807+00:00",
+          "httpStatus": 200,
+          "bytes": 164708,
+          "sha256": "2ed3139cc222eda887f5e52a5ff643f53653a3f921eb9b508fdbe259586a8248"
+        },
+        {
+          "name": "hira-news",
+          "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
+          "checkedAt": "2026-11-16T23:49:04.798444+00:00",
+          "httpStatus": 200,
+          "bytes": 141677,
+          "sha256": "13afb447579680e2ccf2894e63495a04e194d7206bdd61dbac36e48801ac31c3"
+        },
+        {
+          "name": "hira-notice",
+          "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
+          "checkedAt": "2026-11-16T23:49:04.799329+00:00",
+          "httpStatus": 200,
+          "bytes": 174387,
+          "sha256": "3e06e38126f79efaf62e1e1dcd3695a5f1e0e0831b4da5a5cf0ce146680ede7b"
+        }
+      ]
+    },
+    "checkedFiles": 0,
+    "primaryCheckComplete": false,
+    "changesConfirmed": false
   }
 ]
