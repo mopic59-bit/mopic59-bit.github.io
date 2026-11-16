@@ -29,10 +29,15 @@ class Fetcher:
    if e.code==304 and f.exists(): return f.read_bytes()
    raise
  def text(self,u): return self.get(u).decode('utf-8')
-def observe(fetch,archive):
- entry=fetch.text(CURRENT); match=re.search(r'admRulSeq=(\d+)',entry)
+def current_edition(entry):
+ # The current-name page now embeds its edition in a JS param object.
+ # Prefer that current-page value over any links to historical editions.
+ param=re.search(r'\b(?:var|let|const)\s+param\s*=\s*\{(.*?)\}\s*;',entry,re.S)
+ match=re.search(r'''(?:^|,)\s*["']?admRulSeq["']?\s*:\s*["'](\d+)["']''',param[1]) if param else re.search(r'admRulSeq=(\d+)',entry)
  if not match: raise ValueError('현행 법령 이름 조회에서 판본 식별 실패')
- seq=match[1]; url=BASE+'admRulInfoP.do?admRulSeq='+seq; page=fetch.text(url)
+ return match[1]
+def observe(fetch,archive):
+ seq=current_edition(fetch.text(CURRENT)); url=BASE+'admRulInfoP.do?admRulSeq='+seq; page=fetch.text(url)
  def prop(k):
   m=re.search(r'\b'+k+r':\s*"([^"]+)"',page)
   if not m: raise ValueError('공식 고시 메타데이터 누락: '+k)
