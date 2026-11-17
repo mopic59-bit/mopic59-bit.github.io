@@ -8,7 +8,7 @@
   },
   "lastSuccessfulCheckAt": "2026-11-12T23:40:12.671989+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-11-16T23:49:04.795871+00:00",
+  "lastAttemptAt": "2026-11-17T23:46:47.655699+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,7 +110,7 @@
       }
     ]
   },
-  "lastError": "국가법령정보센터 공식 검사 두 차례 HTTP 503 실패. 복지부 제목 검색도 HTTP 503 실패. 심평원 뉴스/알림 집계 30건과 표시 목록 0건이 불일치하여 일부 확인으로 기록하며 변경 없음으로 판단하지 않습니다.",
+  "lastError": "국가법령정보센터 이름 기반 현행 조회 및 공식 검사 두 차례 HTTP 503 실패. 복지부 제목 검색도 HTTP 503 실패. 심평원 검색 집계 74건과 표시 목록 0건이 불일치하여 일부 확인으로 기록하며 변경 없음으로 판단하지 않습니다.",
   "checkState": "failed",
   "revisionState": "unchanged",
   "secondary": {
@@ -122,24 +122,24 @@
   "lastPrimaryCheckAt": "2026-11-12T23:40:12.671989+00:00",
   "hira": {
     "state": "partial",
-    "checkedAt": "2026-11-16T23:49:04.795871+00:00",
+    "checkedAt": "2026-11-17T23:46:47.655699+00:00",
     "officialSearchConfirmed": false,
     "latestSearchCoverageConfirmed": false,
     "comprehensiveSearchConfirmed": false,
-    "summary": "고시명·질의응답 및 범주 검색을 시도했습니다. 제도/정책에는 기존 제2026-162호가 보이지만 뉴스/알림 집계와 목록 불일치로 최신 전체 범위 확인 불가.",
+    "summary": "고시명 검색 집계는 제도/정책 41건·뉴스/알림 30건이나 목록은 0건입니다. Q&A 검색과 기존 제2026-162호 공지는 열렸으나 최신 전체 검색 확인 불가.",
     "evidence": [
       {
         "name": "hira-title",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
-        "checkedAt": "2026-11-16T23:49:04.795737+00:00",
+        "checkedAt": "2026-11-17T23:46:42.726663+00:00",
         "httpStatus": 200,
-        "bytes": 148344,
-        "sha256": "6bb260f3935f9d6a272127fdac7e93d252996060e954b577168f8720459606dc"
+        "bytes": 140935,
+        "sha256": "8e8a81e16c68e9fc2944d9e49b8e4b7c96f190d6b4a7e138eacf6901020c8c98"
       },
       {
         "name": "hira-qa",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
-        "checkedAt": "2026-11-16T23:49:04.796975+00:00",
+        "checkedAt": "2026-11-17T23:46:42.727367+00:00",
         "httpStatus": 200,
         "bytes": 154466,
         "sha256": "5fda465b2f4325ab7bccb457cbedbbc1d491be225e7f643685df91a6fdc8d9e7"
@@ -147,26 +147,26 @@
       {
         "name": "hira-payinfo",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
-        "checkedAt": "2026-11-16T23:49:04.797807+00:00",
+        "checkedAt": "2026-11-17T23:46:42.728506+00:00",
         "httpStatus": 200,
-        "bytes": 164708,
-        "sha256": "2ed3139cc222eda887f5e52a5ff643f53653a3f921eb9b508fdbe259586a8248"
+        "bytes": 139359,
+        "sha256": "cfc343f33e84a0f20c57a57819b4cec6fd2c44c3856e6775e59898b937cf54ea"
       },
       {
         "name": "hira-news",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
-        "checkedAt": "2026-11-16T23:49:04.798444+00:00",
+        "checkedAt": "2026-11-17T23:46:42.729320+00:00",
         "httpStatus": 200,
-        "bytes": 141677,
-        "sha256": "13afb447579680e2ccf2894e63495a04e194d7206bdd61dbac36e48801ac31c3"
+        "bytes": 139353,
+        "sha256": "d6d5f031320875a0d61fc374b68fc898eea6336c267bf98b815f4c7dc95328ee"
       },
       {
         "name": "hira-notice",
         "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
-        "checkedAt": "2026-11-16T23:49:04.799329+00:00",
+        "checkedAt": "2026-11-17T23:46:49.810472+00:00",
         "httpStatus": 200,
         "bytes": 174387,
-        "sha256": "3e06e38126f79efaf62e1e1dcd3695a5f1e0e0831b4da5a5cf0ce146680ede7b"
+        "sha256": "aae091a2fa40d2e06e09f8fa4f2d2a8f50975f787a407b4d1f5d1646e5619bc2"
       }
     ]
   },
@@ -256,5 +256,24 @@
       }
     ],
     "summary": "수정된 검사기는 현행 판본 식별·메타데이터·별표/서식 목록 조회를 통과했지만 원문 수집 단계에서 두 차례 HTTP 503으로 실패했습니다. 마지막 실행 후 새로 수집된 원본 21개는 형식·SHA-256을 별도 검증했으며 기존 기준과 일치합니다. 나머지 9개는 이번 실행에서 확인 완료되지 않았으며 앞선 캐시로 성공을 대체하지 않습니다."
+  },
+  "primaryAttempt": {
+    "state": "failed",
+    "checkedAt": "2026-11-17T23:46:47.655699+00:00",
+    "summary": "현행 조회 HTTP 503으로 현행 고시 메타데이터와 별표·서식 원본 해시 비교를 완료하지 못했습니다.",
+    "evidence": {
+      "name": "law-current",
+      "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
+      "checkedAt": "2026-11-17T23:46:42.725240+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    "freshFilesConfirmed": 0
+  },
+  "secondaryAttempt": {
+    "state": "failed",
+    "name": "mohw",
+    "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&nPage=1",
+    "checkedAt": "2026-11-17T23:46:42.726116+00:00",
+    "error": "HTTP Error 503: Service Unavailable"
   }
 }
