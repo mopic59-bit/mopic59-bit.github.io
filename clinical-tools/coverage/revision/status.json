@@ -8,7 +8,7 @@
   },
   "lastSuccessfulCheckAt": "2026-11-12T23:40:12.671989+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-11-18T23:57:19.988315+00:00",
+  "lastAttemptAt": "2026-11-19T23:11:39.995167+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,8 +110,8 @@
       }
     ]
   },
-  "lastError": "심평원 검색 응답 시간 초과로 일부 확인. 현행 고시·별표/서식 원본 및 복지부 제목 검색에서는 차이가 확인되지 않았습니다.",
-  "checkState": "partial",
+  "lastError": "국가법령정보센터 현행 고시 이름 조회 및 재시도 HTTP 503; 복지부 산정특례 제목 검색 HTTP 503; 심평원 제목 검색 25초 시간 초과. 이번 실행의 고시·별표·서식 해시 비교는 완료하지 못했습니다.",
+  "checkState": "failed",
   "revisionState": "unchanged",
   "secondary": {
     "checkedAt": "2026-11-18T23:57:19.988315+00:00",
@@ -121,37 +121,16 @@
   "lastPrimaryCheckAt": "2026-11-18T23:57:19.988315+00:00",
   "hira": {
     "state": "failed",
-    "checkedAt": "2026-11-19T00:00:48.075383+00:00",
+    "checkedAt": "2026-11-19T23:11:41.092077+00:00",
     "officialSearchConfirmed": false,
     "latestSearchCoverageConfirmed": false,
     "comprehensiveSearchConfirmed": false,
-    "summary": "심평원 고시명·질의응답·범주 검색 및 기존 공지 직접 접속이 응답을 받지 못하고 시간 초과했습니다(초회 15초, 고시명 재시도 30초). 웹 검색에서 확인된 제2026-234호는 별도 고시(요양급여의 적용기준 및 방법에 관한 세부사항)로 산정특례 기준 개정을 확인하는 근거가 아닙니다.",
-    "relatedNoticeUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12345&brdScnBltNo=4&pgmid=HIRAA020002000100",
+    "summary": "심평원 공식 고시명 검색이 25초 내 응답하지 않아 확인 실패. 웹 색인은 공식 검색 확인을 대체하지 않습니다.",
     "evidence": [
       {
-        "name": "hira-title",
         "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
-        "error": "timeout; no response bytes"
-      },
-      {
-        "name": "hira-qa",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=ALL",
-        "error": "timeout; no response bytes"
-      },
-      {
-        "name": "hira-payinfo",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&resultCount=10&pageStart=0",
-        "error": "timeout; no response bytes"
-      },
-      {
-        "name": "hira-news",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&resultCount=10&pageStart=0",
-        "error": "timeout; no response bytes"
-      },
-      {
-        "name": "hira-notice",
-        "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
-        "error": "timeout; no response bytes"
+        "checkedAt": "2026-11-19T23:11:41.092077+00:00",
+        "error": "The read operation timed out"
       }
     ]
   },
@@ -243,23 +222,16 @@
     "summary": "수정된 검사기는 현행 판본 식별·메타데이터·별표/서식 목록 조회를 통과했지만 원문 수집 단계에서 두 차례 HTTP 503으로 실패했습니다. 마지막 실행 후 새로 수집된 원본 21개는 형식·SHA-256을 별도 검증했으며 기존 기준과 일치합니다. 나머지 9개는 이번 실행에서 확인 완료되지 않았으며 앞선 캐시로 성공을 대체하지 않습니다."
   },
   "primaryAttempt": {
+    "checkedAt": "2026-11-19T23:12:56.534513+00:00",
     "state": "failed",
-    "checkedAt": "2026-11-17T23:46:47.655699+00:00",
-    "summary": "현행 조회 HTTP 503으로 현행 고시 메타데이터와 별표·서식 원본 해시 비교를 완료하지 못했습니다.",
-    "evidence": {
-      "name": "law-current",
-      "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
-      "checkedAt": "2026-11-17T23:46:42.725240+00:00",
-      "error": "HTTP Error 503: Service Unavailable"
-    },
-    "freshFilesConfirmed": 0
+    "error": "HTTP Error 503: Service Unavailable",
+    "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80"
   },
   "secondaryAttempt": {
+    "checkedAt": "2026-11-19T23:12:56.534513+00:00",
     "state": "failed",
-    "name": "mohw",
-    "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&nPage=1",
-    "checkedAt": "2026-11-17T23:46:42.726116+00:00",
-    "error": "HTTP Error 503: Service Unavailable"
+    "error": "HTTP Error 503: Service Unavailable",
+    "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80"
   },
   "primaryEvidence": {
     "state": "success",
