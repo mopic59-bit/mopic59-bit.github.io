@@ -6,9 +6,9 @@
     "effectiveDate": "2026-07-31",
     "sourceUrl": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulSeq=2100000283320"
   },
-  "lastSuccessfulCheckAt": "2026-11-12T23:40:12.671989+00:00",
+  "lastSuccessfulCheckAt": "2026-11-21T23:26:12.275139+00:00",
   "pending": null,
-  "lastAttemptAt": "2026-11-20T23:07:14.602036+00:00",
+  "lastAttemptAt": "2026-11-21T23:26:12.275139+00:00",
   "observed": {
     "id": "2100000283320",
     "notice": "2026-162",
@@ -110,176 +110,475 @@
       }
     ]
   },
-  "lastError": "심평원 고시명·산정특례 공식 검색의 공지/정책 목록과 기존 제2026-162호 공지는 확인했으나, 페이지 요청마다 결과가 불일치하고 공지 2쪽의 표시 목록이 비어 전체 최신 범위는 재현하지 못했습니다. 국가법령정보센터 현행 고시 및 별표·서식 원본 30개 해시와 복지부 제목 검색에서는 대상 변경이 확인되지 않았습니다.",
-  "checkState": "partial",
+  "lastError": null,
+  "checkState": "success",
   "revisionState": "unchanged",
   "secondary": {
-    "checkedAt": "2026-11-20T23:07:14.602036+00:00",
-    "summary": "복지부 제목 검색에서 기준 고시와 지침·질의응답·행정예고를 구분했습니다. 기준 목록과 동일.",
+    "checkedAt": "2026-11-21T23:26:12.275139+00:00",
+    "summary": "보건복지부 산정특례 제목 검색과 심평원 공식 제목 검색의 뉴스/알림·제도/정책 범위를 확인했습니다. 질의응답·지침과 행정예고는 고시 개정과 구분합니다.",
     "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80"
   },
-  "lastPrimaryCheckAt": "2026-11-20T23:07:14.602036+00:00",
+  "lastPrimaryCheckAt": "2026-11-21T23:26:12.275139+00:00",
   "hira": {
-    "state": "partial",
-    "checkedAt": "2026-11-20T23:08:09.012878+00:00",
+    "state": "success",
+    "checkedAt": "2026-11-21T23:29:21.040786+00:00",
     "officialSearchConfirmed": true,
-    "latestSearchCoverageConfirmed": false,
-    "comprehensiveSearchConfirmed": false,
-    "summary": "심평원 고시명·산정특례 공식 검색의 공지/정책 목록과 기존 제2026-162호 공지는 확인했으나, 페이지 요청마다 결과가 불일치하고 공지 2쪽의 표시 목록이 비어 전체 최신 범위는 재현하지 못했습니다. 국가법령정보센터 현행 고시 및 별표·서식 원본 30개 해시와 복지부 제목 검색에서는 대상 변경이 확인되지 않았습니다.",
+    "latestSearchCoverageConfirmed": true,
+    "comprehensiveSearchConfirmed": true,
+    "scope": "심평원 공식 통합검색의 고시명·산정특례 제목 검색 중 뉴스/알림 및 제도/정책에 한함",
+    "summary": "심평원 공식 제목 검색의 고시명·산정특례 뉴스/알림 및 제도/정책 총 표시건수와 전 페이지를 확인했습니다. 두 검색의 최신 관련 고시는 기존 제2026-162호입니다. 보조 날짜 필터 오류는 전체 페이지 검증 결과에 포함하지 않았습니다.",
+    "groups": [
+      {
+        "queryType": "exact",
+        "category": "news",
+        "total": 30,
+        "pages": 3,
+        "newestId": "12195",
+        "governingNotices": [
+          "2026-101",
+          "2026-162",
+          "2026-79"
+        ]
+      },
+      {
+        "queryType": "exact",
+        "category": "payinfo",
+        "total": 32,
+        "pages": 4,
+        "newestId": "53175",
+        "governingNotices": [
+          "2026-101",
+          "2026-162"
+        ]
+      },
+      {
+        "queryType": "broad",
+        "category": "news",
+        "total": 45,
+        "pages": 5,
+        "newestId": "12195",
+        "governingNotices": [
+          "2026-101",
+          "2026-162",
+          "2026-79"
+        ]
+      },
+      {
+        "queryType": "broad",
+        "category": "payinfo",
+        "total": 45,
+        "pages": 5,
+        "newestId": "53175",
+        "governingNotices": [
+          "2026-101",
+          "2026-162"
+        ]
+      }
+    ],
     "evidence": [
       {
-        "name": "hira",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=ALL",
-        "checkedAt": "2026-11-20T23:07:26.064767+00:00",
-        "httpStatus": 200,
-        "bytes": 157413,
-        "sha256": "113e08f8c68a19888608f07bb3bea6149b395fca4410543b99187d5091b9a13b",
-        "visibleNoticeRows": 3
-      },
-      {
-        "name": "hira-news",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&pageStart=0&resultCount=10",
-        "checkedAt": "2026-11-20T23:08:09.012878+00:00",
-        "httpStatus": 200,
-        "bytes": 163525,
-        "sha256": "b25274bc2fe84daa84475b8c9714c84e6c2564d61daeda4686fb2a37139f5978",
-        "visibleNoticeRows": 10
-      },
-      {
-        "name": "hira-payinfo",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&pageStart=0&resultCount=10",
-        "checkedAt": "2026-11-20T23:08:09.013445+00:00",
-        "httpStatus": 200,
-        "bytes": 162258,
-        "sha256": "e2b0eef0984b0cade1bc9b464dc9d0ec00bbd59f44edd5173aaf733dc45709cf",
-        "visibleNoticeRows": 8
-      },
-      {
-        "name": "hira-short",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&searchField=subject&collection=news&pageStart=0&resultCount=10",
-        "checkedAt": "2026-11-20T23:08:09.011670+00:00",
-        "httpStatus": 200,
-        "bytes": 162262,
-        "sha256": "e61c5e569b32a5f434c8c57047d2487225ee1eb57214582041bebf80fca82e53",
-        "visibleNoticeRows": 10
-      },
-      {
-        "name": "hira-qa",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&searchField=subject&collection=news&pageStart=0&resultCount=10",
-        "checkedAt": "2026-11-20T23:08:09.012377+00:00",
-        "httpStatus": 200,
-        "bytes": 153680,
-        "sha256": "9dd2723c2958db4b191bb2c72aa341622e9e33db0ed200f00f5d8e664a5b6fc9",
-        "visibleNoticeRows": 5
-      },
-      {
-        "name": "hira-known",
+        "name": "known",
         "sourceUrl": "https://www.hira.or.kr/bbsDummy.do?brdBltNo=12195&brdScnBltNo=4&pgmid=HIRAA020002000100",
-        "checkedAt": "2026-11-20T23:08:09.014358+00:00",
+        "checkedAt": "2026-11-21T23:26:28.402129+00:00",
         "httpStatus": 200,
         "bytes": 174387,
-        "sha256": "8990d18335fdf81e0e3ba0291fbad36c74c3face834c7448a41b8a767dac4bcc"
+        "sha256": "80584a794e799d077750c7f035864c865dcf5ba04469549d3f156c97fed5227d"
       },
       {
-        "name": "date-news-0",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&pageStart=0&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:35.123603+00:00",
+        "name": "retry-qa",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80+%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5&sort=DESC&pageStart=0&resultCount=10&totalCnt=0&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:27:51.070341+00:00",
         "httpStatus": 200,
-        "bytes": 147926,
-        "sha256": "b1b5bfa2ed093f1959633e48477572c90e2c692324684aecb76892380428dbc1",
-        "visibleNoticeRows": 3
+        "bytes": 152671,
+        "sha256": "13715bf8cd7e7632bffe39d130db631821b56f847be020f533d4e91fb890583d"
       },
       {
-        "name": "date-news-10",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&pageStart=10&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:35.124391+00:00",
+        "name": "full-exact-news-0",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=0&resultCount=10&totalCnt=30&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:40.891581+00:00",
         "httpStatus": 200,
-        "bytes": 139770,
-        "sha256": "ad4c2993229953aef5e47933cb5fc52b8fde4690962b33bec4666793727ce653",
-        "visibleNoticeRows": 0
+        "bytes": 163701,
+        "sha256": "bbd64fc5e3347418111ba0df454107c4d8e2463ca776eec128fae212e43b45d1",
+        "categoryTotal": 30,
+        "page": 1,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "12195",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2026-162호 「 본인 일부 부담금 산정 특례 에 관한 기준 」 일부 개정 [2026.07.31]"
+        },
+        "lastRow": {
+          "id": "8286",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2020-229호 「 본인 일부 부담금 산정 특례 에 관한 기준 」 일부 개정 [2020.10.19]"
+        }
       },
       {
-        "name": "date-news-20",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=news&pageStart=20&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:35.124867+00:00",
+        "name": "full-exact-news-10",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=10&resultCount=10&totalCnt=30&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:40.892362+00:00",
         "httpStatus": 200,
-        "bytes": 165855,
-        "sha256": "c49fb92fa11eba033f40a3aa9929c383ac89194f20df832745b1b8e868908a3d",
-        "visibleNoticeRows": 10
+        "bytes": 161372,
+        "sha256": "7c1f77685692358006f51e5a5b4bc0fbea2f74cc3f70a087e9eab90aa1b9a3ea",
+        "categoryTotal": 30,
+        "page": 2,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "8198",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2020-201호 「 본인 일부 부담금 산정 특례 에 관한 기준 」 일부 개정 [2020.09.09]"
+        },
+        "lastRow": {
+          "id": "6433",
+          "title": "기관소식/HIRA 소식/공지사항 [고시 제2017-94호]「 본인 일부 부담금 산정 특례 에 관한 기준 」고시 일부 개정 안내 [2017.06.21]"
+        }
       },
       {
-        "name": "date-payinfo-0",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&pageStart=0&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:35.125565+00:00",
+        "name": "full-exact-news-20",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=20&resultCount=10&totalCnt=30&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:40.892909+00:00",
         "httpStatus": 200,
-        "bytes": 149400,
-        "sha256": "f25d3cc2318961b06ac234004f56a6b6f9429c441aff29b34afaad786e0bb089",
-        "visibleNoticeRows": 3
+        "bytes": 166054,
+        "sha256": "293dc0eb451703563760c1018a15aa52f4f0d0bde4ca5e3c80ba45f5f18f5acb",
+        "categoryTotal": 30,
+        "page": 3,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "6247",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2016-219호 「 본인 일부 부담금 산정 특례 에 관한 기준 」 고시 일부 개정 안내 [2016.11.30]"
+        },
+        "lastRow": {
+          "id": "4104",
+          "title": "기관소식/HIRA 소식/공지사항 (제2010-121호) 본인 일부 부담금 산정 특례 에 관한 기준 개정고시 안내 (수정) [2010.12.24]"
+        }
       },
       {
-        "name": "date-payinfo-10",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&pageStart=10&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:35.126523+00:00",
+        "name": "full-exact-payinfo-0",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=0&resultCount=10&totalCnt=32&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:40.893422+00:00",
         "httpStatus": 200,
-        "bytes": 162891,
-        "sha256": "3ee55b434665eae913fb37db4c71c33e9905ab829d8baca7b2f7b3e75a4a6423",
-        "visibleNoticeRows": 9
+        "bytes": 164179,
+        "sha256": "e06f4052d18d8392fa5b721b544fd0456813985221bbf30aadb6dc6d2aece227",
+        "categoryTotal": 32,
+        "page": 1,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "53175",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [행위] 고시 제2026-162호 「 본인 일부 부담금 산정 특례 에 관한 기준 」 일부 개정"
+        },
+        "lastRow": {
+          "id": "51566",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [행위] 고시 제2020-118, 119호「건강보험 행위 급여·비급여 목록표 및 급여 상대가치점수」 및 「 본인 일부 부담금 산정 특례 에 관한 기준 」 일부 개정"
+        }
       },
       {
-        "name": "date-payinfo-20",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&pageStart=20&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:44.003782+00:00",
+        "name": "full-exact-payinfo-10",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=10&resultCount=10&totalCnt=32&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:46.834147+00:00",
         "httpStatus": 200,
-        "bytes": 163974,
-        "sha256": "f9a44872bc4a0db53a6b806bbf55ecb6e22b4f2db5c1c1ea0424939ce36a39ac",
-        "visibleNoticeRows": 6
+        "bytes": 167521,
+        "sha256": "b056b2933c751b33931ca714b97abac46c5150318b54b4f3560402fcea5cd0a5",
+        "categoryTotal": 32,
+        "page": 2,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "51475",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [행위] 고시 제2020-24호「 본인 일부 부담금 산정 특례 에 관한 기준 」 일부 개정"
+        },
+        "lastRow": {
+          "id": "49867",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [의료급여] 본인 일부 부담금 산정 특례 에 관한 기준 일부 개정에 따른 희귀난치성질환 상병 추가관련 정정 안내"
+        }
       },
       {
-        "name": "date-payinfo-30",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&pageStart=30&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:44.133889+00:00",
+        "name": "full-exact-payinfo-20",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=20&resultCount=10&totalCnt=32&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:46.925209+00:00",
         "httpStatus": 200,
-        "bytes": 159339,
-        "sha256": "e54fe27b65419b6379c1a284526f04624eb68456989c34d47c03c79a22d2d23b",
-        "visibleNoticeRows": 9
+        "bytes": 161961,
+        "sha256": "618434467edcde73642c7410c8bf5b56453bb2e4c3a5d53d587a86913e6da41b",
+        "categoryTotal": 32,
+        "page": 3,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "49852",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 (고시 제2014-8호) 본인 일부 부담금 산정 특례 에 관한 기준 개정고시 안내"
+        },
+        "lastRow": {
+          "id": "47884",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 본인 일부 부담금 산정 특례 에 관한 기준 개정(고시 제2005-95호)"
+        }
       },
       {
-        "name": "date-payinfo-40",
-        "sourceUrl": "https://www.hira.or.kr/co/search.do?query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&searchField=subject&collection=payinfo&pageStart=40&resultCount=10",
-        "checkedAt": "2026-11-20T23:09:44.357980+00:00",
+        "name": "full-exact-payinfo-30",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&searchWord=%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88+%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80&sort=DESC&pageStart=30&resultCount=10&totalCnt=32&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:47.316252+00:00",
         "httpStatus": 200,
-        "bytes": 141304,
-        "sha256": "09f37bead5b1990c12ad7b76686d916d732dbacb80a65b12d48f96d0652f8f06",
-        "visibleNoticeRows": 0
+        "bytes": 143950,
+        "sha256": "6b22239c10a3dc20f044f6ab472b6e08d0a42f7a4725b3a505de624b30457e5d",
+        "categoryTotal": 32,
+        "page": 4,
+        "visibleNoticeRows": 2,
+        "firstRow": {
+          "id": "16559",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 (고시 제2005-55호) 본인 일부 부담금 산정 특례 에 관한 기준"
+        },
+        "lastRow": {
+          "id": "16555",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 (고시 제2004-94호) 본인 일부 부담금 산정 특례 에 관한 기준"
+        }
+      },
+      {
+        "name": "full-broad-news-0",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=0&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:47.682043+00:00",
+        "httpStatus": 200,
+        "bytes": 162087,
+        "sha256": "55894dc6bdad5d5453018d85dc73c8b8ee2a965e6942e82891c126263328958c",
+        "categoryTotal": 45,
+        "page": 1,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "12195",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2026-162호 「본인일부부담금 산정 특례 에 관한 기준」 일부개정 [2026.07.31]"
+        },
+        "lastRow": {
+          "id": "8286",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2020-229호 「본인일부부담금 산정 특례 에 관한 기준」 일부개정 [2020.10.19]"
+        }
+      },
+      {
+        "name": "full-broad-news-10",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=10&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:54.199922+00:00",
+        "httpStatus": 200,
+        "bytes": 159246,
+        "sha256": "58d561cdeff33720f7d57005e93c43ace160219ffcb37f87c49b29010eb68d40",
+        "categoryTotal": 45,
+        "page": 2,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "8198",
+          "title": "기관소식/HIRA 소식/공지사항 [행위] 고시 제2020-201호 「본인일부부담금 산정 특례 에 관한 기준」 일부개정 [2020.09.09]"
+        },
+        "lastRow": {
+          "id": "6435",
+          "title": "기관소식/HIRA 소식/공지사항 (고시 제2017-98호) 산정 특례 대상 확대 관련 청구방법 개정고시 안내 [2017.06.22]"
+        }
+      },
+      {
+        "name": "full-broad-news-20",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=20&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:54.557099+00:00",
+        "httpStatus": 200,
+        "bytes": 160431,
+        "sha256": "4b0163a073752da89e87b990e9546bc01ce1ae8839e9b6290531381d7e2a767b",
+        "categoryTotal": 45,
+        "page": 3,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "6433",
+          "title": "기관소식/HIRA 소식/공지사항 [고시 제2017-94호]「본인일부부담금 산정 특례 에 관한 기준」고시 일부개정 안내 [2017.06.21]"
+        },
+        "lastRow": {
+          "id": "5557",
+          "title": "기관소식/HIRA 소식/공지사항 (고시 제2015-2호 및 보험급여과-432호) 본인일부부담금 산정 특례 에 관한 기준 개정고시 및 질의응답 [2015.01.30]"
+        }
+      },
+      {
+        "name": "full-broad-news-30",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=30&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:54.731979+00:00",
+        "httpStatus": 200,
+        "bytes": 164075,
+        "sha256": "f8e1b284a45776288a2b6eb967130abfb91d36bc7251d893bf3a93f2e8de7465",
+        "categoryTotal": 45,
+        "page": 4,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "5446",
+          "title": "기관소식/HIRA 소식/공지사항 (보험급여과-3460,3461,3580호)희귀난치질환 산정 특례 재등록 관련 질의응답 [2014.10.01]"
+        },
+        "lastRow": {
+          "id": "4153",
+          "title": "기관소식/HIRA 소식/공지사항 암환자 산정 특례 대상질병 관련 행정해석 안내(보험급여과-433호) [2011.02.09]"
+        }
+      },
+      {
+        "name": "full-broad-news-40",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=40&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:28:55.150534+00:00",
+        "httpStatus": 200,
+        "bytes": 149790,
+        "sha256": "77eec40bfdea4f5dd3019836a4d44db3a8ca2935b57a6d52a8a66036a010aafb",
+        "categoryTotal": 45,
+        "page": 5,
+        "visibleNoticeRows": 5,
+        "firstRow": {
+          "id": "4104",
+          "title": "기관소식/HIRA 소식/공지사항 (제2010-121호) 본인일부부담금 산정 특례 에 관한 기준 개정고시 안내 (수정) [2010.12.24]"
+        },
+        "lastRow": {
+          "id": "3817",
+          "title": "기관소식/HIRA 소식/공지사항 (고시 제2010-46호) 중증화상 산정 특례 관련 개정고시 안내 [2010.06.30]"
+        }
+      },
+      {
+        "name": "full-broad-payinfo-0",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=0&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:29:14.090628+00:00",
+        "httpStatus": 200,
+        "bytes": 162497,
+        "sha256": "787cdca858f2bd48682a9fe40232a98797fc3f65ead4566d0fbbc49b95cc2160",
+        "categoryTotal": 45,
+        "page": 1,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "53175",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [행위] 고시 제2026-162호 「본인일부부담금 산정 특례 에 관한 기준」 일부개정"
+        },
+        "lastRow": {
+          "id": "51566",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [행위] 고시 제2020-118, 119호「건강보험 행위 급여·비급여 목록표 및 급여 상대가치점수」 및 「본인일부부담금 산정 특례 에 관한 기준」 일부개정"
+        }
+      },
+      {
+        "name": "full-broad-payinfo-10",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=10&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:29:14.425837+00:00",
+        "httpStatus": 200,
+        "bytes": 162039,
+        "sha256": "670ac8bbb397402f4f9a472a7d8a96986fc5bab6f94ec7334ccd2f6c35fa5168",
+        "categoryTotal": 45,
+        "page": 2,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "51475",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 [행위] 고시 제2020-24호「본인일부부담금 산정 특례 에 관한 기준」 일부개정"
+        },
+        "lastRow": {
+          "id": "50156",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 산정 특례 관련 질의회신 통보(보험급여과-1615호)"
+        }
+      },
+      {
+        "name": "full-broad-payinfo-20",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=20&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:29:14.551961+00:00",
+        "httpStatus": 200,
+        "bytes": 166272,
+        "sha256": "9a68a18156fc2663ab890d683844e356700adb0fd3c21e89622e668482062723",
+        "categoryTotal": 45,
+        "page": 3,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "16732",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 (고시 제2015-29호) 산정 특례 적용확대 관련 청구방법 개정고시"
+        },
+        "lastRow": {
+          "id": "48838",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 희귀난치성질환자 산정 특례 대상 관련 질병군진료 세부작성요령"
+        }
+      },
+      {
+        "name": "full-broad-payinfo-30",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=30&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:29:14.794358+00:00",
+        "httpStatus": 200,
+        "bytes": 162203,
+        "sha256": "e1b2ddd65014605ea67a7d7cc2c7558440ab9a5e96cabd962e9788a951095397",
+        "categoryTotal": 45,
+        "page": 4,
+        "visibleNoticeRows": 10,
+        "firstRow": {
+          "id": "16651",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 (고시 제2009-97호) 본인일부부담금 산정 특례 에관한기준 개정내용 반영 등 관련 청구방법 개정고시"
+        },
+        "lastRow": {
+          "id": "47989",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 본인일부부담금 산정 특례 에 관한 기준 개정 고시 안내"
+        }
+      },
+      {
+        "name": "full-broad-payinfo-40",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=40&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:29:21.040786+00:00",
+        "httpStatus": 200,
+        "bytes": 148864,
+        "sha256": "512774d82a0a11645fa1addfb9c19f0c52f3292a4e1f907c1eaa7c53ca0b5708",
+        "categoryTotal": 45,
+        "page": 5,
+        "visibleNoticeRows": 5,
+        "firstRow": {
+          "id": "47884",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 본인일부부담금 산정 특례 에 관한 기준 개정(고시 제2005-95호)"
+        },
+        "lastRow": {
+          "id": "47226",
+          "title": "홈>제도정책>보험인정기준>보험인정기준>자료실 본인일부부담금 산정 특례 에관한기준 개정"
+        }
+      },
+      {
+        "name": "date-news",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=news&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=0&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on&period=ETC&startDate=2026-07-31&endDate=2026-11-22",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:27:43.503818+00:00",
+        "httpStatus": 200,
+        "bytes": 141222,
+        "sha256": "24393d34f917d03ad41cc712313fd19e9e5c9f2e6d88f8ed6b9ee96ba445b793",
+        "note": "보조 날짜 필터의 검색 엔진 결과가 -1로 반환되어 판정에 사용하지 않았습니다."
+      },
+      {
+        "name": "date-pay",
+        "sourceUrl": "https://www.hira.or.kr/co/search.do?collection=payinfo&searchField=subject&query=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&searchWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&sort=DESC&pageStart=0&resultCount=10&totalCnt=45&analyzerFlag=on&analyzer=on&period=ETC&startDate=2026-07-31&endDate=2026-11-22",
+        "method": "GET",
+        "checkedAt": "2026-11-21T23:27:43.504487+00:00",
+        "httpStatus": 200,
+        "bytes": 141228,
+        "sha256": "d9f359c32bf977e1fc71cbc7305fb160bcc372cfc3965aebc288a08c6bfd31cf",
+        "note": "보조 날짜 필터의 검색 엔진 결과가 -1로 반환되어 판정에 사용하지 않았습니다."
       }
     ]
   },
   "primaryAttemptEvidence": {
     "name": "law",
     "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
-    "checkedAt": "2026-11-20T23:07:26.063432+00:00",
-    "httpStatus": 200,
+    "checkedAt": "2026-11-21T23:26:12.275139+00:00",
     "bytes": 85628,
-    "sha256": "c409d7594828eb2debbfaa8a4b05360a4fbd92b76071a9e04c230a1d4d864fa5"
+    "sha256": "f854eec75814c698ad4e449dbed9694fd96fb3813cb677e6e6cf5b9d8785f95f"
   },
   "primaryAttempt": {
     "state": "success",
-    "checkedAt": "2026-11-20T23:07:14.602036+00:00",
-    "summary": "현행 명칭으로 고시를 찾고 발령·시행일과 별표·서식 15종 원본 파일 30개의 SHA-256을 적용 기준과 대조했습니다. 동일.",
+    "checkedAt": "2026-11-21T23:26:12.275139+00:00",
+    "summary": "현행 명칭으로 찾은 고시의 고시번호·발령일·시행일과 별표·서식 15종 원본 파일 30개의 SHA-256 및 크기가 기준과 일치합니다.",
     "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
     "checkedFiles": 30,
     "checkedAnnexes": 15
   },
   "secondaryAttempt": {
     "state": "success",
-    "checkedAt": "2026-11-20T23:07:14.602036+00:00",
-    "summary": "복지부 제목 검색에서 기준 고시와 지침·질의응답·행정예고를 구분했습니다. 기준 목록과 동일.",
+    "checkedAt": "2026-11-21T23:26:12.275139+00:00",
+    "summary": "복지부 제목 검색에서 기준 고시와 지침·질의응답·행정예고를 구분했습니다. 기준 목록과 동일합니다.",
     "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80",
     "htmlEvidence": {
       "name": "mohw",
       "sourceUrl": "https://www.mohw.go.kr/board.es?mid=a10409020000&bid=0026&keyField=TITLE&keyWord=%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80&nPage=1",
-      "checkedAt": "2026-11-20T23:07:26.064278+00:00",
-      "httpStatus": 200,
+      "checkedAt": "2026-11-21T23:26:12.275139+00:00",
       "bytes": 120719,
       "sha256": "3562403c8525b2801ef520a055533960b326b6a7c6c7d362a6b73fb18e42635c",
       "parsedCount": 10,
@@ -319,8 +618,8 @@
   },
   "primaryEvidence": {
     "state": "success",
-    "checkedAt": "2026-11-20T23:07:14.602036+00:00",
-    "summary": "현행 명칭으로 고시를 찾고 발령·시행일과 별표·서식 15종 원본 파일 30개의 SHA-256을 적용 기준과 대조했습니다. 동일.",
+    "checkedAt": "2026-11-21T23:26:12.275139+00:00",
+    "summary": "현행 명칭으로 찾은 고시의 고시번호·발령일·시행일과 별표·서식 15종 원본 파일 30개의 SHA-256 및 크기가 기준과 일치합니다.",
     "sourceUrl": "https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%EB%B3%B8%EC%9D%B8%EC%9D%BC%EB%B6%80%EB%B6%80%EB%8B%B4%EA%B8%88%EC%82%B0%EC%A0%95%ED%8A%B9%EB%A1%80%EC%97%90%EA%B4%80%ED%95%9C%EA%B8%B0%EC%A4%80",
     "checkedFiles": 30,
     "checkedAnnexes": 15
