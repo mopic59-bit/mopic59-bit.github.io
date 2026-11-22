@@ -1,6 +1,7 @@
 // 링크를 확인한 뒤 제목과 짧은 요약을 함께 추가합니다.
 // { url: 'https://...', title: '기사 제목', summary: '간단한 요약', date: '2026-10-10', publisher: '매체명' }
 const newsItems = [
+  {"reportId": "2026-11-23-N01", "url": "https://www.docdocdoc.co.kr/news/articleView.html?idxno=3044771", "title": "\"시장에 맡긴 필수 항암제, 환자 치료까지 흔든다\"", "titleEn": "Supply disruptions for essential anticancer drugs threaten patient care", "summary": "대한혈액학회는 올해 필수 혈액암 항암제 8종 이상이 품절 또는 공급 불안을 겪었다고 밝혔습니다. L-아스파라기나제, 시클로포스파미드, 빈블라스틴 등이 언급됐습니다.", "summaryEn": "The Korean Society of Hematology reported shortages or supply instability for at least eight essential hematologic cancer medicines, including L-asparaginase, cyclophosphamide, and vinblastine.", "date": "2026-11-23", "publisher": "청년의사", "publisherEn": "The Korean Doctors’ Weekly"},
   {
     "url": "https://www.etoday.co.kr/news/view/2641746",
     "title": "재발 기다리지 않고 먼저 치료⋯소아 백혈병 치료 선택지 넓어졌다 [메디컬 줌인]",
