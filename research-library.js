@@ -6211,6 +6211,7 @@ window.researchLibrary = {
     }
   ],
   "news": [
+    {"reportId": "2026-11-25-N01", "url": "https://medigatenews.com/news/2570068031", "title": "국산 신약 41호 엑스코프리 국내 급여 출시…발작 감소 넘어 완전 발작 소실로", "titleEn": "Cenobamate launches with insurance coverage in Korea", "summary": "성인 뇌전증 치료제 세노바메이트의 국내 급여 출시와 업체의 소아 적응증 개발 계획을 다룬 기사입니다. 소아 허가·급여 확대 발표는 아닙니다.", "summaryEn": "The report covers reimbursement for adult epilepsy treatment and plans to develop a pediatric indication. It does not announce pediatric approval or reimbursement.", "date": "2026-11-24", "publisher": "메디게이트뉴스", "publisherEn": "Medi:Gate News", "id": "news-20261125-n01", "addedOn": "2026-11-25", "sourceUrl": "https://medigatenews.com/news/2570068031", "tags": ["소아과"]},
     {
       "id": "medigatenews-2689388473",
       "reportId": "2026-11-17-N03",
